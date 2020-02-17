@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -31,7 +37,7 @@
       float: right;
   }
   
-  /* if you want it vertically middle of the navbar. */
+  /* if you want it vertically move the logo in middle of the navbar. */
   #logo {
     display: inline-block;
     vertical-align: top;
@@ -41,3 +47,13 @@
     margin-top: 15px;
     background-color: rgb(203, 168, 104) 
 }
+.container{
+width: 800px;
+margin: 50px auto 0;
+display: grid;
+border:border-box;
+}
+.column{
+
+}
+#
