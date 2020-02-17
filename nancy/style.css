@@ -12,6 +12,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Courgette', cursive;
   }
   
   /* Changing the color of links on hover */
@@ -29,11 +30,7 @@
       list-style-type: none;
       float: right;
   }
-  #logo a:hover{
-      background-color: none;
-
-
-  }
+  
   /* if you want it vertically middle of the navbar. */
   #logo {
     display: inline-block;
