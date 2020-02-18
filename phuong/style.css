@@ -26,6 +26,10 @@ header h1 {
   font-size: 1.5rem;
 }
 
+.mobile {
+  display: none;
+}
+
 .mb-5 {
   list-style-type: none;
   display: flex;
@@ -152,7 +156,6 @@ a:hover {
 
 .index-skill {
   background: #ffa59c;
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -169,8 +172,8 @@ a:hover {
 #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .skill-card {
@@ -197,6 +200,12 @@ progress::-moz-progress-bar {
   box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
+progress[value]::-webkit-progress-value {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
 footer {
   background: #525a84;
   color: #ffffff;
@@ -208,6 +217,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .portfolio-wrap img {
@@ -225,7 +235,6 @@ footer {
   padding: 20px;
   margin: 50px;
   align-items: center;
-  margin-left: 300px;
 }
 
 .project-title h3 {
@@ -332,4 +341,13 @@ footer {
 
 .education h4 {
   font-weight: 500;
+}
+
+@media (max-width:768px) {
+  .mb-5 {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
