@@ -20,6 +20,7 @@ body{
     text-decoration: none;
     font-size: 17px;
     font-family: 'Courgette', cursive;
+    
   }
   
   /* Changing the color of links on hover */
@@ -41,7 +42,7 @@ body{
   /* if you want it vertically move the logo in middle of the navbar. */
   #logo {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 50px;
     height: 50px;
     margin-right: 20px;
@@ -82,5 +83,9 @@ footer{
   flex-direction: column;
   
   padding: 0%;
+}
+#smile{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
