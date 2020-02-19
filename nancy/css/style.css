@@ -1,3 +1,9 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -21,6 +27,7 @@ body{
     font-size: 17px;
     font-family: 'Courgette', cursive;
     
+    
   }
   
   /* Changing the color of links on hover */
@@ -37,55 +44,82 @@ body{
   ul li{
       list-style-type: none;
       float: right;
+      
   }
   
   /* if you want it vertically move the logo in middle of the navbar. */
   #logo {
     display: inline-block;
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
     margin-top: 15px;
-    background-color: rgb(203, 168, 104) 
+   background-color: whitesmoke;
+  
 }
 .container{
-width: 800px;
+max-width: 800px;
 margin: 50px auto 0;
-display: table;
-border:border-box;
-}
-.row{
-  margin: 10px 0;
+line-height: 1.65;
+padding: 20px 50px;
+display: flex;
+box-sizing: border-box;
+z-index: 9999999;
+
 }
 .column{
-  background: #cccc;
-  display: table-cell;
-  padding: 10px;
-  width: 33.33333%;
-
+  flex: 1;
+  background-color: lawngreen;
+  margin-bottom: 20px;
+  flex-basis: 45%;
+  
+  
 
 }
+.rows{
+  flex: 1;
+  
+  width: 5000px;
+  height: 400px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  margin-right:auto;
+  margin-left: auto;
+ overflow: hidden;
+  text-align: center;
 
+}
+.image-slider{
+ float: left;
+  margin: 0;
+  padding: 0;
+
+}
+.slide-button-container{
+  top: -20px;
+  position: relative;
+}
+
+  
 footer{
-  background: #333;
-  color: whitesmoke;
+ background: #333333;
 }
 
 .form{
-  float: right;
-  color: #333;
-  
+    float: right;
+    line-height: 3em;
+    flex-direction: column;
+    padding: 0;
+    color: whitesmoke;
 }
-.form ol{
+ol{
   list-style-type: none;
-  line-height: 3em;
-  flex-direction: column;
-  
-  padding: 0%;
 }
-#smile{
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+
+
 
