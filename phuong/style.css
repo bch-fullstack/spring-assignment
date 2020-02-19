@@ -1,4 +1,6 @@
-*, :after, :before {
+*,
+:after,
+:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body, #portfolio, #contact, #resume {
+body,
+#portfolio,
+#contact,
+#resume {
   font-family: "Roboto", sans-serif;
   position: relative;
   background: #ffa59c;
@@ -20,36 +25,60 @@ header {
   position: fixed;
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
 }
 
 header h1 {
   font-size: 1.5rem;
 }
 
-.mobile {
-  display: none;
-}
-
-.mb-5 {
-  list-style-type: none;
-  display: flex;
-}
-
-.mb-5 a {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 header a {
   color: #ffffff;
   text-decoration: none;
   padding: 20px;
-  justify-content: space-evenly;
 }
 
-a:hover {
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: #ffa59c;
+  opacity: 0.9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+.mobile-menu {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay a:hover,
+.overlay a:focus {
   color: #f75239;
   cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
 }
 
 #hero-banner {
@@ -113,7 +142,11 @@ a:hover {
 }
 
 @keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -141,7 +174,7 @@ a:hover {
 }
 
 #intro img {
-  max-height: 40%;
+  max-height: 50%;
 }
 
 #intro-content {
@@ -191,19 +224,22 @@ progress {
   border: 0 none;
   background: rgb(105, 99, 99);
   border-radius: 14px;
-  box-shadow: inset 0px 1px 1px rgba(100, 96, 96, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 1px 1px rgba(100, 96, 96, 0.5),
+    0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
 progress::-moz-progress-bar {
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4),
+    0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 progress[value]::-webkit-progress-value {
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4),
+    0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -320,7 +356,8 @@ footer {
   color: rgb(97, 86, 86);
 }
 
-#exp, #edu {
+#exp,
+#edu {
   margin: 20px 0;
 }
 
@@ -343,11 +380,15 @@ footer {
   font-weight: 500;
 }
 
-@media (max-width:768px) {
-  .mb-5 {
-    display: none;
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #ffa59c;
   }
-  .mobile {
-    display: block;
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    top: 15px;
+    right: 35px;
   }
 }
