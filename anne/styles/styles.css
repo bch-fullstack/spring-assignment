@@ -1,3 +1,47 @@
+/* --------------general styles-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #6B6733;
+    --main-bg-color: rgb(35, 43, 35);
+    --main-highligh: #FFF9AB;
+}
+/* .main-text {
+    color: #6B6733;
+}
+.main-background {
+    background: rgb(35, 43, 35);
+} */
 body {
-    background: darkgreen;
+    background: var(--main-bg-color);
+    color: var(--main-color);
+}
+/* --------------header styles------------- */
+header {
+    display: flex;
+}
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo {
+    flex: 1;
+}
+.top-nav {
+    flex: 3;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--main-color);
 }
