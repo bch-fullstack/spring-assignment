@@ -8,8 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="screen">
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!--
+      Link below is for the download cv button
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
     <title>Document</title>
   </head>
   <body>
@@ -46,7 +54,7 @@
       <section id="home">
         <div class="container">
           <h2>ABOUT</h2>
-          <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg" alt="Veronika Maisuradze" />
+          <img src="images/veronika.png" alt="Veronika Maisuradze" />
           <p>
             My name is Veronika Maisuradze and I am happy to see you on my website!
             <br>
@@ -152,24 +160,82 @@ the most effective way <br>
 </td>
 </tr>
           </table>
+          <a href="images/cv.pdf" download> <button class="btn"><i class="fa fa-download"></i> DOWNLOAD CV</button></a>
         </div>
       </section>
+
+
+      <section id="about">
+        <div class="container">
+          <h2>ABOUT ME</h2>
+          <p>
+            This is what I like!
+          </p>
+        </div>
+      </section>
+
+
+
+
+      <div class="slider_container">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <a href="https://freshdesignweb.com"><img src="images/slide1.jpg" alt="" title=""/></a>
+                      <div class="flex-caption">
+                        <div class="caption_title_line"><h2>I love nature</h2><p>I love being in the nature, especially mountains and sea.</p></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="https://freshdesignweb.com"><img src="images/slide2.jpg" alt="" title=""/></a>
+                      <div class="flex-caption">
+                        <div class="caption_title_line"><h2>Active lifestyle</h2><p>I like to stay active in everyday life - gor for a walk and do sport.</p></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="https://freshdesignweb.com"><img src="images/slide3.jpg" alt="" title=""/></a>
+                      <div class="flex-caption">
+                        <div class="caption_title_line"><h2>Travelling</h2><p>Want to visit every corner in the world!</p></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="https://freshdesignweb.com"><img src="images/slide4.jpg" alt="" title=""/></a>
+                      <div class="flex-caption">
+                        <div class="caption_title_line"><h2>Animals</h2><p>They are adorable.</p></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        
+
+
+
+
+
 
 
       <section id="contact">
         <div class="container_4">
           <h2>CONTACT</h2>
           <p>
-            If you want to contact me, send me an email!
+            If you would like to contact me, just send me an email:
             <br>
-            vera3@inbox.ru
+            <a href="mailto:vera3@inbox.ru">vera3@inbox.ru</a>
           </p>
         </div>
       </section>
     </main>
     <footer>
       <div>
+        <!---
         <a id="button"></a>
+      -->
+      <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+          <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+      </div>
     </div>
     </footer>
     
@@ -177,10 +243,18 @@ the most effective way <br>
 
 
     
-    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
 
+
+
+
+
+    
+   <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
-
+      
+/*
       jQuery(document).ready(function() {
         
         var btn = $('#button');
@@ -198,8 +272,62 @@ the most effective way <br>
           $('html, body').animate({scrollTop:0}, '300');
         });
       
-      });
-      
+      }); 
+      */
+      $(function(){
+
+$(document).on( 'scroll', function(){
+
+  if ($(window).scrollTop() > 100) {
+    $('.scroll-top-wrapper').addClass('show');
+  } else {
+    $('.scroll-top-wrapper').removeClass('show');
+  }
+});
+
+$('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+element = $('body');
+offset = element.offset();
+offsetTop = offset.top;
+$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+
       </script>
+
+
+
+
+<!-- jQuery for the slider 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    FlexSlider for the slider
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  var $ = jQuery.noConflict();
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "fade"
+    });
+    $(function() {
+       $('.show_menu').click(function(){
+          $('.menu').fadeIn();
+          $('.show_menu').fadeOut();
+          $('.hide_menu').fadeIn();
+        });
+        $('.hide_menu').click(function(){
+          $('.menu').fadeOut();
+          $('.show_menu').fadeIn();
+          $('.hide_menu').fadeOut();
+        });
+      });
+    });
+    </script>
+
+-->
+
   </body>
 </html>
