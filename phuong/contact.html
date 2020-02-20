@@ -28,7 +28,9 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+      <span style="color: white;" onclick="openNav()"
+        ><i class="fas fa-bars"></i
+      ></span>
     </header>
     <main>
       <section id="contact-info">
@@ -41,7 +43,7 @@
             >
           </p>
           <h3>Phone Number</h3>
-          <p>(+358)466 1755 56</p>
+          <p>(+358) 466 1755 56</p>
           <h3>Github</h3>
           <p>
             <a href="https://github.com/heihazy">https://github.com/heihazy</a>
@@ -53,12 +55,37 @@
             >
           </p>
         </div>
+        <div class="form-wrap">
+          <h2>Or send some words of encouragement</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject"></label>
+              <input type="text" name="subject" id="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <input type="text" name="message" id="message">
+            </div>
+            <button type="submit">Send</button>
+        </div>
       </section>
-      <footer>
-        <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
-        <h3>All Rights Reserved</h3>
-      </footer>
     </main>
+    <footer>
+      <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
+      <h3>All Rights Reserved</h3>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>

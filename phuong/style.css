@@ -26,6 +26,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
+  background-color: #ffa59c;
 }
 
 header h1 {
@@ -247,6 +248,8 @@ footer {
   color: #ffffff;
   padding: 20px;
   text-align: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .portfolio-wrap {
@@ -254,6 +257,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: 100px;
 }
 
 .portfolio-wrap img {
@@ -284,43 +288,17 @@ footer {
   list-style-type: none;
 }
 
-.form-group {
-  padding: 50px;
-  margin: 20px 0;
-}
-
-.form-group label {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 5px;
-  color: #525a84;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
 #contact-info {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-wrap {
   background-color: #525a84;
-  width: 60%;
-  height: 50%;
   color: #ffffff;
-  padding: 50px;
-  margin: 50px;
-  position: absolute;
-  left: 15%;
+  padding: 40px;
+  margin: 200px 50px 100px 50px;
   text-align: center;
-  font-size: 20px;
   line-height: 2.2rem;
 }
 
@@ -340,12 +318,13 @@ footer {
 
 .exp-wrap {
   padding: 60px;
+  padding-top: 100px;
   margin-left: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   color: #525a84;
-  height: 100vh;
+  flex-wrap: wrap;
 }
 
 .exp-wrap h2 {
@@ -384,11 +363,55 @@ footer {
   header {
     background-color: #ffa59c;
   }
+
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     top: 15px;
     right: 35px;
+  }
+
+  #intro {
+    height: 100vh;
+  }
+
+  #intro img {
+    max-width: 80%;
+  }
+  #intro-content {
+    line-height: 1.3rem;
+    font-size: smaller;
+    text-align: justify;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .project-title h3 {
+    text-transform: inherit;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .exp-wrap {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .contact-wrap {
+    padding: 20px;
   }
 }
