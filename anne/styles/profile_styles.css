@@ -1,0 +1,72 @@
+/* ---------profile page specific header styles---------- */
+
+#profile, #profile a {
+    background: var(--main-color);
+    color: var(--main-highlight);
+    
+}
+#profile {
+    border-left: 2px solid var(--main-highlight);
+    border-top: 2px solid var(--main-highlight);
+    border-right: 2px solid var(--main-highlight);
+}
+
+/* -----------character profile styles-------------- */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-content {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.profile-divider-a, .profile-divider-b {
+    display: flex;
+    flex-direction: column;
+}
+.profile-divider-a {
+    flex: 4;
+}
+.profile-divider-b {
+    flex: 2;
+}
+.profile-divider-c {
+    display: flex;
+    flex: 2;
+}
+.profile-divider-d {
+    flex: 3;
+}
+.profile-image {
+    /* width: 20vw;
+    height: 20vh; */
+    flex: 2;
+    padding: 5px;
+}
+.profile-info {
+    flex: 4;
+    padding: 5px;
+    color: var(--main-bg-color);
+}
+#info {
+    background: var(--main-color);
+    width: 100%;
+    height: 100%;
+}
+.profile-image img, .familiar img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-stats {
+    flex: 3;
+}
+.familiar {
+    flex: 2;
+    overflow: hidden;
+}
