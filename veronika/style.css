@@ -12,14 +12,18 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    background-color: #fff;
+    background-color: #e5f6ff;
     color: #343434;
-    background-color: rgb(184, 208, 253);
   }
-  
+
   header nav {
-    background-color: rgba(255, 255, 255, 0.712);
+    background-color: #e5f6ff;
     text-align: right;
+    float: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
     
   header ul li {
@@ -40,7 +44,7 @@
     font-size: 24px;
     text-align: center;
     color: black;
-    margin: 30px 75px 10px 0;
+    margin: 110px 75px 10px 0;
     text-decoration: none;
     line-height: 50px;
   }
@@ -84,7 +88,7 @@
     height: 450px;
     margin: auto;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: rgba(245, 245, 245, 0.5);
     padding: 20px;
     border-radius: 8px;
   }
@@ -94,16 +98,26 @@
     height: 1280px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: rgba(245, 245, 245, 0.5);
     padding: 40px;
     border-radius: 8px;
   }
 
+  .container_3 {
+    max-width: 1150px;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
   .container_4 {
-    max-width: 1100px;
+    max-width: 1150px;
     height: 215px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgba(245, 245, 245, 0.5);
     padding: 40px;
     border-radius: 8px;
   }
@@ -248,7 +262,7 @@ visibility: visible;
     font-size: 16px;
     text-align: center;
     color: black;
-    margin: 30px 75px 10px 0;
+    margin: 0 auto;
     text-decoration: none;
     line-height: 50px;
 }
