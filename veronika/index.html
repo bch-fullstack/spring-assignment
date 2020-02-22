@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC&display=swap" rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="screen">
@@ -174,45 +175,19 @@ the most effective way <br>
           <p>
             This is what I like!
           </p>
+<div class="slider-outer">
+<img src="images/arrow-left.png" class="prev" alt="Prev">
+<div class="slider-inner">
+  <img src="images/slide1.jpg" class="active">
+  <img src="images/slide2.jpg">
+  <img src="images/slide3.jpg">
+  <img src="images/slide4.jpg">
+</div>
+<img src="images/arrow-right.png" class="next" alt="Next">
+
+        </div>
         </div>
       </section>
-
-
-<!--
-
-      <div class="slider_container">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <a href="https://freshdesignweb.com"><img src="images/slide1.jpg" alt="" title=""/></a>
-                      <div class="flex-caption">
-                        <div class="caption_title_line"><h2>I love nature</h2><p>I love being in the nature, especially mountains and sea.</p></div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="https://freshdesignweb.com"><img src="images/slide2.jpg" alt="" title=""/></a>
-                      <div class="flex-caption">
-                        <div class="caption_title_line"><h2>Active lifestyle</h2><p>I like to stay active in everyday life - gor for a walk and do sport.</p></div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="https://freshdesignweb.com"><img src="images/slide3.jpg" alt="" title=""/></a>
-                      <div class="flex-caption">
-                        <div class="caption_title_line"><h2>Travelling</h2><p>Want to visit every corner in the world!</p></div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="https://freshdesignweb.com"><img src="images/slide4.jpg" alt="" title=""/></a>
-                      <div class="flex-caption">
-                        <div class="caption_title_line"><h2>Animals</h2><p>They are adorable.</p></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-        -->
-
-
 
 
 
@@ -231,9 +206,7 @@ the most effective way <br>
     </main>
     <footer>
       <div>
-        <!---
-        <a id="button"></a>
-      -->
+       
       <div class="scroll-top-wrapper ">
         <span class="scroll-top-inner">
           <i class="fa fa-2x fa-arrow-circle-up"></i>
@@ -255,28 +228,11 @@ the most effective way <br>
    <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-      
-/*
-      jQuery(document).ready(function() {
-        
-        var btn = $('#button');
-      
-        $(window).scroll(function() {
-          if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-          } else {
-            btn.removeClass('show');
-          }
-        });
-      
-        btn.on('click', function(e) {
-          e.preventDefault();
-          $('html, body').animate({scrollTop:0}, '300');
-        });
-      
-      }); 
-      */
+   
+   
+   
+   <script>
+
       $(function(){
 
 $(document).on( 'scroll', function(){
@@ -300,37 +256,6 @@ $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }
 
       </script>
-
-
-
-
-<!-- jQuery for the slider 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    FlexSlider for the slider
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-  var $ = jQuery.noConflict();
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "fade"
-    });
-    $(function() {
-       $('.show_menu').click(function(){
-          $('.menu').fadeIn();
-          $('.show_menu').fadeOut();
-          $('.hide_menu').fadeIn();
-        });
-        $('.hide_menu').click(function(){
-          $('.menu').fadeOut();
-          $('.show_menu').fadeIn();
-          $('.hide_menu').fadeOut();
-        });
-      });
-    });
-    </script>
-
--->
 
   </body>
 </html>
