@@ -239,6 +239,12 @@ footer {
     color: steelblue;
 }
 
+#img_tanja {
+    flex: 0.5;
+    width: 5vw;
+    margin: 0 2vw 2vh 0;
+}
+
 #print_btn {
     background-color: lightgrey;
     width: 12vw;
@@ -302,7 +308,15 @@ footer {
     #bc {
         margin-right: 0;
         margin-bottom: 1vh;
+    }
 
+    #contact_container {
+        display: block;
+    }
+
+    #img_tanja {
+        width: 15vw;
+        margin: 0 2vw 0 0;
     }
 }
 
@@ -383,6 +397,11 @@ footer {
 
     #mail {
         padding-right: 0;
+    }
+
+    #img_tanja {
+        width: 20vw;
+        margin: 0 0 0 2vw;
     }
 
     #contact_container {
@@ -471,6 +490,11 @@ footer {
 
     #mail {
         padding-right: 0;
+    }
+
+    #img_tanja {
+        width: 20vw;
+        margin: 0 0 0 2vw;
     }
 
     #to_top_btn {

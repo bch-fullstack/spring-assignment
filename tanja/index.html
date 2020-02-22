@@ -6,6 +6,7 @@
     <title>Tanja's website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="https://unpkg.com/aos@next/dist/aos.css" >
     <script src="https://use.fontawesome.com/e22008024a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -24,7 +25,7 @@
         <section id="hero_banner" class="container">
         </section>
         <section id="about_me" class="container">
-            <div id="about_container">
+            <div data-aos="fade-up" id="about_container">
                 <h1>About Tanja Lehtinen</h1>
                 <p>Welcome to my web site!</p>
                 <p>My name is Tanja Lehtinen. At the moment, I study Full Stack Web Development full-time in Business College Helsinki. To be able to do that I am on a study leave from my work as a team lead.</p>
@@ -95,6 +96,7 @@
         <section id="contact" class="container">
             <h2>Contact Me</h2>
             <div id="contact_container">
+                <img id="img_tanja" src="Tanja_samba_sm.jpg" alt="Tanja dancing at a samba festival">
                 <ul id="mail">
                     <li>
                         <a href="mailto:tanja.lehtinen@edu.bc.fi"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
@@ -157,8 +159,13 @@
 
         $("#print_btn").on('click', function () {
         window.print();
-        });
-      
+        }); 
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        setTimeout(function() {
+            AOS.init();
+        }, 750);
     </script>
 </body>
 </html>
