@@ -96,22 +96,22 @@
         <section id="contact" class="container">
             <h2>Contact Me</h2>
             <div id="contact_container">
-                <img id="img_tanja" src="Tanja_samba_sm.jpg" alt="Tanja dancing at a samba festival">
                 <ul id="mail">
                     <li>
                         <a href="mailto:tanja.lehtinen@edu.bc.fi"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
                         <p>tanja.lehtinen@edu.bc.fi</p>
                     </li>              
                     <li>
-                        <a href="https://www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="//www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                         <p>linkedin.com/in/tanja-lehtinen-3b692019b</p>
                     </li>
                     <li>
-                        <a href="https://github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <a href="//github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                         <p>maaliskesakuu</p>
                     </li>
-                </ul>    
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </ul>   
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" allowfullscreen=""></iframe>
+                <img id="img_tanja" src="Tanja_samba_sm.jpg" alt="Tanja dancing at a samba festival"> 
                 <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
             </div>
         </section>
@@ -141,15 +141,13 @@
 
         btn = document.getElementById("to_top_btn");
     
-        window.onscroll = function() {
-            scrollFunction()
-        };
+        window.onscroll = scrollFunction();
     
         function scrollFunction () {
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-            btn.style.display = "block";
+                btn.style.display = "block";
             } else {
-            btn.style.display = "none";
+                btn.style.display = "none";
             }
         }
     
@@ -157,15 +155,14 @@
             document.documentElement.scrollTop = 0;
         }
 
-        $("#print_btn").on('click', function () {
-        window.print();
+        $("#print_btn").on("click", function () {
+            window.print();
         }); 
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+
         setTimeout(function() {
             AOS.init();
         }, 750);
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

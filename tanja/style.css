@@ -196,7 +196,7 @@ footer {
     height: 100%;
     position: relative;
     margin: 10vh 10vw 0;
-    padding: 15vh;
+    padding: 15vh 0;
 }
 
 #contact li {
@@ -205,7 +205,7 @@ footer {
 }    
 
 #contact li > p {
-    padding-bottom: 1vh;
+    padding-bottom: 4vh;
 }
 
 #contact_container {
@@ -216,13 +216,10 @@ footer {
     position: relative;
 }
 
-#mail, #map {
+#mail {
     flex: 1;
     display: block;
-}
-
-#mail {
-    padding-right: 2vw;
+    padding-right: 1vw;
 }
 
 #mail a {
@@ -239,10 +236,20 @@ footer {
     color: steelblue;
 }
 
+#map {
+    flex: 1;
+    display: block;
+    border: 0.1rem solid black;
+    margin-right: 1vw;
+    margin-bottom: 4vh;
+}
+
+
 #img_tanja {
-    flex: 0.5;
+    flex: .75;
+    height: auto;
     width: 5vw;
-    margin: 0 2vw 2vh 0;
+    min-width: 135px;
 }
 
 #print_btn {
