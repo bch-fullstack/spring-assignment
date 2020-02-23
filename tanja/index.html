@@ -23,6 +23,7 @@
     </header>
     <main>
         <section id="hero_banner" class="container">
+            <a onclick="darker()">To darker mode</a>
         </section>
         <section id="about_me" class="container">
             <div data-aos="fade-up" id="about_container">
@@ -141,9 +142,9 @@
 
         btn = document.getElementById("to_top_btn");
     
-        window.onscroll = scrollFunction();
+        window.onscroll = scrollFunction;
     
-        function scrollFunction () {
+        function scrollFunction() {
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
                 btn.style.display = "block";
             } else {
@@ -162,6 +163,11 @@
         setTimeout(function() {
             AOS.init();
         }, 750);
+
+        function darker() {
+            var element = document.body;
+            element.classList.toggle("dark_mode");
+        }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
