@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanja's website</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel=stylesheet href="https://unpkg.com/aos@next/dist/aos.css" >
-    <script src="https://use.fontawesome.com/e22008024a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="//unpkg.com/aos@next/dist/aos.css" >
+    <script src="//use.fontawesome.com/e22008024a.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="container">
@@ -86,22 +86,28 @@
         </section>
         <section id="image_slider" class="container">
             <div id="image_container">
-                <div>
-                    <img class="my_slides" src="taekwondo.jpeg" alt="After having my yellow belt in taekwondo">
-                    <!-- <div class="caption">Having my yellow belt in Taekwondo</div> -->
+                <div class="my_slides">
+                    <img src="taekwondo.jpeg" alt="my yellow belt in taekwondo">
+                    <div class="text">Taekwondo yellow belt 1/4 </div>
                 </div>
-                <div>
-                    <img class="my_slides" src="nyrkkeily.jpg" alt="In a boxing lesson">
-                    <!-- <div class="caption">Boxing</div> -->
+                <div class="my_slides">
+                    <img src="nyrkkeily.jpg" alt="In a boxing lesson">
+                    <div class="text">In a boxing lesson 2/4</div>
                 </div>
-                <div>
-                    <img class="my_slides" src="hanko.jpeg" alt="The sea in Hanko, Finland">
-                    <!-- <div class="caption">Admiring the sea in Hanko</div> -->
+                <div class="my_slides">
+                    <img src="hanko.jpeg" alt="The sea in Hanko, Finland">
+                    <div class="text">The Gulf of Finland, Hanko 3/4</div>
                 </div>
-                <div>
-                    <img class="my_slides" src="sheep.jpeg" alt="Feeding sheep">
-                    <!-- <div class="caption">Feeding sheep at my sister's</div> -->
+                <div class="my_slides">
+                    <img src="sheep.jpeg" alt="Feeding sheep">
+                    <div class="text">Feeding sheep 4/4</div>
                 </div>    
+                <div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </section>
     </main>
@@ -123,7 +129,7 @@
                         <p>maaliskesakuu</p>
                     </li>
                 </ul>   
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" allowfullscreen=""></iframe>
+                <iframe id="map" src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" allowfullscreen=""></iframe>
                 <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
             </div>
         </section>
@@ -180,6 +186,6 @@
             element.classList.toggle("dark_mode");
         }
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
