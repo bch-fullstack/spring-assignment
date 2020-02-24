@@ -291,15 +291,18 @@ footer {
 #contact-info {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-wrap {
   background-color: #525a84;
   color: #ffffff;
-  padding: 40px;
+  padding: 50px;
   margin: 200px 50px 100px 50px;
   text-align: center;
   line-height: 2.2rem;
+  font-size: 24px;
 }
 
 .contact-wrap a {
@@ -314,6 +317,17 @@ footer {
 
 .contact-wrap h2 {
   margin-bottom: 20px;
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  padding: 20px;
 }
 
 .exp-wrap {
