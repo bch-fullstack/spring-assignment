@@ -122,12 +122,15 @@ $(document).ready(function () {
 /* Slick slider */
 $(document).ready(function () {
     $('.slider').slick({
-        dots: true,
+        dots: true, //slick's object
         infinite: true,
-        speed: 300,
+        speed: 3500,
         slidesToShow: 1,
         adaptiveHeight: true,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true
     });
 });
 

@@ -165,6 +165,13 @@ header {
   }
 
 /* Slick slider */
+
+.slider{
+  margin: 80px auto;
+  width: 80%;
+
+}
+
 .slickimg img{
   width: 100%;
 }
