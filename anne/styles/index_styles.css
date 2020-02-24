@@ -1,0 +1,6 @@
+/* --------------overview/index page specific header styles */
+#overview,
+#overview a {
+  background: var(--main-color);
+  color: var(--skills-box);
+}

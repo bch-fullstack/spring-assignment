@@ -93,12 +93,7 @@ header h1 {
     color: var(--main-bg-color);
     background: var(--main-color);
 } */
-/* --------------overview/index page specific header styles */
-#overview,
-#overview a {
-  background: var(--main-color);
-  color: var(--skills-box);
-}
+
 /* ----------------main styles----------------- */
 .main-content {
   /* height: 80vh; */

@@ -1,0 +1,7 @@
+/* missions page specific header styles */
+
+#missions, #missions a {
+    background: var(--main-color);
+    color: var(--skills-box);
+    
+}
