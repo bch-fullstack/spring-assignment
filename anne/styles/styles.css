@@ -8,8 +8,10 @@
 
 :root {
     /* --main-color: #6B6733; */
-    --main-color: rgba(107, 103, 51, 1);
-    --main-color-muted: rgba(107, 103, 51, 0.7);
+    /* --main-color: rgba(107, 103, 51, 1);  130, 125, 62*/
+    --main-color: rgba(130, 125, 62, 1);
+    /* --main-color-muted: rgba(107, 103, 51, 0.7); */
+    --main-color-muted: rgba(130, 125, 62, 0.7);
     --main-color-acc:(#959276);
     --main-bg-color: rgb(35, 43, 35);
     --main-highlight: rgba(255, 249, 171, 0.7);
