@@ -1,0 +1,132 @@
+
+.profile-mp {
+    padding: 5px;
+}
+
+h3 {
+    color: var(--main-bg-color);
+    /* font-family: var(--nav-font); */
+}
+
+/* ---------profile page specific header styles---------- */
+
+#profile, #profile a {
+    background: var(--main-color);
+    color: var(--skills-box);
+    
+}
+/* #profile {
+    border-left: 2px solid var(--skills-box);
+    border-top: 2px solid var(--skills-box);
+    border-right: 2px solid var(--skills-box);
+} */
+
+/* -----------character profile styles-------------- */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-content {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.profile-divider-a, .profile-divider-b {
+    display: flex;
+    flex-direction: column;
+}
+.profile-divider-a {
+    flex: 4;
+}
+.profile-divider-b {
+    flex: 2;
+}
+.profile-divider-c {
+    display: flex;
+    flex: 2;
+}
+.profile-divider-d {
+    flex: 3;
+}
+/* ---------------- profile image------------- */
+.profile-image {
+    /* width: 20vw;
+    height: 20vh; */
+    flex: 2;
+}
+
+.profile-image img, .familiar img {
+    width: 100%;
+    height: 100%;
+}
+/* -----------info-box-------- */
+.profile-info {
+    flex: 4;
+    color: var(--main-bg-color);
+}
+#info {
+    background: var(--info-box);
+    width: 100%;
+    height: 100%;
+    color: var(--skills-box);
+}
+.info-header {
+    background: var(--info-box-full);
+    padding-left: 8px;
+    border-bottom: 1.5px solid var(--skills-box);
+}
+.info-header h3 {
+    color: var(--skills-box);
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+}
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--logo-font);
+}
+.info-table th, .info-table td {
+    text-align: left;
+    padding: 8px;;
+}
+.info-table tr:nth-child(odd) {
+    background: var(--info-box-full);
+} 
+
+/* ---------------skills box----------- */
+.profile-skills {
+    width: 100%;
+    height: 100%;
+}
+#skills {
+    background: var(--skills-box);
+    width: 100%;
+    height: 100%;
+}
+/* ------------stats box------------------ */
+.profile-stats {
+    flex: 3;
+}
+#stats {
+    background: var(--stats-box);
+    width: 100%;
+    height: 100%;
+}
+/* -----------familiar box------------------- */
+.familiar {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+}
+.familiar-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.familiar-text h3 {
+    color: var(--profile-box);
+}

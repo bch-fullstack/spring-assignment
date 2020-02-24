@@ -1,0 +1,7 @@
+/* equipment page specific header styles */
+
+#equipment, #equipment a {
+    background: var(--main-color);
+    color: var(--skills-box);
+    
+}

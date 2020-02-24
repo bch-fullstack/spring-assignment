@@ -9,7 +9,15 @@
 :root {
     --main-color: #6B6733;
     --main-bg-color: rgb(35, 43, 35);
-    --main-highligh: #FFF9AB;
+    --main-highlight: rgba(255, 249, 171, 0.7);
+    --main-highlight-full: rgba(255, 249, 171, 1);
+    --stats-box: rgba(221, 83, 16, 0.7);
+    --stats-box-full: rgba(221, 83, 16, 1);
+    /* --skills-box: #63336b; */
+    --info-box: rgba(48, 70, 83, 0.7);
+    --info-box-full: rgba(48, 70, 83, 1);
+    --skills-box: rgba(248, 167, 20, 0.7);
+    --skills-box-full: rgba(248, 167, 20, 1);
     --nav-font: 'Roboto', sans-serif;
     --logo-font: 'Lora', serif;
     --footer-font-bold: 'Roboto Condensed', sans-serif;
@@ -90,7 +98,8 @@ header h1 {
 
 /* ----------------main styles----------------- */
 .main-content {
-    height: 80vh;
+    /* height: 80vh; */
+    width: 100%;
 }
 
 /* --------------footer styles---------------- */
