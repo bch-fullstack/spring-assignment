@@ -1,4 +1,4 @@
-//Back to top button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+//Scroll top button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 //Get the button:
 mybutton = document.getElementById("topBtn");

@@ -43,7 +43,7 @@ header a {
 }
 
 li a:hover {
-  border-bottom: 4px solid rgb(70, 130, 180);
+  border-bottom: 4px solid darkorange;
   font-weight: bolder;
 }
 
@@ -58,7 +58,7 @@ li a:hover {
   z-index: 199;
   border: none;
   outline: none;
-  background-color: darkcyan;
+  background-color: orange;
   color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px;
@@ -77,11 +77,14 @@ li a:hover {
   line-height: 1.5rem;
   position: relative;
   background: white;
+  text-shadow: 2px 2px 5px white;
 }
 #hero-banner::before {
   content: "";
-  background: url(https://source.unsplash.com/wJpl8D38Tq8/1600x900) no-repeat
-    center center/cover;
+ background: url(https://source.unsplash.com/1_CMoFsPfso/1600x900) no-repeat
+    center center/cover; 
+    /* DErxVSSQNdM q2GNdFmhxx4 */
+    /* background-image: url("img/notebook-1280538_1920.jpg"); */
   height: 100%;
   width: 100%;
   opacity: 0.5;
@@ -90,7 +93,12 @@ li a:hover {
   left: 0;
 }
 
-#hero-banner a {
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* #hero-banner a {
   background-color: rgba(70, 130, 180, 0.7);
   padding: 10px;
   border-radius: 5px;
@@ -99,7 +107,7 @@ li a:hover {
 }
 #hero-banner a:hover {
   background-color: rgb(70, 130, 180);
-}
+} */
 
 .container {
   display: flex;
@@ -121,12 +129,22 @@ h2 {
   padding: 20px;
   display: flex;
 }
-#about-me img {
+/* #about-me img {
   width: 50%;
   border-radius: 5px;
+} */
+#myphoto {
+  width: 15%;
+  border-radius: 100%;
+  min-width: 320px;
 }
 #about-me-text {
   margin: 20px 50px;
+}
+
+#education {
+  width: 100%;
+  line-height: 1.5rem;
 }
 
 #skills {
@@ -140,7 +158,7 @@ h2 {
   margin: 30px 20px;
 }
 #cards div {
-  background-color: lightblue;
+  background-color: wheat;
   border-radius: 5px;
   height: 10rem;
   width: 10rem;
