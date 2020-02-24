@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    <link rel="stylesheet" href="style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -42,20 +44,25 @@
                     <p>I'm a junior web developer.</p>
                 </div>
                 <div class="about-image">
-                    <img src="photo/makiyo.png">
+                    <img src="img/makiyo.png">
                 </div>
             </div>
         </div>
 
         <!-- Photo slider -->
-        <div class="section content">
-            <div class="slider">
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
+
+        <div class="section content slider">
+            <div class="slickimg">
+                <img src="img/makiyo-oulu.jpg">
+            </div>
+            <div class="slickimg">
+                <img src="img/makiyo-helsinki1.jpg">
+            </div>
+            <div class="slickimg">
+                <img src="img/makiyo-helsinki2.jpg">
             </div>
         </div>
+
 
         <!-- Contact form -->
         <div class="section contact contact-bkg" id="contact">
@@ -150,15 +157,15 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <p>Please click below link to see my project!</p><br>
-                    <a href="https://github.com/makiyo-ronkko">Makiyo's Github</a>
+                    <a href="//github.com/makiyo-ronkko">Makiyo's Github</a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
