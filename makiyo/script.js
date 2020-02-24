@@ -124,13 +124,16 @@ $(document).ready(function () {
     $('.slider').slick({
         dots: true, //slick's object
         infinite: true,
-        speed: 3500,
+        speed: 1000,
         slidesToShow: 1,
         adaptiveHeight: true,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true
+        autoplaySpeed: 4000,
+        width: true,
+        arrows: true,
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
 });
 

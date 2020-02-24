@@ -84,7 +84,7 @@ header {
     right: 0;
     top: 100px;
     width: 30%;
-    height: calc(100% - 500px);
+    height: calc(100% - 300px);
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
@@ -104,10 +104,12 @@ header {
     color: #000000;
     text-decoration: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .navlink a:hover {
   border-bottom: 4px dotted#000000;
+  
 }
 
 .nav-active {
@@ -156,25 +158,63 @@ header {
   height: auto;
 }
   
-/* Main content */
+/* Slider content */
 
-.content {
-    background-color: #F5CF8E;
-    height: 300px;
+.slider-content {
+    background-color: transparent;
+    height: auto;
     order: 2;
+    padding: 50px 0 50px 0;
+    margin: 0;
+    flex-direction: column;
   }
+
+.slider-content h2{
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1em;
+}
 
 /* Slick slider */
 
 .slider{
   margin: 80px auto;
   width: 80%;
-
 }
 
-.slickimg img{
-  width: 100%;
+button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
 }
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  left: -30px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #a9a9a9;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next-arrow{
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #a9a9a9;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
   
 /* Contact Form*/
 
@@ -188,7 +228,7 @@ header {
 
 .contact h2{
   font-size: 1em;
-  padding-bottom: 5px;
+  padding: 0 5px 5px 0;
 }
 
 #mycv-container{
@@ -345,6 +385,26 @@ header {
   opacity: 0.3;
 }
 
+#skill-modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skill-modal a{
+  text-decoration: underline;
+  color: #000000;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#skill-modal ul li{
+list-style-type: none;
+}
+
+#skill-modal ul li:before {
+  content: '✓'; 
+ }
 
  /* Education - pop-up window */ 
 
@@ -404,6 +464,20 @@ header {
   font-weight: bold;
 }
 
+ /* Footer */
+.footer{
+  background-color: #B2D6FF;
+  order: 3;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  }
+
+.socialicons a{
+  color: #000000;
+  
+}
+
   /* Mobile version */
   @media only screen and (max-width: 400px) {
     body {
@@ -428,6 +502,7 @@ header {
       width: 960px;
       margin: 0 auto;
     }
+    
     .feature-1,
     .feature-2,
     .feature-3, 
@@ -436,6 +511,11 @@ header {
     }
     .hero-banner {
       height: 400px;
+    }
+    .slider{
+      margin: auto;
+      width: 50%;
+      height: auto;
     }
 
   }
@@ -475,10 +555,12 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .navlink a:hover {
       border-bottom: 4px dotted#000000;
+      
     }
 
     .burger {
