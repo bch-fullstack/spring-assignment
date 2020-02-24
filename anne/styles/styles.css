@@ -7,12 +7,16 @@
 }
 
 :root {
-    --main-color: #6B6733;
+    /* --main-color: #6B6733; */
+    --main-color: rgba(107, 103, 51, 1);
+    --main-color-muted: rgba(107, 103, 51, 0.7);
+    --main-color-acc:(#959276);
     --main-bg-color: rgb(35, 43, 35);
     --main-highlight: rgba(255, 249, 171, 0.7);
     --main-highlight-full: rgba(255, 249, 171, 1);
     --stats-box: rgba(221, 83, 16, 0.7);
     --stats-box-full: rgba(221, 83, 16, 1);
+    --stats-box-half: rgba(221, 83, 16, 0.5);
     /* --skills-box: #63336b; */
     --info-box: rgba(48, 70, 83, 0.7);
     --info-box-full: rgba(48, 70, 83, 1);
@@ -86,15 +90,9 @@ header h1 {
 
 .nav-list li:hover, .nav-list a:hover {
     color: var(--main-bg-color);
-    background: var(--main-color);
+    background: var(--main-color-muted);
     transition: all 0.2s ease-in;
 }
-
-/* .nav-list a:active {
-    color: var(--main-bg-color);
-    background: var(--main-color);
-} */
-
 
 /* ----------------main styles----------------- */
 .main-content {

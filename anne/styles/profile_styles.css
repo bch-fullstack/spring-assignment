@@ -3,15 +3,10 @@
     padding: 5px;
 }
 
-h3 {
-    color: var(--main-bg-color);
-    /* font-family: var(--nav-font); */
-}
-
 /* ---------profile page specific header styles---------- */
 
 #profile, #profile a {
-    background: var(--main-color);
+    background: var(--main-color-muted);
     color: var(--skills-box);
     
 }
@@ -69,18 +64,21 @@ h3 {
     color: var(--main-bg-color);
 }
 #info {
-    background: var(--info-box);
+    background: var(--main-color-muted);
     width: 100%;
     height: 100%;
     color: var(--skills-box);
 }
 .info-header {
-    background: var(--info-box-full);
+    /* background: var(--info-box-full); */
+    /* background: var(--main-color); */
     padding-left: 8px;
-    border-bottom: 1.5px solid var(--skills-box);
+    /* border-bottom: 1.5px solid var(--skills-box); */
+    border-bottom: 1.5px solid var(--main-bg-color);
 }
 .info-header h3 {
-    color: var(--skills-box);
+    /* color: var(--skills-box); */
+    color: var(--main-bg-color);
     font-family: var(--logo-font);
     font-size: 1.5rem;
 }
@@ -91,11 +89,12 @@ h3 {
 }
 .info-table th, .info-table td {
     text-align: left;
-    padding: 8px;;
+    padding: 8px;
 }
-.info-table tr:nth-child(odd) {
-    background: var(--info-box-full);
-} 
+/* .info-table tr:nth-child(odd) {
+    background: var(--info-box-full); 
+     background: var(--main-color);
+}  */
 
 /* ---------------skills box----------- */
 .profile-skills {
@@ -107,6 +106,28 @@ h3 {
     width: 100%;
     height: 100%;
 }
+.skills-header{
+    /* background: var(--info-box-full); */
+    padding-left: 8px;
+    border-bottom: 1.5px solid var(--main-bg-color);
+}
+.skills-header h3 {
+    color: var(--main-bg-color);
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+}
+.skills-content {
+    display: flex;
+}
+.skillset {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+.skillset:nth-child(even){
+    background: var(--skills-box-full);
+}
+
 /* ------------stats box------------------ */
 .profile-stats {
     flex: 3;
@@ -116,17 +137,51 @@ h3 {
     width: 100%;
     height: 100%;
 }
+.stats-header {
+    /* background: var(--stats-box-half); */
+    padding-left: 8px;
+    border-bottom: 1.5px solid var(--main-bg-color);
+}
+.stats-header h3 {
+    color: var(--main-bg-color);
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+}
+.stats-content {
+    color: var(--skills-box);
+}
 /* -----------familiar box------------------- */
 .familiar {
     flex: 2;
     overflow: hidden;
     position: relative;
 }
+/* .familiar-header { */
+    /* width: 100%;
+    padding-left: 8px;
+    border-bottom: 1.5px solid var(--main-bg-color);
+    background: var(--skills-box);
+    z-index: 4;
+} */
+
 .familiar-text {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 5px;
+    left: 5px;
+    padding-left: 8px;
+    border-bottom: 1.5px solid var(--main-bg-color);
+    background: var(--skills-box);
+    z-index: 4;
+    width: calc(100% - 10px);
+
+    /* background: var(--skills-box); */
 }
 .familiar-text h3 {
-    color: var(--profile-box);
+    color: var(--main-bg-color);
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+    z-index: 2;
+}
+.familiar-img {
+    z-index: 1;
 }
