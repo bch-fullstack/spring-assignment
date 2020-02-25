@@ -62,13 +62,25 @@ nav ul li a:hover {
     background-size: cover;
     height: 40vh;
     width: 100%;
+    position: relative;
 }
 
 #hero_banner a {
+    display: inline-block;
+    margin: 1vh;
     cursor: pointer;
     margin-left: 2vw;
-    font-size: 2.5vh;
+    font-size: x-large;
     font-weight: bold;
+}
+
+#header_picture {
+    position: absolute;
+    border-radius: 50%;
+    width: 10%;
+    bottom: 0;
+    left: 0;
+    margin: 1vh 2vw;
 }
 
 .container {
@@ -175,14 +187,19 @@ ul.resume {
     height: auto;
 }
 
+#my_slides {
+    position: relative;
+}
+
 .text {
     color: rgb(255, 105, 180);
     padding: 2vh 2vw;
-    font-size: x-large;
     position: absolute;
-    bottom: 5%;
+    bottom: 20%;
     width: 100%;
     text-align: center;
+    font-size: xx-large;
+    left: 0;
 }
 
 #image_container {
@@ -316,10 +333,6 @@ footer {
         height: 25vh;
     }
 
-    #hero_banner a {
-        font-size: larger;
-    }
-
     #edu_container {
         display: block;
     }
@@ -330,9 +343,7 @@ footer {
     }
 
     .text {
-        padding: 0;
-        width: 50%;
-        bottom: 20%;
+        font-size: larger;
     }
 
     #contact_container {
@@ -366,15 +377,16 @@ footer {
     }
 
     #hero_banner a {
-    font-size: smaller;
+        font-size: smaller;
+        margin-top: 0.5vh;
     }
 
     #about_container, 
     #education_container, #work_container, #image_container, #contact {
         display: block;
-        margin: 0;
+        margin: 2vh;
         padding: 2vh 0;
-        border-radius: 0;
+        border-radius: 3px;
     }
 
     #print_btn {
@@ -402,11 +414,22 @@ footer {
     }
 
     #image_container {
-        padding: 3vh 0 2vh;
+        padding: 1vh 0 2vh;
+        margin: 0;
+    }
+
+    .text {
+        bottom: 5%;
+        text-align: center;
+        font-size: initial;
     }
 
     #mail {
         padding-right: 0;
+    }
+
+    #contact {
+        margin: 0 0 0 2vw;
     }
 
     #contact_container {
@@ -446,14 +469,15 @@ footer {
 
     #hero_banner a {
         font-size: smaller;
+        margin-top: 0.5vh;
     }
 
     #about_container, 
     #education_container, #work_container, #image_container, #contact {
         display: block;
-        margin: 0;
+        margin: 2vh;
         padding: 2vh 0;
-        border-radius: 0;
+        border-radius: 3px;
     }
 
     #print_btn {
@@ -481,7 +505,17 @@ footer {
     }
 
     #image_container {
-        padding: 3vh 0 2vh;
+        padding: 1vh 0 2vh;
+        margin: 0;
+    }
+
+    .text {
+        bottom: 5%;
+        font-size: initial;
+    }
+
+    #contact {
+        margin: 0 0 0 2vw;
     }
 
     #contact_container {
