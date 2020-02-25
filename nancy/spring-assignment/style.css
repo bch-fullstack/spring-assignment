@@ -341,7 +341,7 @@ justify-content: center;
 .timeline{
     border-left: 4px yellow;
     border-radius: 8rem;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgb(0,0,0,0.05);
     margin: 0 auto;
     position: relative;
     padding: 5rem;
@@ -349,18 +349,126 @@ justify-content: center;
     text-align: left;
     width: 70%;
 }
+.timeline h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+.timeline .date{
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: rotateY(-50%);
+}
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1rem;
+}
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px lightblue;
+    border-radius: 100%;
+    left: -8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(169, 169, 66);
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*portfolio section ends */
+
+/*start contact form */
+.contact{
+    background-color: rgb(33, 15, 33);
+}
+form{
+    width: 30%;
+    margin: 0 auto;
+
+}
+form.lable{
+    font-size: 1.3rem;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: rgb(95, 150, 169);
+}
+input[type="submit"]{
+    width: initial;
+    background-color:lightblue;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: indigo;
+    background-color: yellow;
+
+}
+
+/*end contact form */
+
+/*start footer */
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #121222;
+    padding: 2rem 0;
+    position: relative;
+}
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+
+}
+.copyright p{
+    font-size: 1.2rem;
+}
+/*start footer animation*/
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 #add8e6;
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgb(223, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 #add8e6; 
+    }
+}
