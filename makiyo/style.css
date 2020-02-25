@@ -175,6 +175,11 @@ header {
   font-size: 1em;
 }
 
+.slider-content img{
+width: 100%;
+height: auto;
+}
+
 /* Slick slider */
 
 .slider{
