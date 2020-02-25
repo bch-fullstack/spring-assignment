@@ -33,6 +33,7 @@
                 <p>My name is Tanja Lehtinen. At the moment, I study Full Stack Web Development full-time in Business College Helsinki. To be able to do that I am on a study leave from my work as a team lead.</p>
                 <p>What I learn at school are HTML5, CSS3, JavaScript, jQuery, UI design and prototyping, React, Redux, and Node. I also study web development at home and participate in interesting work shops.</p>
                 <button id="print_btn">Print my CV</button>
+                <a></a>
             </div>
         </section>
         <section id="education" class="container">
@@ -103,12 +104,6 @@
                     <img src="sheep.jpeg" alt="Feeding sheep">
                     <div class="text">Feeding sheep 4/4</div>
                 </div>    
-                <div>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
         </section>
     </main>
@@ -178,14 +173,15 @@
             window.print();
         }); 
 
-        setTimeout(function() {
-            AOS.init();
-        }, 750);
-
         function darker() {
             var element = document.body;
             element.classList.toggle("dark_mode");
         }
+
+        setTimeout(function() {
+            AOS.init();
+        }, 950);
+
     </script>
     <script src="//unpkg.com/aos@next/dist/aos.js"></script>
 </body>
