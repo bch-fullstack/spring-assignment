@@ -117,6 +117,10 @@ h3 {
     padding-top: 3vh;
 }
 
+#date {
+    margin-top: 2vh;
+}
+
 #education {
     width: 100%;
     position: relative;
