@@ -335,8 +335,11 @@ justify-content: center;
     margin-top: 2rem;
     
 }
-.timeline ul{
-    border-left: 4px lightblue yellow;
+
+
+/*styling the work experience timeline */
+.timeline{
+    border-left: 4px yellow;
     border-radius: 8rem;
     background-color: rgba(0,0,0,0.05);
     margin: 0 auto;
@@ -346,7 +349,6 @@ justify-content: center;
     text-align: left;
     width: 70%;
 }
-
 
 
 
