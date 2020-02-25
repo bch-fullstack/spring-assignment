@@ -328,7 +328,7 @@ button{
     margin: 50px auto auto auto;
     padding: 20px;
     border: solid 3px #000000;
-    width: 50%;
+    width: 90%;
     height: auto;
     word-break: break-word;
   }
@@ -468,7 +468,7 @@ list-style-type: none;
 .footer{
   background-color: #B2D6FF;
   order: 3;
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   }
@@ -518,6 +518,10 @@ list-style-type: none;
       height: auto;
     }
 
+    .modal-content{
+      width: 70%;
+      height: auto;
+    }
   }
 
   /* Desktop navigation */
