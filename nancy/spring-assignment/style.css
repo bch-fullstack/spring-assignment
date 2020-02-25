@@ -17,6 +17,9 @@ body{
 
        
 }
+section{
+    padding: 5rem 0;
+}
 a{
     text-decoration: none;
     color:black;
@@ -311,8 +314,8 @@ justify-content: center;
 ´
     
 
-.my-info ul{
-    list-style-type: none;
+.add-info a{
+    color: whitesmoke;
     line-height: 4rem;
     
 }
@@ -450,6 +453,8 @@ input[type="submit"]:hover{
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
+    
 }
 .up i{
     color: #16162d;
@@ -463,12 +468,15 @@ input[type="submit"]:hover{
 /*start footer animation*/
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 #add8e6;
+        box-shadow: 0 0 0 0 #3a6c7d;
     }
     70%{
         box-shadow: 0 0 0 2rem rgb(223, 87, 191, 0);
     }
     100%{
-        box-shadow: 0 0 0 0 #add8e6; 
+        box-shadow: 0 0 0 0 #add8e0; 
     }
 }
+/*end of footer animations*/
+
+/*start media queries*/
