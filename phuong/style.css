@@ -10,10 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-#portfolio,
-#contact,
-#resume {
+body {
   font-family: "Roboto", sans-serif;
   position: relative;
   background: #ffa59c;
@@ -100,10 +97,6 @@ header a {
   width: 100%;
 }
 
-/* #scroll-down-btn {
-  background-color: #ffa59c;
-} */
-
 .scroll-down {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in 3s;
@@ -182,7 +175,7 @@ header a {
   color: #525a84;
   display: block;
   line-height: 3rem;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   width: 50%;
   text-align: center;
@@ -447,6 +440,25 @@ footer {
   font-weight: 500;
 }
 
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: #525a84;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#back-to-top:hover {
+  background-color: #97a4e5;
+}
 @media screen and (max-width: 768px) {
   header {
     background-color: #ffa59c;
