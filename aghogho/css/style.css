@@ -37,3 +37,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 } */
+
+/*skills section customization*/
+.skills-icon {
+  background: #242424;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  transition: all 1s ease;
+}
+.skills-icon:hover {
+  background: #2a9134;
+}
+.skills-icon span {
+  font-size: 100px;
+  color: #909090;
+  transition: all 1s ease-in;
+}
+.skills-icon:hover span {
+  color: #f1fffa;
+}
