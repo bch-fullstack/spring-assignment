@@ -101,16 +101,12 @@ header h1 {
 }
 
 /* --------------footer styles---------------- */
-/* footer {
-    width: 1280px;
-    max-width: 100%;
 
-} */
 footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 80%;
   margin-top: 120px;
 }
 .hidden-footer-container {
@@ -179,8 +175,90 @@ footer .container {
 .contact-img {
   flex: 1;
   overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1570454075245-cc119adf2b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+  background-size: cover;
+  background-position: center center;
 }
-.contact-img img {
-  width: 100%;
-  height: auto;
+/* -------------mobile design------------- */
+
+@media only screen and (max-width: 400px) {
+
+  .footer-header {
+      top: -70px;
+    }
+  .contact-header{
+    font-size: 90px;
+  }
+
+  .contact-email {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .contact-links {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .contact-card {
+    flex: 1;
+    padding: 2rem;
+  }
+  .contact-text {
+    margin: 1rem 0;
+  }
+  .contact-img {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 401px) {
+
+footer {
+  height: 800px;
+}
+footer .container {
+  height: 100%;
+}
+.footer-header {
+    top: -110px;
+  }
+.contact-header{
+  font-size: 140px;
+}
+.footer-content {
+  flex-direction: column;
+}
+.contact-links {
+  text-align: center;
+  margin: 0;
+}
+.contact-text {
+  text-align: center;
+  margin: 1rem 0;
+}
+.contact-email {
+  margin: 0;
+  text-align: center;
+}
+.contact-card {
+  flex: 1;
+  padding: 2rem;
+}
+
+}
+@media only screen and (min-width: 600px) {
+
+.footer-header {
+    top: -112px;
+  }
+.contact-header{
+  font-size: 160px;
+}
+.footer-content {
+  flex-direction: row;
+}
+
 }
