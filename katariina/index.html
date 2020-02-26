@@ -11,30 +11,37 @@
   <body>
     
     <header>
+      <div class="menuContainer" id="mainMenu">
       <div class="logoContainer">
         <div class="logo">My Logo Here</div>
       </div>
-      <div class="menuContainer">
-        <div class="menuBtn"></div>
-      <div>
-
-      </div>
+      <div class="dropMenu">
+        <button class="btn" id="dropBtn">Menu</button>
+          <div id="dropContent">
+            <a href="#mainMenu">Home</a>
+            <a href="#heroBanner">About</a>
+            <a href="#education">Things</a>
+            <a href="#mySkills">Skills</a>
+          </div>
+     
     </div>
-
+  </div>
     </header>
     <!--Main page content starts from here-->
     <div class="pageContainer">
   
-      <div class="heroBanner">
+      <div class="heroBanner" id="heroBanner">
       <h1>My Portfolio is as empty as my Soul</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis aut, quos voluptates eligendi quae at unde officia sed, ad quaerat corporis nihil ipsam culpa esse dolores natus hic facilis.</p>
     </div>
 
-<div class="eduContainer">
+<div class="eduContainer" id="education">
   <div class="eduBox">
     <h3>Education</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sint deserunt hic repellat perspiciatis vel nobis minima ex, rem repellendus?</p>
   </div>
+  <div class="img1">img1</div>
+  <div class="img2">img2</div>
   <div class="expBox">
     <h3>Experience</h3>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, vero! Vel corrupti voluptate qui cum animi architecto tempora rem, perferendis, magnam, soluta inventore. Corrupti, quae.</p>
@@ -43,13 +50,13 @@
     
     
       
-      <div class="boxContainer"> 
-        <h3>My Skills</h3>
-      <div class="skillBox">Skill 1</div>
-      <div class="skillBox">Skill 2</div>
-      <div class="skillBox">Skill 3</div>
-      <div class="skillBox">Skill 4</div>
-      <div class="skillBox">Skill 5</div>
+      <div class="boxContainer" id="mySkills"> 
+        <div class="titleLine"><h3>My Skills</h3></div>
+      <div class="skillBox skillHtml">Skill 1</div>
+      <div class="skillBox skillCss">Skill 2</div>
+      <div class="skillBox skillJs">Skill 3</div>
+      <div class="skillBox skillUiD">Skill 4</div>
+      <div class="skillBox skillBaking">Skill 5</div>
     </div>
   
   
@@ -57,7 +64,10 @@
 
   <!--Main page stops here. Footer is below.-->
     <footer>
-      <div class="footerContainer"><div class="logo">My Logo Here</div></div>
+      <div class="footerContainer">
+        <div class="logo">My Logo Here</div>
+        <div class="contactMe"> Send me an email!</div>
+    </div>
       
     </footer>
  

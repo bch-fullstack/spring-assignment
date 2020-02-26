@@ -10,6 +10,71 @@ body{
     font-family: 'IM Fell English' ;
 }
 
+.menuContainer {
+    padding: 2rem;
+    display:flex;
+    align-items: center;
+}
+
+/*.logoContainer{
+    display: inline-block;
+}
+
+.dropMenu{
+    display: inline-block;
+    
+}
+*/
+button{
+    font-family: 'IM Fell English SC';
+    text-transform: uppercase;
+}
+
+.dropMenu{
+    position: relative;
+  flex: 1;
+    
+  }
+  
+ 
+
+
+  #dropBtn{
+    background-color: rgb(73, 71, 71);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+  
+  }
+  
+  #dropContent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #dropContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #dropContent a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropMenu:hover #dropContent {
+    display: block;
+  }
+  
+  .dropMenu:hover #dropBtn {
+    background-color:rgb(34, 34, 49);
+  }
 
 .pageContainer{
 
@@ -36,6 +101,34 @@ h1{
     grid-row: 4/span 4;
     background-color: indigo;
     padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+}
+
+.eduBox {
+    grid-column:1;
+    grid-row: 1/span 2;
+    background-color: tomato;
+}
+
+.img1 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: yellow;
+}
+
+.img2 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: violet;
+}
+
+.expBox {
+    grid-column: 3;
+    grid-row: 1/span 2;
+    background-color: turquoise;
 }
 
 .boxContainer{
@@ -43,4 +136,26 @@ h1{
     grid-row:8/ span 3;
     background-color:turquoise;
     padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:0.4rem;
 }
+.titleLine {
+    grid-column: 1/span 5;
+    grid-row: 1;
+    background-color:green ;
+}
+
+.skillBox {
+    height: 150px;
+    background-color: lightgray;
+
+}
+.skillHtml {
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
