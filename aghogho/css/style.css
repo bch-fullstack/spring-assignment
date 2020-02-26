@@ -22,3 +22,18 @@ body {
   padding: 10px 15px;
   margin: 0 10px;
 }
+.navbar .nav-link:hover {
+  border-bottom: 1px solid #fff;
+}
+.hamburgerIcon {
+  background-color: #fff;
+}
+
+/* .aboutMe {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/aboutme-pix.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
