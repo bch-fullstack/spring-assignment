@@ -15,13 +15,16 @@ function closeNav() {
 }
 
 //Display range value
-var slider = document.getElementById("myRange");
-var output = document.getElementById("value");
-output.innerHTML = slider.value;
-slider.oninput = function() {
-  output.innerHTML = this.value;
-};
+var sliders = document.getElementsByClassName("slider");
+var outputs = document.getElementsByClassName("value");
+Array.from(sliders).forEach(slider => {
+  var output = slider.parentElement.children[2];
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  };
+});
 
+//Back to top button
 var myBtn = document.getElementById("back-to-top");
 window.onscroll = function() {
   scrollFunction();
@@ -36,4 +39,10 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+//Dark mode toggle
+function darkToggle() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }

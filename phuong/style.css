@@ -14,6 +14,11 @@ body {
   font-family: "Roboto", sans-serif;
   position: relative;
   background: #ffa59c;
+  color: #525a84;
+}
+
+body a {
+  color: #525a84;
 }
 
 header {
@@ -23,7 +28,8 @@ header {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background-color: #ffa59c;
+
+  z-index: 1;
 }
 
 header h1 {
@@ -77,6 +83,23 @@ header a {
   position: absolute;
   top: 20px;
   right: 45px;
+}
+
+.dark-mode {
+  background-color: #494949;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #494949;
+}
+
+.dark-mode .overlay {
+  background-color: #494949;
 }
 
 #hero-banner {
@@ -158,7 +181,6 @@ header a {
 }
 
 #intro {
-  background-color: #ffa59c;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -172,7 +194,6 @@ header a {
 }
 
 #intro-content {
-  color: #525a84;
   display: block;
   line-height: 3rem;
   font-size: 20px;
@@ -182,11 +203,9 @@ header a {
 }
 
 .index-skill {
-  background: #ffa59c;
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #525a84;
 }
 
 .index-skill h2 {
@@ -272,8 +291,6 @@ footer {
 
 .project-title h3 {
   font-size: 20px;
-  text-transform: uppercase;
-  color: #525a84;
 }
 
 .project a {
@@ -317,8 +334,6 @@ footer {
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  z-index: -1;
-  color: #525a84;
 }
 
 .form-wrap h2 {
@@ -335,7 +350,6 @@ footer {
 }
 
 #value {
-  color: #525a84;
   font-weight: bold;
 }
 
@@ -404,16 +418,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: #525a84;
   flex-wrap: wrap;
 }
 
 .exp-wrap h2 {
   text-transform: uppercase;
-}
-
-.exp-wrap p {
-  color: rgb(97, 86, 86);
 }
 
 #exp,
