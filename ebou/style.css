@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: skyblue;
+  font-family: sans-serif;
+}
+nav {
+  background: blue;
+  min-height: 100px;
+}
+.image-slider {
+  background: red;
+  min-height: 700px;
+}
+.about-page {
+  background: white;
+  min-height: 700px;
+}
+.education {
+  background: blue;
+  min-height: 700px;
+}
+.experience {
+  background: white;
+  min-height: 700px;
+}
+.skills {
+  background: green;
+  min-height: 700px;
+}
+.contact {
+  background: yellow;
+  min-height: 700px;
+}
