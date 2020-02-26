@@ -87,6 +87,7 @@ button{
 
 h1{
     font-family: 'IM Fell English SC';
+    margin-bottom: 2rem;
 }
 
 .heroBanner{
@@ -94,6 +95,7 @@ h1{
     grid-row: 1/span 3;
     background-color: hotpink;
     padding: 2rem;
+    line-height: 2rem;
 }
 
 .eduContainer{
@@ -103,8 +105,8 @@ h1{
     padding: 2rem;
 
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.2rem;
 }
 
@@ -112,24 +114,28 @@ h1{
     grid-column:1;
     grid-row: 1/span 2;
     background-color: tomato;
+    padding: 0.5rem;
+
 }
 
 .img1 {
     grid-column: 2;
     grid-row: 1;
-    background-color: yellow;
+    background-image: url("https://source.unsplash.com/featured/?tarantula");
+    
 }
 
 .img2 {
     grid-column: 2;
     grid-row: 2;
-    background-color: violet;
+    background-image: url("https://source.unsplash.com/featured/?raven");
 }
 
 .expBox {
     grid-column: 3;
     grid-row: 1/span 2;
     background-color: turquoise;
+    padding: 0.5rem;
 }
 
 .boxContainer{
