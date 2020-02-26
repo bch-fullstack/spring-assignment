@@ -11,7 +11,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="container">
+    <header id="header" class="container">
         <nav>
             <ul class="navigation_bar">
                 <li><a href="#about_me">About me</a></li>
@@ -24,7 +24,7 @@
     <main>
         <section id="hero_banner" class="container">
             <a onclick="darker()">Change color mode</a>
-            <img id="header_picture" src="Tanjan kuva.jpeg" alt="a picture of me with an alligator">
+            <img id="header_picture" src="Tanjan_kuva.jpeg" alt="a picture of me with an alligator">
         </section>
         <section id="about_me" class="container">
             <div data-aos="fade-up" id="about_container">
@@ -90,20 +90,28 @@
             <div id="image_container">
                 <div class="my_slides">
                     <img src="taekwondo.jpeg" alt="my yellow belt in taekwondo">
-                    <div class="text">Taekwondo yellow belt 1/4 </div>
+                    <div class="text">Taekwondo yellow belt</div>
                 </div>
                 <div class="my_slides">
                     <img src="nyrkkeily.jpg" alt="In a boxing lesson">
-                    <div class="text">In a boxing lesson 2/4</div>
+                    <div class="text">In a boxing lesson</div>
                 </div>
                 <div class="my_slides">
                     <img src="hanko.jpeg" alt="The sea in Hanko, Finland">
-                    <div class="text">The Gulf of Finland in Hanko 3/4</div>
+                    <div class="text">The Gulf of Finland in Hanko</div>
                 </div>
                 <div class="my_slides">
                     <img src="sheep.jpeg" alt="Feeding sheep">
-                    <div class="text">Feeding sheep 4/4</div>
-                </div>    
+                    <div class="text">Feeding sheep</div>
+                </div>   
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div>
+                    <div class="dot" onclick="currentSlide(1)">1</div>
+                    <div class="dot" onclick="currentSlide(2)">2</div>
+                    <div class="dot" onclick="currentSlide(3)">3</div>
+                    <div class="dot" onclick="currentSlide(4)">4</div>
+                </div>
             </div>
         </section>
     </main>
@@ -125,32 +133,57 @@
                         <p>maaliskesakuu</p>
                     </li>
                 </ul>   
-                <iframe id="map" src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" allowfullscreen=""></iframe>
+                <iframe id="map" src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" allowfullscreen=""></iframe>
                 <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
             </div>
         </section>
     </footer>
 
     <script>
-        var slideIndex = 0;
-        carousel();
+        var slideIndex = 0; 
 
-        function carousel() {
+        function plusSlides(n) {
+            clearInterval(my_timer);
+            if (n < 0) {
+                showSlides(slideIndex -= 1);
+            } else {
+                showSlides(slideIndex += 1);
+            }
+            if (n === -1) {
+                my_timer = setInterval(function(){plusSlides(n + 2)}, 4000);
+            } else {
+                my_timer = setInterval(function(){plusSlides(n + 1)}, 4000);
+            }
+        }
+
+        function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("my_slides");
-
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length};
             for (i=0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-
-            slideIndex++;
-
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
+            for (i=0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-
             slides[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 5000);
+            dots[slideIndex-1].className += " active";
+        }    
+
+        window.addEventListener("load", function() {
+            showSlides(slideIndex);
+            my_timer = setInterval(function(){plusSlides(1)}, 4000);
+        })
+
+        function currentSlide(n) {
+            clearInterval(my_timer);
+            my_timer = setInterval(function(){plusSlides(n + 1)}, 4000);
+            showSlides(slideIndex = n);
         }
 
         btn = document.getElementById("to_top_btn");
@@ -175,14 +208,16 @@
 
         function darker() {
             var element = document.body;
+            var element_2 = document.getElementById("header");
             element.classList.toggle("dark_mode");
+            element_2.classList.toggle("dark_mode");
         }
 
-        var now = new Date()
-        var day = now.getDate()
-        var month = now.getMonth() + 1
-        var year = now.getFullYear()
-        document.getElementById("date").innerHTML = day + "/" + month + "/" + year
+        var now = new Date();
+        var day = now.getDate();
+        var month = now.getMonth() + 1;
+        var year = now.getFullYear();
+        document.getElementById("date").innerHTML = day + "/" + month + "/" + year;
 
         setTimeout(function() {
             AOS.init();

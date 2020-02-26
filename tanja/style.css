@@ -53,6 +53,10 @@ nav ul li a:hover {
     border-bottom: 0.5vh solid #151516;;
 }
 
+nav ul li a:active {
+    color: lightsteelblue;
+}
+
 #hero_banner {
     background-color: linen;
     background-image: url('Banner.png');
@@ -199,7 +203,7 @@ ul.resume {
     color: rgb(255, 105, 180);
     padding: 2vh 2vw;
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
     width: 100%;
     text-align: center;
     font-size: xx-large;
@@ -215,6 +219,24 @@ ul.resume {
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh; 
+}
+
+.prev, .next {
+    color: rgb(255, 105, 180);
+    cursor: pointer;
+}
+
+.prev:active, .next:active {
+    color: lightsteelblue;
+}
+
+.dot {
+    color: rgb(255, 105, 180);
+    cursor: pointer;
+}
+
+.dot:active {
+    color: lightsteelblue;
 }
 
 img {
@@ -279,6 +301,7 @@ footer {
     display: block;
     margin-right: 1vw;
     margin-bottom: 4vh;
+    border: none;
 }
 
 #print_btn {
@@ -348,6 +371,7 @@ footer {
 
     .text {
         font-size: larger;
+        bottom: 45%;
     }
 
     #contact_container {
@@ -423,9 +447,15 @@ footer {
     }
 
     .text {
-        bottom: 5%;
-        text-align: center;
         font-size: initial;
+    }
+
+    .prev, .next {
+        padding-left: 2vw;
+    }   
+
+    .dot {
+        padding-left: 4vw;
     }
 
     #mail {
@@ -514,8 +544,15 @@ footer {
     }
 
     .text {
-        bottom: 5%;
         font-size: initial;
+    }
+
+    .prev, .next {
+        padding-left: 2vw;
+    }   
+
+    .dot {
+        padding-left: 4vw;
     }
 
     #contact {
