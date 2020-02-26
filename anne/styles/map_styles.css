@@ -1,9 +1,8 @@
 /* missions page specific header styles */
 
-#map, #map a {
+#map a {
     background: var(--main-color);
-    color: var(--skills-box);
-    
+    color: var(--main-bg-color);    
 }
 
 /* main styles */
