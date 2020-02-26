@@ -1,36 +1,59 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-body {
-  background-color: skyblue;
-  font-family: sans-serif;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
-nav {
-  background: blue;
-  min-height: 100px;
+/* nav {
+  
+} */
+.menu-container {
+  display: flex;
+  flex-direction: row;
 }
 .image-slider {
   background: red;
-  min-height: 700px;
+  min-height: 850px;
+  padding-top: 0px;
 }
 .about-page {
   background: white;
-  min-height: 700px;
+  min-height: 850px;
 }
 .education {
   background: blue;
-  min-height: 700px;
+  min-height: 850px;
 }
 .experience {
   background: white;
-  min-height: 700px;
+  min-height: 850px;
 }
 .skills {
   background: green;
-  min-height: 700px;
+  min-height: 850;
 }
 .contact {
   background: yellow;
-  min-height: 700px;
+  min-height: 850px;
+}
+ul li {
+  display: inline;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+}
+ul {
+  background: black;
+  text-align: left;
+}
+nav {
+  position: relative;
 }
