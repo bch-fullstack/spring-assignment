@@ -5,15 +5,10 @@
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
+    display: flex;
   }
 }
-/* nav {
-  
-} */
-.menu-container {
-  display: flex;
-  flex-direction: row;
-}
+
 .image-slider {
   background: red;
   min-height: 850px;
@@ -52,8 +47,5 @@ a {
 }
 ul {
   background: black;
-  text-align: left;
-}
-nav {
-  position: relative;
+  
 }
