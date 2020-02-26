@@ -178,9 +178,12 @@ footer .container {
 
 .contact-img {
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
+  background: url("https://images.unsplash.com/photo-1570454075245-cc119adf2b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+  background-size: cover;
+  background-position: center;
 }
-.contact-img img {
+/* .contact-img img {
   width: 100%;
   height: auto;
-}
+} */
