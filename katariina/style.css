@@ -14,17 +14,17 @@ body{
     padding: 2rem;
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-/*.logoContainer{
-    display: inline-block;
+.logoContainer{
+    flex: 1;
 }
 
-.dropMenu{
-    display: inline-block;
+
     
-}
-*/
+
+
 button{
     font-family: 'IM Fell English SC';
     text-transform: uppercase;
@@ -32,7 +32,7 @@ button{
 
 .dropMenu{
     position: relative;
-  flex: 1;
+
     
   }
   
@@ -105,6 +105,7 @@ h1{
     display: grid;
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (2, 1fr);
+    grid-gap: 0.2rem;
 }
 
 .eduBox {
@@ -159,3 +160,22 @@ h1{
 
 }
 
+footer {
+    background-color: dimgrey;
+}
+
+.footerContainer{
+    padding: 4rem;
+    display:flex;
+       justify-content: space-between;
+}
+
+.contactMe a {
+    color: black;
+    text-decoration: none;
+}
+
+.contactMe a:hover {
+    color: darkred;
+    font-size: 2rem;
+}
