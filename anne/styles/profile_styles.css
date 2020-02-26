@@ -5,9 +5,9 @@
 
 /* ---------profile page specific header styles---------- */
 
-#profile, #profile a {
-    background: var(--main-color-muted);
-    color: var(--skills-box);
+#profile a {
+    background: var(--main-color);
+    color: var(--main-bg-color);
     
 }
 

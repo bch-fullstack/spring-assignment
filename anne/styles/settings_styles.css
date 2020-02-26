@@ -1,8 +1,8 @@
 /* ---------settings page specific header styles---------- */
 
-#settings, #settings a {
-    background: var(--main-color-muted);
-    color: var(--skills-box);
+#settings a {
+    background: var(--main-color);
+    color: var(--main-bg-color);
     
 }
 
