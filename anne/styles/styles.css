@@ -118,13 +118,11 @@ footer .container {
 }
 .footer-header {
   position: relative;
-  top: -120px;
   align-self: flex-start;
   width: 100%;
 }
 .contact-header {
   color: #000;
-  font-size: 160px;
   font-family: var(--footer-font-bold);
   font-weight: 700;
   line-height: 1em;
@@ -152,22 +150,12 @@ footer .container {
 }
 .contact-email {
   font-family: var(--logo-font);
-  font-size: 3.5rem;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 .contact-text {
   font-family: var(--footer-font-bold);
   line-height: 1.5em;
-  margin-left: 2rem;
-  margin-right: 5rem;
 }
-.contact-links {
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
+
 .contact-links a {
   margin-right: 0.5rem;
 }
@@ -184,8 +172,8 @@ footer .container {
 @media only screen and (max-width: 400px) {
 
   .footer-header {
-      top: -70px;
-    }
+    top: -70px;
+  }
   .contact-header{
     font-size: 90px;
   }
@@ -224,7 +212,7 @@ footer .container {
 }
 .footer-header {
     top: -110px;
-  }
+}
 .contact-header{
   font-size: 140px;
 }
@@ -251,14 +239,43 @@ footer .container {
 }
 @media only screen and (min-width: 600px) {
 
-.footer-header {
-    top: -112px;
+  footer {
+    height: auto;
   }
-.contact-header{
-  font-size: 160px;
-}
-.footer-content {
-  flex-direction: row;
-}
+  .footer-header {
+    position: relative;
+    top: -120px;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .contact-header{
+    font-size: 160px;
+  } 
+  .footer-content {
+    flex-direction: row;
+  }
+  .contact-links {
+    text-align: unset;
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .contact-text {
+    text-align: unset;
+    line-height: 1.5em;
+    margin-left: 2rem;
+    margin-right: 5rem;
+  }
+  .contact-email {
+    text-align: unset;
+    font-size: 3.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact-card {
+    flex: 1;
+    padding: 0;
+  }
 
 }
