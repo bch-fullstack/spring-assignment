@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
 /*start global */
 *{
     margin: 0;
@@ -12,6 +22,11 @@ html{
 body{
     width: 100%;
     height: 100%;
+    background-image:url("http://source.unsplash.com/udnCsUmuSgM") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
     background: rgb(33, 15, 33)
     
 
@@ -480,3 +495,86 @@ input[type="submit"]:hover{
 /*end of footer animations*/
 
 /*start media queries*/
+@media screen and (max-width:768px){
+    body{
+    background-image:url("http://source.unsplash.com/udnCsUmuSgM") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
+
+    }
+    .landing-text h1{
+        font-size: 3rem;
+    }
+    .landing-text h5{
+        font-size: 1.3rem;
+    }
+    .navList{
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .NavLinks{
+        font-size: 2.5rem;
+    }
+    .about-heading h2{
+        font-size: 3rem;
+
+    }
+    .section-heading h2{
+        font: size 2rem; ;
+    }
+    .about-details .navList{
+        flex-direction: initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+
+    }
+    .icon-container i{
+        font-size: 3rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+
+    }
+    .timeline .date::before{
+        left: 8rem;
+    }
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+    .landing-text h1{
+        font-size: 6rem;
+    }
+    .landing-text h5{
+        font-size: 1.4rem;
+    }
+    .NavLinks{
+        font-size: 3.5rem
+
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin-top: 0 o 7rem 0;
+    }
+   
+}
+
+/*end of media animations*/
