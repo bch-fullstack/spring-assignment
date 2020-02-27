@@ -117,6 +117,7 @@ input {
   z-index: 2;
 }
 
+/*Moves sign in container to the right*/
 .container.right-panel-active .sign-in-container {
   transform: translateX(100%);
 }
@@ -128,6 +129,7 @@ input {
   z-index: 1;
 }
 
+/*Move signup to the left*/
 .container.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
