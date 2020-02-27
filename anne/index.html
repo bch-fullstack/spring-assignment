@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page Anne Kokkonen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/242a4dda2d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index_styles.css">
 </head>
-<body>
+<body> 
     <header>
         <div class="container">
             <div class="logo-bar">
@@ -42,6 +43,15 @@
     </header>
     <main>
         <section class="main-content">
+            <div class="slideshow-wrapper">
+                <ul class="slideshow">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+            </div>
 
         </section>
     </main>
@@ -51,7 +61,7 @@
                 <div class="footer-header">
                     <h2 class="contact-header">Say hi.</h2>
                 </div> 
-                <div class="footer-content">         
+                <div class="footer-content light-mode-dark">         
                         <div class="contact-card">
                             <div class="contact-info">
                                 <div class="contact-email">
@@ -77,7 +87,8 @@
                 </div>
             </div>   
         </div>
-    </footer>   
+    </footer>
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
