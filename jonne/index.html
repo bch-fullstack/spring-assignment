@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Jonne &quot tyBz &quot Paljakka" />
+  <meta keywords="portfolio" />
+  <link rel="icon" type="image/png" href="icon/favicon-32x32.png">
+  <!--google CDN services for fonts and jquery/ajax-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--AOS library for fadein scroll effects-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <!--fontawesome cdn css for social and skills section icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Paljakka Consulting</title>
+</head>
+
+<body onscroll="progressOnload()">
+
+  <!-- firebase jdk, is required to be in body -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+
+  <script>
+    //Firebase configuration frontend
+    var firebaseConfig = {
+      apiKey: "AIzaSyDFfnYT-Y78egxSy3ECVWq1l7xePZGww_A",
+      authDomain: "paljakka-consulting.firebaseapp.com",
+      databaseURL: "https://paljakka-consulting.firebaseio.com",
+      projectId: "paljakka-consulting",
+      storageBucket: "paljakka-consulting.appspot.com",
+      messagingSenderId: "727422788325",
+      appId: "1:727422788325:web:465f9735f9ddfc2e6caa0c",
+      measurementId: "G-L7GER5DPVG"
+    };
+    // Init Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- Header -->
+  <header>
+    <div class="logo" id="logo">
+
+      <a href="#hero-banner"> &lt;paljakka&gt;
+        <!--Hand crafted logo-->
+        <p class="design"> consulting</p>
+      </a>
+
+    </div>
+    <!--mobile dropdown menu bars-->
+    <div class="dropbtn" id="navContainer" >
+      <div class="bar1 bar"></div>
+      <div class="bar2 bar"></div>
+      <div class="bar3 bar"></div>
+    </div>
+  
+    <nav class="animate" id="mobileNav">
+      <ul class="dropdown-content" >
+        <li id="navHome"><a href="#hero-banner">Home</a></li>
+        <li id="navExperience"><a href="#experience">Experience</a></li>
+        <li id="navContact"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero banner and content inside it -->
+    <section class="hero">
+      <section id="hero-banner">
+
+        <div class="hero-content active">
+          <h1>Jonne Paljakka</h1>
+
+          <p>Full Stack Developer student</p>
+          <input onclick="" class="btn" type="button" value="Read more" />
+        </div>
+
+        <div class="hero-content background">
+
+          <h2>
+            About me
+          </h2>
+         <p class="aboutMe mg">I'm 30 years old ex-paramedic.<p>
+         <p class="aboutMe mg">My previous career was mainly in emergency medical services and emergency rooms around Finland.</p>
+          <p class="aboutMe mg"> I changed my career path to IT industry in 2020. I have about 20 years of self learned experience in field of IT as hobbyist, one of my favourite subject is reversing and inspecting malwares.
+          I started Full Stack Web developer studies in January 2020 because most of services nowadays runs on web platforms.</p>
+          <p class="aboutMe">My future plan is to combine my knowledge about technology and healthcare.</p>
+
+
+          <p></p>
+          <input type="button" name="" class="closeContent" id="" value="Close">
+        </div>
+
+
+      </section>
+
+      <div class="flex-container wrapper">
+        <!-- Content -->
+        <section class="content-flex" id="experience">
+
+          <div class="education-wrapper">
+
+            <h3 data-aos="fade-right" data-aos-duration="1500">Education</h3>
+            <ul data-aos="fade-right" data-aos-duration="3000" class="experience">
+              <li class="experience year">1/2020- Present</li>
+              <li class="experience">Helsinki Business College,
+                Full Stack Developer</li>
+              <li class="experience year">8/2013 - 12/2016</li>
+              <li class="experience">Lahti University of Applied Sciences,
+                RN</li>
+              <li class="experience year">8/2010 - 5/2013</li>
+              <li class="experience">Jämsä Vocational College,
+                EMT</li> <br>
+            </ul>
+            <div data-aos="fade-right" data-aos-duration="3000" class="experiencePicture">
+
+              <img class="aboutPicture" src="img/_1460015.jpg" alt="about picture">
+            </div>
+          </div>
+
+          <div class="experienceWrapper">
+            <h3 data-aos="fade-right" data-aos-duration="1500">Latest experience</h3>
+            <ul data-aos="fade-right" data-aos-duration="3000" class="experience">
+              <li class="experience year">2/2020 - Present</li>
+              <li class="experience">Web developer at Mäntsälä Digital</li>
+              <li class="experience year"> 9/2018 - Present, on study leave</li>
+              <li class="experience"> Paramedic at Acute 24 </li>
+              <li class="experience year"> 12/2018 - Present </li>
+              <li class="experience"> Head nurse at Avarn Security</li>
+              <li class="experience year">1/2018 - 12/2018</li>
+              <li class="experience">Security officer at Avarn Security</li>
+              <li class="experience year"> 3/2018 - 6/2018</li>
+              <li class="experience ">Registered nurse at Central-Finland Central Hospital</li>
+              <li class="experience year">11/2017 - 1/2018</li>
+              <li class="experience">Registered nurse at Central-Finland Central Hospital</li>
+              <li class="experience year"></li>
+              <li class="experience"></li>
+            </ul>
+          </div>
+
+        </section>
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+          <div data-aos="fade-right" data-aos-duration="3000" class="skill-card">
+            <i class="fab fa-html5"></i>
+            <progress id="progressHtml" max="100" value="0">
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="3000" class="skill-card">
+            <i class="fab fa-css3"></i>
+            <progress id="progressCss" max="100" value="0"></progress>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="3000" class="skill-card">
+            <i class="fab fa-js"></i>
+            <progress id="progressJavascript" max="100" value="0"></progress>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="3000" class="skill-card">
+            <i class="fab fa-java"></i>
+            <progress id="progressJava" max="100" value="0"></progress>
+          </div>
+      </div>
+      </aside>
+
+      </div>
+      <!-- Footer -->
+      <footer id="contact">
+        <div class="contactInfo"> 
+          <div social-wrapper> <!---socialmedia links starts here-->
+          <h3>Social media</h3>
+          <a href="https://github.com/"><i class="fab fa-github">
+            </i></a>
+
+          <a href="linkedin.com"><i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/JonnePaljakka"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+        <div cv-wrapper>
+          <h3>Download CV here</h3>
+          q1
+        </div>
+        <div class="contactInfo"> <!-- contact info starts here-->
+          <h3>Contact</h3>
+          <p> Jonne Paljakka </p>
+          <a href="mailto:example@example.com">Mail</a>
+      </footer>
+      <button class="toTop" id="toTop" title="top">&#9650</button>
+  </main>
+
+</body>
+<script>
+  AOS.init();
+</script>
+<script src="js/script.js"></script>
+
+</html>
