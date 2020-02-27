@@ -8,15 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="screen">
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-
-    <!--
-      Link below is for the download cv button
-    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
     <title>Document</title>
@@ -24,7 +16,7 @@
   <body>
     <header id="header">
       
-      <nav>
+      <nav style="z-index: 9999999;">
         <ul>
           <li><a href="#home">HOME</a></li>
           <li><a href="#resume">RESUME</a></li>
@@ -32,15 +24,7 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <!--
-        <ul class="social-icons">
-        <li><a href="https://github.com/veronika333/"><img src="images/github-image.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/veronika-maisuradze-42423088/"><img src="images/linkedin.png"></a></li>
-        <li><a href="https://www.instagram.com/veronikamaisuradze/?hl=fi"><img src="images/instagram.png"></a></li>
-      </ul>
-    -->
       
-
       <div id="logo">
         <h1>VERONIKA MAISURADZE</h1>
         <p id="subheading">FULL STACK WEB DEVELOPER STUDENT<p>
@@ -53,11 +37,13 @@
     </header>
     <main>
       <section id="home">
-        <div class="container">
-          <h2>HELLO</h2>
+        <div class="grid-container">
+          
           <img src="images/veronika.png" alt="Veronika Maisuradze" />
+          
+          <h2>Hi, I'm Veronika</h2> <br><br>
           <p>
-            I'm Veronika and I'm happy to see you on my website!
+            <b>I'm happy to see you on my website!</b>
             <br><br>
             I’m currently learning JavaScript, and will learn React, Redux, Node, 
             by January 2021. I speak English and Russian, and have basic conversational ability 
@@ -75,47 +61,43 @@
           </p>
         </div>
       </section>
+
       <section id="resume">
-        <div class="container_2">
-          <h2>DIG A LITTLE DEEPER</h2>
-          <table>
-            <tr>
-              <td id="first_column"><b>TECHNOLOGIES</b></td>
-              <td id="second_column">
-                <ul>
+        
+        <div class="grid-container_2">
+          <h2 style="text-align: left;" >Dig a Little Deeper</h2>
+          <h3 style="text-align: left;">Here Comes My Resume</h3><br>
+              <div class="title_1"><b>TECHNOLOGIES</b></div>
+              <div class="technologies"><br>
+                
 <li>HTML5/CSS3</li>
 <li>JavaScript/jQuery</li>
 <li>Bootstrap</li>
 <li>React.js</li>
-<li>Node.js</li>
-                </ul>
-              </td>
-            </tr>
-<tr>
-  <td id="first_column"><b>EDUCATION</b></td>
-  <td id="second_column">
-    <ul style="list-style-type:none;">
+<li>Node.js</li><br>
+              </div>
+               
+  <div class="title_1"><b>EDUCATION</b></div><br>
+    <div class="education_2">
       <li><b>Full Stack Web Developer</b>
 <br>
 Helsinki Business College, Helsinki, January 2020 - July 2021
       </li>
-      <br>
+      
       <li><b>International Business Administration</b>
       <br>
      HAAGA-HELIA University of Applied Scienses, Helsinki, August 2012 - November 2016
     </li>
-    <br>
+    
       <li><b>Teacher of the English Language and Literature</b>
         <br>
       Petrozavodsk State University, Petrozavodsk, September 2003 - June 2008
       </li>
-    </ul>  
-  </td>
-</tr>
-<tr>
-  <td id="first_column"><b>WORK EXPERIENCE</b></td>
-  <td id="second_column">
-  <ul style="list-style-type:none;">
+    </div>  <br>
+  
+  <div class="title_1"><b>WORK EXPERIENCE</b></div><br>
+  
+  <div class="work_2" style="list-style-type:none;">
   <li><b>Beauty Advisor</b>
     <br>
   <a href="https://www.esteelauder.com/">Estee Lauder</a>, Helsinki, July 2017 - January 2020
@@ -123,7 +105,7 @@ Helsinki Business College, Helsinki, January 2020 - July 2021
 -providing product knowledge on Estee Lauder products <br>
 -meeting sales goals <br>
 -offering personalized customer service according to company’s values <br>
--producing sales reports <br> <br>
+-producing sales reports <br> 
   </li>
   <li>
     <b>Marketin Assistant</b>
@@ -135,7 +117,7 @@ Helsinki Business College, Helsinki, January 2020 - July 2021
 -writing general and promotional articles <br>
 -updating company’s website <br>
 -developing social media content <br>
--assisting with the production of promotional materials <br><br>
+-assisting with the production of promotional materials <br>
   </li>
   <li>
     <b>Advertising Specialist</b>
@@ -145,7 +127,7 @@ Helsinki Business College, Helsinki, January 2020 - July 2021
 -explaining to clients how specific types of advertising would help promote their products or services in
 the most effective way <br>
 -providing clients with the costs of advertising products or services <br>
--processing all paperwork related to accounts <br><br>
+-processing all paperwork related to accounts <br>
   </li>
 <li>
   <b>English Teacher</b>
@@ -157,49 +139,55 @@ the most effective way <br>
 -keeping student attendance records <br>
 
 </li>
-  </ul>
-</td>
-</tr>
-          </table>
-          
-          <a href="images/cv.pdf" download> <button class="btn"><i class="fa fa-download"></i> DOWNLOAD CV</button></a>
-        
-        </div>
-
+<a href="images/cv.pdf" download> <button class="btn"><i class="fa fa-download"></i> DOWNLOAD CV</button></a>
+</div>
       </section>
-
 
       <section id="about">
         <div class="container_3">
-          <h2>ABOUT ME</h2>
-          <p>
-            This is what I like!
-          </p>
-<div class="slider-outer">
-<img src="images/arrow-left.png" class="prev" alt="Prev">
-<div class="slider-inner">
-  <img src="images/slide1.jpg" class="active">
-  <img src="images/slide2.jpg">
-  <img src="images/slide3.jpg">
-  <img src="images/slide4.jpg">
-</div>
-<img src="images/arrow-right.png" class="next" alt="Next">
+          <h2>More About Me</h2>
+          <h3>I like nature, active lifestyle and animals.</h3><br>
+      
+        <div class="slideshow-container">
 
-        </div>
-        </div>
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/slide1.jpg" style="width:100%">
+            <div class="text">Hiking in Georgia</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/slide2.jpg" style="width:100%">
+            <div class="text">Surfing in Bali</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slide3.jpg" style="width:100%">
+            <div class="text">Walking down Batur Mountain</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
       </section>
-
-
-
-
 
       <section id="contact">
         <div class="container_4">
           <h2>CONTACT</h2>
-          <p>
-            If you would like to contact me, just send me an email:
-            <br>
-            <a href="mailto:vera3@inbox.ru">vera3@inbox.ru</a>
+          <p><b>
+            If you would like to contact me, please send me an email: </b><br>
+            <a href="mailto:vera3@inbox.ru" style="color: white;"><b>vera3@inbox.ru</b></a>
           </p>
         </div>
       </section>
@@ -214,74 +202,14 @@ the most effective way <br>
       </div>
     </div>
     </footer>
-    
-    
-
-
-    
-
-
-
-
-
-    
-   <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+   <script src="main.js"></script>
    
-   
-   
-   <script>
-
-      $(function(){
-
-$(document).on( 'scroll', function(){
-
-  if ($(window).scrollTop() > 100) {
-    $('.scroll-top-wrapper').addClass('show');
-  } else {
-    $('.scroll-top-wrapper').removeClass('show');
-  }
-});
-
-$('.scroll-top-wrapper').on('click', scrollToTop);
-});
-
-function scrollToTop() {
-verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
-element = $('body');
-offset = element.offset();
-offsetTop = offset.top;
-$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
-}
-
-
-//image slider show below:
-$(document).ready(function(){
-$('.next').on('click', function(){
-  var currentImg = $('.active');
-  var nextImg = currentImg.next();
-  if(nextImg.length) {
-    currentImg.removeClass('active').css('z-index', -10);
-    nextImg.addClass('active').css('z-index', 10);
-  }
-})
-
-$('.prev').on('click', function(){
-  var currentImg = $('.active');
-  var prevImg = currentImg.prev();
-  if(prevImg.length) {
-    currentImg.removeClass('active').css('z-index', -10);
-    prevImg.addClass('active').css('z-index', 10);
-  }
-})
-
-
-});
-
-
-
-      </script>
-
   </body>
 </html>
