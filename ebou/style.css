@@ -76,7 +76,7 @@ img {
 }
 .page-title {
   font-family: Georgia, serif;
-  font-size: 40px;
+  font-size: 30px;
   background: black;
   color: white;
   padding: 0px;
@@ -101,6 +101,6 @@ img {
 #about-text {
   border: 3px;
   border-style: solid;
-  border-color:#287EC7;
+  border-color: #287ec7;
   padding: 1em;
 }
