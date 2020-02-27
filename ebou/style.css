@@ -81,3 +81,26 @@ img {
   color: white;
   padding: 0px;
 }
+.about-text1 {
+  flex: 2;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+.portrait {
+  height: 50px;
+  width: 200px;
+  flex: 1;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.about-page-container {
+  display: flex;
+}
+#about-text {
+  border: 3px;
+  border-style: solid;
+  border-color:#287EC7;
+  padding: 1em;
+}
