@@ -23,7 +23,7 @@
     font-family: var(--logo-font);
 }
 .profile-img {
-    background: url(../images/profile-pic-pix.jpg);
+    background: url(../assets//profile-pic-pix.jpg);
     background-size: cover;
     background-position: center center;
 }

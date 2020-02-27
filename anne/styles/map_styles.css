@@ -39,7 +39,7 @@
     font-size: 2rem;
 }
 .map-img {
-    background: url("../images/helsinkiMap.jpg");
+    background: url("../assets//helsinkiMap.jpg");
     height: 100%;
     width: auto;
     background-size: cover;
