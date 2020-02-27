@@ -19,7 +19,7 @@
     <header>
       <div class="menuContainer" id="mainMenu">
         <div class="logoContainer">
-          <div class="logo">My Logo Here</div>
+          <div class="logo"><img src="assets/logo_kata.svg" alt="Personal logo"></div>
         </div>
         <div class="dropMenu">
           <button class="btn" id="dropBtn">Menu</button>
@@ -49,11 +49,11 @@
         <div class="eduBox">
           <h3 class="eTitle">Education</h3>
           <p>
-            Current: <br />
+            <strong>Current:</strong> <br />
             Full-Stack Web Developer, Business College Helsinki<br />
             PhD (Biological and Environmental Sciences), University of
             Helsinki<br /><br />
-            Past:<br />
+            <strong>Past:</strong><br />
             MSc (Agriculture and Forestry), University of Helsinki<br />
             BSc (Agriculture and Forestry), University of Helsinki
           </p>
@@ -63,13 +63,13 @@
         <div class="expBox">
           <h3 class="eTitle">Experience</h3>
           <p>
-            Most relevant:<br />
+            <strong>Most relevant:</strong><br />
             Researcher/doctoral candidate<br />
             University of Helsinki, Apr/2014 – Sep/2019<br />
             Researcher<br />
             Finnish Food Safety Authority Evira, Jul/2013 – Mar/2014<br /><br />
 
-            Other:<br />
+           <strong> Other:</strong><br />
             Summer jobs and other short employments aside studies including
             sales, postal work, and plant nursery work.
           </p>
@@ -81,19 +81,29 @@
       <div class="boxContainer" id="mySkills">
         <div class="titleLine"><h3>My Skills</h3></div>
         <div class="skillBox skillHtml">
-          <i class="fab fa-html5 fa-3x"></i>HTML
+          <i class="fab fa-html5 fa-3x"></i>
+          <label for="sHtml">HTML</label>
+<progress id="sHtml" value="25" max="100"> 25% </progress>
         </div>
         <div class="skillBox skillCss">
-          <i class="fab fa-css3 fa-3x"></i>CSS
+          <i class="fab fa-css3 fa-3x"></i>
+          <label for="sCss">CSS</label>
+          <progress id="sCss" value="15" max="100"> 15% </progress>
         </div>
         <div class="skillBox skillJs">
-          <i class="fab fa-js fa-3x"></i>JavaScript
+          <i class="fab fa-js fa-3x"></i>
+          <label for="sJs">JavaScript</label>
+          <progress id="sJs" value="10" max="100"> 10% </progress>
         </div>
         <div class="skillBox skillUiD">
-          <i class="fab fa-figma fa-3x"></i>UI Design
+          <i class="fab fa-figma fa-3x"></i>
+          <label for="sDesign">UI Design</label>
+          <progress id="sDesign" value="15" max="100"> 15% </progress>
         </div>
         <div class="skillBox skillBaking">
-          <i class="fas fa-birthday-cake fa-3x"></i>Baking
+          <i class="fas fa-birthday-cake fa-3x"></i>
+          <label for="sBaking">Baking</label>
+          <progress id="sBaking" value="75" max="100"> 75% </progress>
         </div>
       </div>
     </div>
@@ -101,7 +111,7 @@
     <!--Main page stops here. Footer is below. mailto does not refer to an actual email address-->
     <footer>
       <div class="footerContainer">
-        <div class="logo">My Logo Here</div>
+        <div class="logo"><p>©</p> <img src="assets/logo_kata.svg" alt="Personal logo"></div>
         <div class="contactMe">
           <a href="mailto:notreallyanemail@tentacles.not">Send me an email!</a>
         </div>

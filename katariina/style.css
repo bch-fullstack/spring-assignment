@@ -23,6 +23,9 @@ body{
     flex: 1;
 }
 
+header .logo img {
+    height: 3.5rem;
+}
 
  /*Hoverable menu button styling*/   
 
@@ -85,7 +88,7 @@ button{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 0.5rem;
-    background-color: greenyellow;
+    background-color:whitesmoke ;
 }
 
 h1{
@@ -111,7 +114,8 @@ h3 {
 .heroBanner{
     grid-column: 1/span 12;
     grid-row: 1/span 3;
-    background-color: hotpink;
+    background-image: url('https://source.unsplash.com/8_LZ9UWTKLE') ;
+
     padding: 2rem;
     line-height: 2rem;
     display:flex;
@@ -123,10 +127,11 @@ h3 {
 
 /*--- Education and work experience section styling.
  Including a sub-grid structure.---*/
+
 .eduContainer{
     grid-column:2/span 10;
     grid-row: 4/span 4;
-    background-color: indigo;
+    background-color: gainsboro;
     padding: 2rem;
 
     display: grid;
@@ -142,7 +147,7 @@ h3 {
 .eduBox {
     grid-column:1;
     grid-row: 1/span 2;
-    background-color: tomato;
+    background-color: whitesmoke;
     padding: 0.5rem;
 
 }
@@ -150,20 +155,20 @@ h3 {
 .img1 {
     grid-column: 2;
     grid-row: 1;
-    background-image: url("https://source.unsplash.com/featured/?tarantula");
+    background-image: url("https://source.unsplash.com/featured/?black-and-white");
     
 }
 
 .img2 {
     grid-column: 2;
     grid-row: 2;
-    background-image: url("https://source.unsplash.com/featured/?raven");
+    background-image: url("https://source.unsplash.com/featured/?black-and-white-texture");
 }
 
 .expBox {
     grid-column: 3;
     grid-row: 1/span 2;
-    background-color: turquoise;
+    background-color: whitesmoke;
     padding: 0.5rem;
 }
 
@@ -172,7 +177,7 @@ h3 {
 .boxContainer{
     grid-column: 1/span 12;
     grid-row:8/ span 3;
-    background-color:turquoise;
+    background-image: url('https://source.unsplash.com/v0N_zTNrIgo') ;
     padding: 2rem;
 
     display: grid;
@@ -183,7 +188,7 @@ h3 {
 .titleLine {
     grid-column: 1/span 5;
     grid-row: 1;
-    background-color:green ;
+    background-color:gainsboro ;
     text-align: center;
     padding: 2rem;
     height: fit-content;
@@ -191,7 +196,7 @@ h3 {
 
 .skillBox {
     height: 150px;
-    background-color: lightgray;
+    background-color: whitesmoke;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -205,12 +210,30 @@ h3 {
     grid-row: 2;
 
 }
+progress[value] {
+   
+    -webkit-appearance: none;
+     appearance: none;
+  
+    width: 50px;
+    height: 15px;
+  }
 
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-style: solid;
+    border-radius: 2px;
+    
+  }
+
+progress[value]::-webkit-progress-value {
+    background-color: grey;
+}
 
 /*--- Footer area styling, including mailto link styling---*/
 
 footer {
-    background-color: dimgrey;
+    background-color: gainsboro;
 }
 
 .footerContainer{
@@ -219,6 +242,22 @@ footer {
        justify-content: space-between;
 }
 
+.footerContainer .logo {
+
+    display:flex;
+    align-items: center;
+  
+}
+
+.footerContainer .logo img {
+
+    margin-left: 0.2rem;
+  
+}
+
+.footerContainer .logo p {
+    font-size: 1.5rem;
+}
 .contactMe a {
     color: black;
     text-decoration: none;
