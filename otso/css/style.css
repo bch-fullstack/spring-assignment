@@ -93,6 +93,15 @@ header ul li a:hover {
   text-decoration: underline;
 }
 
+.dl-cv {
+  background-color: coral;
+}
+
+.dl-cv a:hover {
+  background-color: teal;
+  color: white;
+}
+
 /* Profile-banner */
 
 .profile-img {
