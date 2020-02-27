@@ -5,26 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Settings Page Anne Kokkonen</title>
-    <script
-      src="https://kit.fontawesome.com/242a4dda2d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/242a4dda2d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/settings_styles.css" />
   </head>
-  <body>
+  <body class="normal-mode">
     <header>
       <div class="container">
           <div class="logo-bar">
@@ -41,13 +30,13 @@
       <div class="container shadow a">
           <div class="header-content">
               <nav class="top-nav">
-                  <ul class="nav-list">
+                  <ul class="nav-list normal-mode">
                      <li id="overview"><a href="index.html">Overview</a></li>
                      <li><a href="profile.html">Profile</a></li>
                      <li><a href="equipment.html">Equipment</a></li>
                      <li><a href="missions.html">Missions</a></li>
                      <li><a href="map.html">Map</a></li>
-                     <li id="settings"><a href="settings.html">Settings</a></li>
+                     <li class="normal-mode" id="settings"><a href="settings.html">Settings</a></li>
                   </ul>
               </nav>
           </div>
@@ -59,12 +48,10 @@
            <h2>Settings</h2>
          <div class="graphics">
            <h2>Graphics</h2>
-           <p>Enable Light Mode for better contrast
-          or switch back to Dark Mode (default)
+           <p>Enable Crazy Mode or switch back to Dark Mode (default)
           </p>
-           <button class="settings-btn" type="button">Light Mode</button>
-           <button class="settings-btn" type="button">Dark Mode</button>
-
+           <button id="crazy-btn" class="settings-btn" type="button">Crazy Mode</button>
+           <p>Works until page is refreshed. </p>
          </div>
        </div>
      </section>
@@ -93,9 +80,9 @@
                   </p>
                 </div>
                 <div class="contact-links">
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fas fa-at"></i></a>
+                  <a href="https://github.com/nefarious-onion"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/anne-kokkonen-b913a11a0/"><i class="fab fa-linkedin"></i></a>
+                  <a href="./assets//webdeveloperbootcamp_august19.pdf" download=""><i class="fas fa-file-pdf"></i></a>
                 </div>
               </div>
             </div>
@@ -104,5 +91,7 @@
         </div>
       </div>
     </footer>
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
