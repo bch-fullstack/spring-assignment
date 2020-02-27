@@ -1,3 +1,4 @@
+/*--- Setting basic styling---*/
 *{
     margin:0;
     padding: 0;
@@ -9,6 +10,7 @@ body{
     background-color: gainsboro;
     font-family: 'IM Fell English' ;
 }
+/*---Header styling---*/
 
 .menuContainer {
     padding: 2rem;
@@ -22,7 +24,7 @@ body{
 }
 
 
-    
+ /*Hoverable menu button styling*/   
 
 
 button{
@@ -37,8 +39,6 @@ button{
   }
   
  
-
-
   #dropBtn{
     background-color: rgb(73, 71, 71);
     color: white;
@@ -76,6 +76,9 @@ button{
     background-color:rgb(34, 34, 49);
   }
 
+
+/*--- Main page styling, including main grid ---*/
+
 .pageContainer{
 
     display: grid;
@@ -87,13 +90,23 @@ button{
 
 h1{
     font-family: 'IM Fell English SC';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 { 
+    font-family: 'IM Fell English SC';
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+
 }
 
 h3 {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+
+/*---Hero banner section styling---*/
 
 .heroBanner{
     grid-column: 1/span 12;
@@ -101,8 +114,15 @@ h3 {
     background-color: hotpink;
     padding: 2rem;
     line-height: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
+
+/*--- Education and work experience section styling.
+ Including a sub-grid structure.---*/
 .eduContainer{
     grid-column:2/span 10;
     grid-row: 4/span 4;
@@ -113,6 +133,10 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.2rem;
+}
+
+.eTitle{
+    margin-bottom: 1rem;
 }
 
 .eduBox {
@@ -142,6 +166,8 @@ h3 {
     background-color: turquoise;
     padding: 0.5rem;
 }
+
+/*--- Skills area styling, including a second sub-grid structure---*/
 
 .boxContainer{
     grid-column: 1/span 12;
@@ -179,6 +205,9 @@ h3 {
     grid-row: 2;
 
 }
+
+
+/*--- Footer area styling, including mailto link styling---*/
 
 footer {
     background-color: dimgrey;
