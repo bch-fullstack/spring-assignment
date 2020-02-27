@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My portfolio</title>
     <script
-      src="//kit.fontawesome.com/4a608a82be.js"
+      src="https://kit.fontawesome.com/4a608a82be.js"
       crossorigin="anonymous"
     ></script>
     <link
-      href="//fonts.googleapis.com/css?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -48,7 +50,7 @@
           <h2>About me</h2>
           <p>
             I am Full stack web developer student at Business College Helsinki.
-            I used to work as a teacher in junior high school, but now I'm
+            I used to work as a mathematics and physics teacher in junior high school, but now I'm
             looking for new opportunities.
           </p>
         </div>
@@ -91,14 +93,14 @@
           Here's what I have been studying so far.
         </p>
         <section id="cards">
-          <div class="card" id="html">
+          <div class="card" id="html" data-aos="zoom-in">
             <p class="icon">
               <i class="fab fa-html5"></i>
             </p>
             <p>HTML</p>
           </div>
 
-          <div class="card" id="css">
+          <div class="card" id="css" data-aos="zoom-in">
             <p class="icon">
               <i class="fab fa-css3-alt"></i>
             </p>
@@ -106,13 +108,13 @@
               CSS
             </p>
           </div>
-          <div class="card" id="js">
+          <div class="card" id="js" data-aos="zoom-in">
             <p class="icon">
               <i class="fab fa-js-square"></i>
             </p>
             <p>JS</p>
           </div>
-          <div class="card" id="ui">
+          <div class="card" id="ui" data-aos="zoom-in">
             <p class="icon"><i class="fas fa-pencil-alt"></i></p>
             <p>UI DESING</p>
           </div>
@@ -136,12 +138,16 @@
       <div class="footer-text">
         <h3>Contact</h3>
         <p>
-          <a id="mail-to" href="mailto:example@example.com"
-            >example@example.com</a
+          <a id="mail-to" href="mailto:oona.kakkonen@edu.bc.fi"
+            >oona.kakkonen@edu.bc.fi</a
           >
         </p>
       </div>
     </footer>
   </body>
   <script src="scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
