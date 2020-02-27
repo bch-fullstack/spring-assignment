@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: bisque;
+  background-color: #FFFAFA;
   }
 
 html{
@@ -29,5 +29,8 @@ html{
     margin: 50px 20px 20px 20px;
     background-color: #ffffff;
   }
+.section a{
+  color: #000000;
+}
 
   
