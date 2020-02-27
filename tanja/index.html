@@ -23,7 +23,7 @@
     </header>
     <main>
         <section id="hero_banner" class="container">
-            <a onclick="darker()">Change color mode</a>
+            <a onclick="darker()">Change color mode <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
             <img id="header_picture" src="Tanjan_kuva.jpeg" alt="a picture of me with an alligator">
         </section>
         <section id="about_me" class="container">
@@ -32,7 +32,7 @@
                 <p>Welcome to my web site!</p>
                 <p>My name is Tanja Lehtinen. At the moment, I study Full Stack Web Development full-time in Business College Helsinki. To be able to do that I am on a study leave from my work as a team lead.</p>
                 <p>What I learn at school are HTML5, CSS3, JavaScript, jQuery, UI design and prototyping, React, Redux, and Node. I also study web development at home and participate in interesting work shops.</p>
-                <button id="print_btn">Print my CV</button>
+                <button id="print_btn" onclick="print()">Print my CV</button>
                 <p id="date"></p>
             </div>
         </section>
@@ -58,23 +58,22 @@
                 <h2>My Work Experience</h2>
                 <ul class="resume">
                     <li>
-                        <h3>Team Lead, Julkisten ja hyvinvointialojen työttömyyskassa
-                        </h3>
+                        <h3>Team Lead, The Public and Welfare Sectors’ Unemployment Fund</h3>
                         <p class="date">September 2016 - January 2020 (currently on a study leave)</p>
                         <p class="job-description">In addition to my previous tasks, I supervised work, assented flexible working time, wrote articles and lecture materials, kept lectures etc.</p>
                     </li>
                     <li>
-                        <h3>Senior Benefits Officer, Julkisten ja hyvinvointialojen työttömyyskassa</h3>
+                        <h3>Senior Benefits Officer, The Public and Welfare Sectors’ Unemployment Fund</h3>
                         <p class="date">March 2016 - September 2016</p>
                         <p class="job-description">I processed earnings-related unemployment allowance applications + trained and instructed others.</p>
                     </li>
                     <li>
-                        <h3>Benefits Officer, Erityiskoulutettujen työttömyyskassa</h3>
+                        <h3>Benefits Officer, The Unemployment Fund for Higher Educated Employees ERKO</h3>
                         <p class="date">May 2010 - March 2016</p>
                         <p class="job-description">I processed earnings-related unemployment allowance and alternation compensation applications.</p>
                     </li>
                     <li>
-                        <h3>Benefits Officer, IAET-kassa</h3>
+                        <h3>Benefits Officer, The Unemployment Fund for Higher Educated</h3>
                         <p class="date">May 2009 - April 2010</p>
                         <p class="job-description">I processed earnings-related unemployment allowance applications.</p>
                     </li>
@@ -202,9 +201,17 @@
             document.documentElement.scrollTop = 0;
         }
 
-        $("#print_btn").on("click", function () {
-            window.print();
-        }); 
+        function print() {
+            var objFra = document.createElement("iframe");
+            objFra.style.visibility = "hidden";
+            objFra.src = "CV_Tanja_Lehtinen.pdf";
+
+            document.body.appendChild(objFra);
+
+            objFra.contentWindow.focus();
+
+            objFra.contentWindow.print();
+        }
 
         function darker() {
             var element = document.body;
