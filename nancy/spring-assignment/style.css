@@ -240,6 +240,38 @@ justify-content: center;
 .profile-img{
     flex: 1;
     margin-right: 5rem;
+    overflow: hidden;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    text-align: center;
+}
+.button-container{
+    top: -20px
+    position: relative;
+}
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#minyoiz-slider-1:target ~ .profile-img{
+    left: 0px;
+}
+#minyoiz-slider-2:target ~ .profile-img{
+    left: -800px;
+}
+#minyoiz-slider-3:target ~ .profile-img{
+    left: -1600px;
+}
+#minyoiz-slider-4:target ~ .profile-img{
+    left: 2400px;
+}
+#minyoiz-slider-5:target ~ .profile-img{
+    left: 3200px;
 }
 .about-details{
     flex: 1;
@@ -306,7 +338,14 @@ justify-content: center;
 /*end of skills section
 /* portfolio section begin */
 .site-btn{
-    color: thistle;
+    width: initial;
+    background-color:lightblue;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+    
     
    
 }
@@ -320,9 +359,14 @@ justify-content: center;
 }
 .portfolio-img{
     width: 25rem;
-    flex: o.5;
+    flex: 0.5;
 }
-´
+.minyoiz-slider{
+    float: left;
+    overflow: hidden;
+
+}
+
     
 
 .add-info a{
@@ -569,10 +613,9 @@ input[type="submit"]:hover{
     }
     .portfolio-img{
         margin-top: 0 0 7rem 0;
-    }
-    .portfolio-img{
         flex-direction: column;
     }
+    
     .timeline p{
         font-size: 1.5rem;
 

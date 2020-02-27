@@ -15,5 +15,12 @@ $(document).ready (function(){
 
         }, Options, 2000);
         });
+$('#up').on('click', function(){
+$('html, body').animate(keyframes,{
+scrollTop: 0
+
+}, Options, 2000);
+
+ });      
 
 });
