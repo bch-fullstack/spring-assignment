@@ -262,16 +262,16 @@ justify-content: center;
     left: 0px;
 }
 #minyoiz-slider-2:target ~ .profile-img{
-    left: -800px;
+    left: -200px;
 }
 #minyoiz-slider-3:target ~ .profile-img{
-    left: -1600px;
+    left: -400px;
 }
 #minyoiz-slider-4:target ~ .profile-img{
-    left: 2400px;
+    left: 600px;
 }
 #minyoiz-slider-5:target ~ .profile-img{
-    left: 3200px;
+    left: 800px;
 }
 .about-details{
     flex: 1;
