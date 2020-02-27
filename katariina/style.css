@@ -32,7 +32,7 @@ header .logo img {
 
 button{
     font-family: 'IM Fell English SC';
-    text-transform: uppercase;
+    
 }
 
 .dropMenu{
@@ -54,8 +54,9 @@ button{
   #dropContent{
     display: none;
     position: absolute;
+    left: -11px;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -76,7 +77,7 @@ button{
   }
   
   .dropMenu:hover #dropBtn {
-    background-color:rgb(34, 34, 49);
+    background-color: darkred;
   }
 
 
@@ -239,25 +240,23 @@ footer {
 .footerContainer{
     padding: 4rem;
     display:flex;
-       justify-content: space-between;
+    justify-content: space-between;
 }
 
 .footerContainer .logo {
 
     display:flex;
     align-items: center;
+    
   
 }
 
-.footerContainer .logo img {
-
-    margin-left: 0.2rem;
-  
-}
 
 .footerContainer .logo p {
     font-size: 1.5rem;
+    margin: 0.3rem;
 }
+
 .contactMe a {
     color: black;
     text-decoration: none;
