@@ -28,11 +28,17 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <button onclick="darkToggle()" id="dark-toggle" class="dark-mode">
-        <i class="fas fa-adjust"></i>
+      <button
+        onclick="darkToggle()"
+        id="dark-toggle"
+        class="dark-mode"
+        title="Dark Mode"
+      >
+        <i class="far fa-lightbulb fa-3x"></i>
       </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
       <span style="color: white;" onclick="openNav()"
-        ><i class="fas fa-bars"></i
+        ><i class="fas fa-bars fa-2x"></i
       ></span>
     </header>
     <main>
@@ -59,7 +65,7 @@
           </p>
         </div>
         <div class="form-wrap">
-          <h2>Or you can send me some feedbacks about this website</h2>
+          <h2>Or you can send me some feedback about this website</h2>
           <form>
             <div class="form-group">
               <h3>Design</h3>
@@ -97,7 +103,7 @@
                 placeholder="Enter your comment here"
               ></textarea>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" onclick="sendFeedback()">Send</button>
           </form>
         </div>
       </section>

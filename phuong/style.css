@@ -26,9 +26,9 @@ header {
   width: 100%;
   position: fixed;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
-
+  background-color: #525a84;
   z-index: 1;
 }
 
@@ -39,29 +39,31 @@ header h1 {
 header a {
   color: #ffffff;
   text-decoration: none;
-  padding: 20px;
 }
 
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   right: 0;
   top: 0;
-  background-color: #ffa59c;
+  background-color: #525a84;
   opacity: 0.9;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   transition: 0.5s;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
 }
 
 .mobile-menu {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
@@ -69,8 +71,8 @@ header a {
   text-decoration: none;
   font-size: 36px;
   color: #ffffff;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block;
+  transition: 0.3s;
 }
 
 .overlay a:hover,
@@ -85,6 +87,14 @@ header a {
   right: 45px;
 }
 
+#dark-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+#dark-toggle:hover {
+  cursor: pointer;
+}
 .dark-mode {
   background-color: #494949;
   color: #ffffff;
@@ -94,10 +104,8 @@ header a {
   color: #ffffff;
 }
 
-.dark-mode header {
-  background-color: #494949;
-}
-
+.dark-mode header,
+.dark-mode footer,
 .dark-mode .overlay {
   background-color: #494949;
 }
@@ -181,16 +189,23 @@ header a {
 }
 
 #intro {
-  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column-reverse;
+  padding: 100px 0 0;
 }
 
-#intro img {
-  max-height: 50%;
+.photo-carousel {
+  max-width: 30%;
+  max-height: 30%;
+  margin: 0 auto;
+}
+
+.photo-carousel img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #intro-content {
@@ -200,6 +215,7 @@ header a {
   font-weight: 300;
   width: 50%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .index-skill {
@@ -345,12 +361,12 @@ footer {
   padding: 30px;
 }
 
-.form-group h3 {
-  margin-bottom: 10px;
+.form-group p {
+  font-weight: bold;
 }
 
-#value {
-  font-weight: bold;
+.form-group h3 {
+  margin-bottom: 10px;
 }
 
 #comment {
@@ -469,10 +485,6 @@ footer {
   background-color: #97a4e5;
 }
 @media screen and (max-width: 768px) {
-  header {
-    background-color: #ffa59c;
-  }
-
   .overlay a {
     font-size: 20px;
   }
@@ -484,15 +496,15 @@ footer {
 
   #intro {
     height: 100vh;
+    padding-top: 50px;
   }
-
-  #intro img {
-    max-width: 80%;
+  .photo-carousel {
+    max-width: 75%;
+    max-height: 75%;
   }
   #intro-content {
-    line-height: 1.3rem;
-    font-size: smaller;
-    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 100%;
   }
 
   .project {

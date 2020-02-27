@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/2be82ea0a4.js"
@@ -29,11 +35,17 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <button onclick="darkToggle()" id="dark-toggle" class="dark-mode">
-        <i class="fas fa-adjust"></i>
+      <button
+        onclick="darkToggle()"
+        id="dark-toggle"
+        class="dark-mode"
+        title="Dark Mode"
+      >
+        <i class="far fa-lightbulb fa-3x"></i>
       </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
       <span style="color: white;" onclick="openNav()"
-        ><i class="fas fa-bars"></i
+        ><i class="fas fa-bars fa-2x"></i
       ></span>
     </header>
     <main>
@@ -43,9 +55,12 @@
           <a href="#" class="scroll-down" address="true"></a>
         </div>
       </section>
-
       <section id="intro">
-        <img src="img/bio-photo.jpg" alt="profile-photo" />
+        <div class="photo-carousel">
+          <div><img src="img/bio-photo.jpg" alt="profile-photo" /></div>
+          <div><img src="img/photo-4.jpg" alt="internship-photo" /></div>
+          <div><img src="img/slush.jpg" alt="Slush 2018" /></div>
+        </div>
         <div id="intro-content">
           <h2>Hello</h2>
           <p>
@@ -55,6 +70,7 @@
           </p>
         </div>
       </section>
+
       <section id="home-skills" class="index-skill">
         <h2>My Skills</h2>
         <div id="cards">
@@ -93,6 +109,10 @@
       <h3>All Rights Reserved</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="slick-1.8.1/slick/slick.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

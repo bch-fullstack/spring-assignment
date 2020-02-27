@@ -46,3 +46,19 @@ function darkToggle() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+if (location.href.includes("index")) {
+  $(document).ready(function() {
+    $(".photo-carousel").slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: "linear"
+    });
+  });
+}
+
+const sendFeedback = () => {
+  alert("Thanks for the feedback!");
+};
