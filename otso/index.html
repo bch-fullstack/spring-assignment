@@ -21,10 +21,6 @@
     <!-- We3school's progress bars-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Javascript + Jquery-->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-
     <!-- Century Gothic font-->
 
     <link rel="stylesheet" href="https://use.typekit.net/tnd1rqp.css">
@@ -44,7 +40,6 @@
 <body>
     <header>
     <div id="logo"> Otso Lappalainen
-        <a href="#"></a>
     </div>
     <nav id="navbar">
     <ul>
@@ -53,7 +48,8 @@
     <li> <a href="#skills"> Skills</a></li>
     <li> <a href="http://www.linkedin.com/in/otsolap/"> LinkedIn</a></li>
     <li> <a href="http://www.youtube.com/channel/UC4t1gUHiI6hTPyAOR3zlqaw?view_as=subscriber">Vlog</a></li>
-    <li> <a href="https://drive.google.com/uc?export=download&id=1VhFMORk5InskWFGUQc7N5TJwNH5kC-Ee"> Download my CV</a></li>
+ <li><a href="/cv-dl/OtsoLappalainen_CV_2019_fi.pdf">Download CV</a></li>
+    <!--  <button id="pdfBtn"> Download my CV</buton> -->
 </ul>
 </nav>   
 
@@ -64,15 +60,14 @@
     <div class="profile-img">
     <div class="profile-txt">
     <h1> Welcome to my webpage!</h1><br>
-    <p> I’m interested in client consultations and creating excellent experiences. My job experience has been built from working at small start-up companies to handling international client cases at a global media house company. This has developed my consultation and communication skills. I enjoy work where I am able to consult clients and develop my problem-solving attitude utilising data. </p><br>
-    <button class="btn" a href="#CV"> Read more </button>
+    <p> I’m interested in client consultations and creating excellent experiences. My job experience has been built from working at small start-up companies to handling international client cases at a global media house company. This has developed my consultation and communication skills. I enjoy work where I am able to consult clients and develop my problem-solving attitude utilising data. </p>
     </div>
     </div>
     </section>
 
     <!-- CV -->
+    <div id="toPdf">
 <section id="CV">
-    
 <div id="BC" data-aos="fade-left" >
     <i class="BC-logo"></i>
     <div class="BC-text">
@@ -89,8 +84,7 @@
     <div class="SEM-text">
         <h2> Digital Marketer</h2>
         <h3> 2016-2019</h3>
-        <li>
-        I follow, measure and constantly develop our new website’s search engine optimisation and search engine marketing utilising Google tools.</li>
+        <li>I follow, measure and constantly develop our new website’s search engine optimisation and search engine marketing utilising Google tools.</li>
        <li> Managed and optimised international clients’ search engine marketing accounts, while alongside acquiring certificates on Google Ads and Analytics.</li>
 </div>
 </div>
@@ -122,12 +116,12 @@
     <div class="Mode-text">
         <h2> Youtuber</h2>
         <h3> 2018- current</h3>
-        <p> Unbearable thoughts and rambles. +30 subcribers, not including my mom!</p>
+        <li> Unbearable thoughts and rambles. +30 subcribers!</li>
+            <li> not including my mom!</li>
 </div>
 </div>
-
 </section>
-
+</div>
 <!-- Skills-->
 <section id="skills">
     <div class="skills-text">
@@ -178,6 +172,12 @@
     </div>
 
 </div>
+
+<!-- Scroll to top Button-->
+
+<a id="topBtn">&#9650</a>
+
+
 </section>
 </main>
 <!-- Footer-->
@@ -185,13 +185,21 @@
     <div class="personal-info">
 <p>Otso Lappalainen Rautatieläisenkatu 5, 00520 Helsinki</p>
     </div>
+    <div class="SoME">
+        <!-- WIP -->
+    </div>
     <div class="contact-mail">
 <p>Contact me:</p> <a href="mailto:s2000113@edu.bc.fi?subject=Good%20Day%20-%20Interesting%20in%20your%20service&body=Good%20Day%20Mr.%20Lappalainen%2C%0D%0A%0D%0A">otso.lappalainen@edu.bc.fi</a>
 </div>
 </footer>
 
+  <!-- Javascript + Jquery + AOS.Init + jsPDF-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 <script>
     AOS.init();
   </script>
 </body>
 </html>
+

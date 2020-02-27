@@ -1,346 +1,324 @@
 
-
 /* Whole site */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: CenturyGothic;
-}
-
-body {
-  background-position: center;
-  text-align: center;
-  background-position: center;
-  height: 100%;
-}
-
-/* Text-rules*/
-
-h1 {
-  font-size: 1.2rem;
-  white-space: none;
-  font-style: normal;
-  font-variant: normal;
-}
-h3 {
-  font-size: 0.8rem;
-  font-style: normal;
-  font-variant: normal;
-}
-p {
-  font-size: 0.8rem;
-  font-style: normal;
-  font-variant: normal;
-}
-
-li {
-  font-size: 0.8rem;
-  font-style: normal;
-  font-variant: normal;
-}
-
-
-
-/* Header */
-
-#logo {
-  width: 100%;
-  height: 7vh;
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-header {
-  background-color: white;
-  z-index: 9000;
-  margin-bottom: 10px;
-  position: fixed;
-  width: 100%;
-  position: 0;
-}
-
-#navbar {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-
-header ul {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-
-}
-header ul li {
-  display: inline-block;
-}
-header ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-header ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Profile-banner */
-
-.profile-img {
-  background: url("/images/OtsoSelfie.jpg") no-repeat fixed center center/cover;
-  height: 70vh;
-  width: 100vw;
-  padding-top: 27rem;
-  padding-bottom: 10rem;
-}
-
-.profile-txt {
-color: white;
-line-height: 2;
-letter-spacing: 2px;
-display: grid;
-justify-content: center;
-box-sizing: border-box;
-border-radius: 5px;
-max-width: 40rem;
-border: 2px solid rgba(0, 0, 0, 0.301);
-border-style: none;
-background-color: rgba(255, 131, 55, 0.863);
-margin-left: 10rem;
-padding: 20px;
-}
-
-.btn {
-  color: white;  
-  display: block;
-  border: none;
-  outline: none;
-  height: 2rem;
-  width: 7rem;
-  bottom: 20px;
-  right: 30px;
-  padding: 3px;
-  cursor: pointer;
-  background-color: rgb(0,128,128);
-}
-
-.btn:hover {
-  color: white;
-  font-weight: 600;
-  background-color: rgb(255,127,80);
-}
-
-/* CV Sections */
-#CV  {
- /* height: 95vh; */
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 0.5rem;
-}
-
-#BC {
-  background-color: teal;
-  color: whitesmoke;
-  margin: 1rem;
-  max-width: 40rem;
-  max-height: 40rem;
-  grid-column: 3;
-  grid-row: 1;
-}
-
-#SEM {
-  background-color: coral;
-  color: whitesmoke;
-  margin: 1rem;
-  line-height: 2;
-  max-width: 40rem;
-  max-height: 40rem;
-  grid-column: 3;
-  grid-row: 2;
-}
-#BA {
-  background-color: yellowgreen;
-  color: whitesmoke;
-  margin: 1rem;
-  max-width: 40rem;
-  max-height: 40rem;
-  grid-column: 3;
-  grid-row: 3;
-}
-#Stockmann {
-  background-color: hotpink;
-  color: whitesmoke;
-  margin: 1rem;
-  max-width: 40rem;
-  max-height: 40rem;
-  grid-column: 3;
-  grid-row: 4;
-}
-#Mode {
-  background-color: peru;
-  color: whitesmoke;
-  margin: 1rem;
-  max-width: 40rem;
-  max-height: 40rem;
-  grid-column: 3;
-  grid-row: 5;
-}
-
-/* CV logos */
-
-.BC-logo {
-  content: url("/images/BCWhite.png");
-  height: 7.5vh;
-  background-position: center;
-}
-
-.SEM-logo {
-  content: url("/images/Gads.png");
-  height: 7.5vh;
-}
-
-.BA-logo {
-  content: url("/images/BA.png");
-  height: 7.5vh;
-}
-
-.Stockmann-logo {
-  content: url("/images/Stockmann.png");
-  height: 7.5vh;
-}
-
-.Mode-logo {
-  content: url("/images/Modelogo.png");
-  height: 7.5vh;
-}
-
-/* Skills */
-
-#skills {
-  background-color: coral;
-/*  height: 50vh; */
-}
-
-.skill-cards {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 0.5rem;
-}
-
-.skill-cards-html {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.skill-cards-css {
-  grid-column: 4;
-  grid-row: 2;
-}
-
-.skill-cards-js {
-  grid-column: 6;
-  grid-row: 2;
-}
-
-.skill-cards-ux {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.skill-cards-photoshop {
-  grid-column: 4;
-  grid-row: 4;
-}
-
-.skill-cards-vegas {
-  grid-column: 6;
-  grid-row: 4;
-}
-
-
-
-/* Card-images */
-
-.cards-html {
-  content: url("/images/HTML5.svg");
-  height: 7.5vh;
-}
-
-.cards-css {
-  content: url("/images/CSS.svg");
-  height: 7.5vh;
-}
-
-.cards-js {
-  content: url("/images/Javascript.png");
-  height: 7.5vh;
-}
-
-.cards-ux {
-  content: url("/images/UIUX.svg");
-  height: 7.5vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: CenturyGothic;
+  }
   
-}
-
-
-.cards-photoshop {
-  content: url("/images/Photoshop.png");
-  height: 7.5vh;
-}
-
-.cards-vegas {
-  content: url("/images/Vegas.png");
-  height: 7.5vh;
-}
-
-/* Footer */
-
-footer {
-  height: 7vh;
-  display: flex;
-  justify-content: center;
-}
-
-.personal-info {
-line-height: 2;
-}
-
-.contact-mail {
+  body {
+    background-position: center;
+    text-align: center;
+    height: 100%;
+  }
+  
+  /* Text-rules*/
+  
+  h1 {
+    font-size: 1.2rem;
+    white-space: none;
+    font-style: normal;
+    font-variant: normal;
+  }
+  h3 {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-variant: normal;
+  }
+  p {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-variant: normal;
+  }
+  
+  li {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-variant: normal;
+  }
+  
+  
+  
+  /* Header */
+  
+  #logo {
+    width: 100%;
+    height: 7vh;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  header {
+    background-color: white;
+    z-index: 9000;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    position: 0;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  
+  header ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  header ul li {
+    display: inline-block;
+  }
+  header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Profile-banner */
+  
+  .profile-img {
+    background: url("/images/OtsoSelfie.jpg") no-repeat fixed center center/cover;
+    height: 70vh;
+    width: 100vw;
+    padding-top: 27rem;
+    padding-bottom: 10rem;
+  }
+  
+  .profile-txt {
+  color: white;
   line-height: 2;
-}
+  letter-spacing: 2px;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  max-width: 40rem;
+  border: 2px solid rgba(0, 0, 0, 0.301);
+  border-style: none;
+  background-color: rgba(255, 131, 55, 0.863);
+  margin-left: 10rem;
+  padding: 20px;
+  }
+  
+  /* CV Sections */
+  #CV  {
+   /* height: 95vh; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  #BC {
+    background-color: white;
+    color: black;
+    margin: 1rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  #SEM {
+    background-color: green;
+    color: whitesmoke;
+    margin: 1rem;
+    line-height: 2;
+    max-width: 40rem;
+    max-height: 40rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #BA {
+    background-color: coral;
+    color: whitesmoke;
+    margin: 1rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    grid-column: 3;
+    grid-row: 3;
+  }
+  #Stockmann {
+    background-color: white;
+    color: black;
+    margin: 1rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    grid-column: 4;
+    grid-row: 4;
+  }
+  #Mode {
+    background-color: black;
+    color: whitesmoke;
+    margin: 1rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    grid-column: 3;
+    grid-row: 5;
+  }
+  
+  /* CV logos */
+  
+  .BC-logo {
+    content: url("/images/BCWhite.png");
+    height: 9vh;
+  }
+  
+  .SEM-logo {
+    content: url("/images/Gads.png");
+    height: 9vh;
+  }
+  
+  .BA-logo {
+    content: url("/images/BA.png");
+    height: 9vh;
+  }
+  
+  .Stockmann-logo {
+    content: url("/images/Stockmann.png");
+    height: 9vh;
+  }
+  
+  .Mode-logo {
+    content: url("/images/Modelogo.png");
+    height: 9vh;
+  }
+  
+  /* Skills */
+  
+  #skills {
+    background-color: coral;
+    margin-left: 100px;
+    margin-right: 100px;
+  /*  height: 50vh; */
+  }
+  
+  .skill-cards {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+  }
+  
+  .skill-cards-html {
+    grid-column: 6;
+    grid-row: 2;
+  }
+  
+  .skill-cards-css {
+    grid-column: 8;
+    grid-row: 2;
+  }
+  
+  .skill-cards-js {
+    grid-column: 10;
+    grid-row: 2;
+  }
+  
+  .skill-cards-ux {
+    grid-column: 6;
+    grid-row: 4;
+  }
+  
+  .skill-cards-photoshop {
+    grid-column: 8;
+    grid-row: 4;
+  }
+  
+  .skill-cards-vegas {
+    grid-column: 10;
+    grid-row: 4;
+  }
+  
+  
+  
+  /* Card-images */
+  
+  .cards-html {
+    content: url("/images/HTML5.svg");
+    height: 7.5vh;
+  }
+  
+  .cards-css {
+    content: url("/images/CSS.svg");
+    height: 7.5vh;
+  }
+  
+  .cards-js {
+    content: url("/images/Javascript.png");
+    height: 7.5vh;
+  }
+  
+  .cards-ux {
+    content: url("/images/UIUX.svg");
+    height: 7.5vh;
+    
+  }
+  
+  
+  .cards-photoshop {
+    content: url("/images/Photoshop.png");
+    height: 7.5vh;
+  }
+  
+  .cards-vegas {
+    content: url("/images/Vegas.png");
+    height: 7.5vh;
+  }
 
-/* Mobile-responsiveness */
+/* top-button */
 
-@media screen and (min-width: 250px) {
-  body {
+#topBtn {
+    position: fixed;
     display: block;
-    height: auto;
+    outline: none;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0,128,128);
+    color: white;
+    border: none;
+    cursor: pointer;
   }
-}
-@media screen and (min-width: 500px) {
-  body {
-    display: block;
-    height: auto;
+  
+
+  #topBtn:hover {
+    background-color: rgb(255,127,80);
   }
-}
-@media screen and (min-width: 750px) {
-  body {
-    display: block;
-    height: auto;
+  
+  /* Footer */
+  
+  footer {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
   }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    display: block;
-    height: auto;
+  
+  .personal-info {
+  line-height: 2;
   }
-}
+  
+  .contact-mail {
+    line-height: 2;
+  }
+  
