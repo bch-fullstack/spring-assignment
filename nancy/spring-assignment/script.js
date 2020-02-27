@@ -16,11 +16,18 @@ $(document).ready (function(){
         }, Options, 2000);
         });
 $('#up').on('click', function(){
-$('html, body').animate(keyframes,{
-scrollTop: 0
+$('html, body').animate({
+scrollTop: 0}, '300');
 
-}, Options, 2000);
-
- });      
+ });  
+ AOS.init ({
+     easing: 'ease',
+     duration: 1800
+ });   
 
 });
+
+$(".site-btn").click(function(){
+    var href = $('portfolio.html').attr('href');
+    window.location.href = href;
+   });
