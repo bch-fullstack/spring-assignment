@@ -18,12 +18,15 @@
     <title>Spring Assignment - Otso Lappalainen</title>
     <link rel="stylesheet" href="css/style.css"/>
 
-    <!-- We3school's progress bars-->
+    <!-- We3school's progress bars and image slider-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <style>
+      .mySlides {display:none;}
+      </style>
 <!-- Font awesome icons for social media-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
 />
+
 
     <!-- Century Gothic font-->
 
@@ -50,6 +53,7 @@
    <li> <a href="#profile"> About Me</a></li>
     <a href="#CV"> CV</a></li>
     <li> <a href="#skills"> Skills</a></li>
+    <li> <a href="#slideshow"> Images</a></li>
     <li> <a href="http://www.linkedin.com/in/otsolap/"> LinkedIn</a></li>
     <li> <a href="http://www.youtube.com/channel/UC4t1gUHiI6hTPyAOR3zlqaw?view_as=subscriber">Vlog</a></li>
  <li><a href="/cv-dl/OtsoLappalainen_CV_2019_fi.pdf">Download CV</a></li>
@@ -175,14 +179,51 @@
     </div>
 
 </div>
+</section>
 
-<!-- Scroll to top Button-->
+<!-- Slick image slider Section-->
 
-<a id="topBtn">&#9650</a>
+<section id="slideshow">
+    <div class="slidershow text">
+        <p><H2>Personal/Hobbies</H2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, aliquam.</p>
+    </div>
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="/images/OBiz.jpg" style="width:100%">
+  <img class="mySlides" src="/images/Ogym.jpg" style="width:100%">
+  <img class="mySlides" src="/images/ONinjas.jpg" style="width:100%">
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
 
+</div>
 
 </section>
+
+
+<!-- Scroll to top Button-->
+<a id="topBtn">&#9650</a>
+
 </main>
+
 <!-- Footer-->
 <footer>
     <div class="personal-info">
@@ -199,12 +240,13 @@
 </div>
 </footer>
 
-  <!-- Javascript + Jquery + AOS.Init-->
+  <!-- Javascript + Jquery + AOS.Init -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/scripts.js"></script>
 <script>
     AOS.init();
   </script>
+
 </body>
 </html>
 
