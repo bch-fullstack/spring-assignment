@@ -34,6 +34,7 @@
                 <p>What I learn at school are HTML5, CSS3, JavaScript, jQuery, UI design and prototyping, React, Redux, and Node. I also study web development at home and participate in interesting work shops.</p>
                 <button id="print_btn" onclick="print()">Print my CV</button>
                 <p id="date"></p>
+                <p id="weather"></p>
             </div>
         </section>
         <section id="education" class="container">
@@ -103,13 +104,13 @@
                     <img src="sheep.jpeg" alt="Feeding sheep">
                     <div class="text">Feeding sheep</div>
                 </div>   
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 <div>
-                    <div class="dot" onclick="currentSlide(1)">1</div>
-                    <div class="dot" onclick="currentSlide(2)">2</div>
-                    <div class="dot" onclick="currentSlide(3)">3</div>
-                    <div class="dot" onclick="currentSlide(4)">4</div>
+                    <span class="dot" onclick="currentSlide(1)">1</span>
+                    <span class="dot" onclick="currentSlide(2)">2</span>
+                    <span class="dot" onclick="currentSlide(3)">3</span>
+                    <span class="dot" onclick="currentSlide(4)">4</span>
                 </div>
             </div>
         </section>
@@ -121,15 +122,15 @@
                 <ul id="mail">
                     <li>
                         <a href="mailto:tanja.lehtinen@edu.bc.fi"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-                        <p>tanja.lehtinen@edu.bc.fi</p>
+                        <a href="mailto:tanja.lehtinen@edu.bc.fi">tanja.lehtinen@edu.bc.fi</a>
                     </li>              
                     <li>
                         <a href="//www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-                        <p>linkedin.com/in/tanja-lehtinen-3b692019b</p>
+                        <!-- <p>linkedin.com/in/tanja-lehtinen-3b692019b</p> -->
                     </li>
                     <li>
                         <a href="//github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                        <p>maaliskesakuu</p>
+                        <!-- <p>maaliskesakuu</p> -->
                     </li>
                 </ul>   
                 <iframe id="map" src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" allowfullscreen=""></iframe>
@@ -225,6 +226,18 @@
         var month = now.getMonth() + 1;
         var year = now.getFullYear();
         document.getElementById("date").innerHTML = day + "/" + month + "/" + year;
+
+        $(document).ready(function() {
+            $.ajax({url: "//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f&units=metric"}).done(function (resp) {
+                console.log(resp);
+                    $("#weather").text("By the way, it is "
+                    + resp.main.temp
+                    + " degrees in Celcius in Helsinki and it feels like "
+                    + resp.main.feels_like
+                    + " degrees in Celcius." 
+                );
+            });
+        });
 
         setTimeout(function() {
             AOS.init();
