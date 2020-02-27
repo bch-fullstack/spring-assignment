@@ -27,7 +27,4 @@ scrollTop: 0}, '300');
 
 });
 
-$(".site-btn").click(function(){
-    var href = $('portfolio.html').attr('href');
-    window.location.href = href;
-   });
+
