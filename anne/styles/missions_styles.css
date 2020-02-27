@@ -1,0 +1,7 @@
+/* missions page specific header styles */
+
+#missions a {
+    background: var(--main-color);
+    color: var(--main-bg-color);
+    
+}

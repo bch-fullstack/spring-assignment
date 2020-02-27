@@ -1,0 +1,48 @@
+/* missions page specific header styles */
+
+#map a {
+    background: var(--main-color);
+    color: var(--main-bg-color);    
+}
+
+/* main styles */
+
+#map-page-main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.map-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.map-header {
+    background: var(--main-bg-color);
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.map-header h2 {
+    font-family: var(--logo-font);
+    font-size: 2rem;
+}
+.map-img {
+    background: url("../assets//helsinkiMap.jpg");
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+}
