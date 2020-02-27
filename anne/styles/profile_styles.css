@@ -108,11 +108,11 @@
     }
     .profile-skills {
         grid-column: 1 / span 1;
-        grid-row: 8 / span 3;
+        grid-row: 9 / span 3;
     }
     .profile-familiar {
         grid-column: 1 / span 1;
-        grid-row: 11 / span 2;
+        grid-row: 12 / span 2;
     }
 
 }
@@ -126,7 +126,6 @@
         grid-column: 1 / span 1;
         grid-row: 1 / span 3;
     }
-    }
     .profile-info {
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
@@ -135,7 +134,7 @@
         grid-column: 2 / span 1;
         grid-row: 3 / span 3;
     }
-    .profile-skills {
+    .profile-skills {      
         grid-column: 1 / span 2;
         grid-row: 6 / span 3;
     }
