@@ -55,3 +55,22 @@ body {
 .skills-icon:hover span {
   color: #f1fffa;
 }
+
+/*footer customizatio*/
+footer {
+  background: #242424;
+}
+
+.footer-icons a {
+  color: #2a9134;
+  font-size: 25px;
+  transition: color 1s ease;
+}
+
+.footer-icons a:hover {
+  color: #f1fffa;
+}
+
+footer p {
+  color: #f1fffa;
+}
