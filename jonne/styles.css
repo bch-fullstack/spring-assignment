@@ -1,0 +1,727 @@
+/*Pre-setting for body, */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  display: inline-block;
+}
+main,
+header,
+section,
+aside,
+footer {
+  padding: rem-calc(20);
+  color: #ffffff;
+}
+
+.year {
+  color: #000000;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+}
+
+/*content starts*/
+header {
+  background-color: #67806a;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  opacity: 0.97;
+  z-index: 999999;
+}
+
+
+.logo {
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.design {
+  font-weight: 700;
+  color: #33323C;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+li {
+  display: inline-flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  color: white;
+}
+
+ul,
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+nav {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  position: relative;
+}
+
+
+nav.animate ul li a {
+  position: relative;
+}
+
+nav.animate ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.animate ul li a {
+  transition: all 2s;
+}
+
+nav.animate ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.animate ul li a:hover {
+  color: rgb(216, 216, 216);
+  z-index: 1;
+}
+
+nav.animate ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/*keyframes*/
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #33323C;
+  }
+}
+
+#hero-banner {
+  display: flex;
+  justify-content: flex-start;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+
+}
+
+#hero-banner::before {
+  content: "";
+  background: url("https://source.unsplash.com/9l_326FISzk/1920x1080") no-repeat fixed center center/cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content.initial,
+.hero-content.active {
+  padding: 2rem;
+  color: white;
+  z-index: 40;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.hero-content {
+  display: none;
+}
+
+.background.active {
+  display: flex;
+  justify-content: center;
+  margin: 10vh auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  width: 60rem;
+  height: 30rem;
+  font-size: smaller;
+
+}
+
+.aboutMe {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.mg {
+  margin-bottom: 1rem;
+}
+
+.closeContent {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #33323C;
+  border-style: none;
+  border-radius: 3px;
+  width: 6rem;
+  height: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+h1::before {
+  position: absolute;
+  left: -48px;
+  bottom: 0;
+
+}
+
+h1::after {
+  position: absolute;
+  right: -48px;
+  bottom: 0;
+
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  background-color: #33323C;
+  ;
+  border-style: none;
+  border-radius: 3px;
+  width: 6rem;
+  height: 3rem;
+  color: white;
+
+}
+
+.btn:hover {
+  transition: ease-in-out 500ms;
+  cursor: pointer;
+  background-color: rgb(43, 42, 49);
+}
+
+/* Experience Section */
+
+
+.experienceWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+
+}
+
+
+.content-flex {
+  background: #67806a;
+  position: static;
+  padding: 2rem;
+
+}
+
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-transform: none;
+  line-height: 2;
+
+
+}
+
+.experiencePicture {
+  flex: 1;
+}
+
+img {
+  height: 30vh;
+}
+
+.aboutPicture {
+  display: flex;
+  flex: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 285px;
+  min-height: 285px;
+}
+
+.education {
+  padding: 5vw;
+  background-color: #1C2725
+}
+
+.education-wrapper {
+  z-index: 1;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #33323C;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 2rem
+}
+
+
+/*aside with skills*/
+
+.sidebar {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  padding: 5vw;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0.9;
+  position: relative;
+}
+
+.sidebar::before {
+
+  background: url("https://source.unsplash.com/p5N3PVOOF_0/1920x1080") no-repeat fixed center center/cover;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  margin: 3px;
+  background-color: rgba(0, 0, 0, 0.678);
+  border-radius: 1rem;
+  opacity: 0.85;
+  z-index: 1;
+}
+.skill-card:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+progress {
+  width: 6rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+::-webkit-progress-value {
+  background-color: darkorange;
+  transition: width 15s;
+}
+
+::-moz-progress-bar {
+  background-color: darkorange;
+
+}
+
+::-ms-fill {
+  background-color: darkorange;
+}
+
+.fab {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 2;
+  font-size: 3rem;
+  color: darkorange;
+}
+
+.toTop {
+  font-family: "Lato", sans-serif;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(51, 50, 60, 0.301);
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.toTop:hover {
+  background-color: rgb(48, 43, 49);
+  transition: ease-in-out 300ms;
+}
+
+/*footer with contacts*/
+footer {
+
+  height: 100vh;
+  background: black;
+  padding: 5rem 2rem 2rem;
+  display: flex;
+
+}
+.contactMe{
+  line-height: 2;
+}
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fas{
+  font-size: 3rem;
+  color:darkorange;
+  line-height: 2;
+}
+
+
+.email {
+  padding: 0;
+  line-height: 1.5;
+}
+
+
+
+/*only one break point at this point, i'm learning scss and shell scripting*/
+@media screen and (max-width: 1024px) {
+
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .display {
+    display: block;
+    position: absolute;
+    width: 11rem;
+    height: 20rem;
+    top: 64px;
+    right: 0px;
+    background-color: black;
+
+  }
+
+  #navContainer {
+    display: inline-block;
+    padding: 2rem;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+
+
+  .toggle .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .toggle .bar2 {
+    opacity: 0;
+  }
+
+  .toggle .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+
+  ul,
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+
+
+  main {
+    position: relative;
+    top: 4rem;
+  }
+
+  #hero-banner {
+    height: 100vh;
+  }
+
+  progress {
+    transform: rotate(90deg) translate(26px, 0px);
+    width: 4rem;
+  }
+
+  h1 {
+    width: auto;
+    min-height: 75px;
+    text-transform: uppercase;
+
+  }
+
+  .background.active {
+    display: inline-table;
+    position: relative;
+    margin: 0vh auto;
+    height: 100%;
+    width: 90%;
+    box-shadow: tan;
+    background: black;
+    opacity: 0.8;
+
+  }
+
+  .fab {
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .social-wrapper {
+    padding-top: 5rem;
+    z-index: 1000;
+    text-align: center;
+
+
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+  }
+
+
+}
+
+/*css for screens with at least 1024px*/
+@media screen and (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+
+  }
+
+  .content-flex {
+    display: flex;
+    flex: 1;
+    padding: 5rem 2rem 2rem;
+
+  }
+
+
+  img {
+    width: 20vw;
+    height: 30vh;
+
+  }
+
+  .aboutPicture {
+    position: absolute;
+    border-radius: 10px;
+    object-fit: cover;
+    min-width: 285px;
+    min-height: 285px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 150px;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    padding: 5rem 2rem 2rem;
+
+  }
+
+  .wrapper {
+    margin: auto;
+    max-width: rem-calc(1200);
+  }
+
+  li {
+    display: inline-flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  ul,
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+
+  nav {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    position: relative;
+  }
+
+
+  nav.animate ul li a {
+    position: relative;
+  }
+
+  nav.animate ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+
+  nav.animate ul li a {
+    transition: all 2s;
+  }
+
+  nav.animate ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+
+  nav.animate ul li a:hover {
+    color: rgb(216, 216, 216);
+    z-index: 1;
+  }
+
+  nav.animate ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+
+  /*keyframes*/
+  @keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #33323C;
+    }
+  }
+
+  #hero-banner {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+
+  }
+
+  #hero-banner::before {
+    content: "";
+    background: url("https://source.unsplash.com/9l_326FISzk/3840x2160") no-repeat fixed center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3rem;
+
+  }
+
+ footer{
+   height: 40vh;
+ }
+
+}
