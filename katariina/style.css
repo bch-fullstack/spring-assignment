@@ -237,10 +237,29 @@ footer {
     background-color: gainsboro;
 }
 
+.pdfCV{
+    display: flex;
+    justify-content: center;
+}
+
+.pdfButton {
+    background-color: rgb(73, 71, 71);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    
+    
+}
+
+
 .footerContainer{
     padding: 4rem;
     display:flex;
     justify-content: space-between;
+    
 }
 
 .footerContainer .logo {
@@ -256,6 +275,8 @@ footer {
     font-size: 1.5rem;
     margin: 0.3rem;
 }
+
+
 
 .contactMe a {
     color: black;
