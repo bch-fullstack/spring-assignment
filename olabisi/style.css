@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*NAV LINKS AND LOGO*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: space-between;
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+}
+
+.logo a {
+    color: rgb(255, 69, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav .logo {
+    font-size: 20px;
+    flex: 1;
+}
+
+.main-nav .main-ul {
+    flex: 1;
+    display: flex;
+}
+
+.main-ul {
+    display: flex;
+}
+
+.main-nav .main-ul li {
+    padding: 0 10px;
+    align-items: unset;
+}
+
+.main-nav .main-ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav .main-ul li a:hover {
+    border-bottom: 2px solid rgb(255, 69, 0);
+}
+
+.main-nav .main-ul.main-menu {
+    margin-left: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: none;
+    z-index: 2;
+}
+
+
+/*END NAV LINKS AND LOGO*/
+
+
+/*BUTTON*/
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(255, 69, 0);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/*END BUTTON*/
+
+
+/*SHOWCASE*/
+
+.showcase {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 450px;
+}
+
+.showcase p {
+    margin-bottom: 10px;
+}
+
+.showcase btn {
+    margin-top: 20px;
+}
+
+.showcase .bg-image {
+    background: url(".//portfolio-img/websiteimg2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 460px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+
+/*GRID START*/
+
+
+/**EDUCATION AND WORK GRID CONTAINER*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr;
+    grid-gap: 20px;
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.grid-item {
+    min-height: 100px;
+    padding: 0.25rem 0.4rem 0.25rem 0.4rem;
+}
+
+.grid-item h2 {
+    margin-bottom: 5px;
+}
+
+.education {
+    grid-column: 4;
+    background-color: rgba(236, 222, 233, 0.9);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.work {
+    grid-column: 4;
+    background-color: rgba(236, 222, 233, 0.9);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+/*ABOUT ME GRID*/
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 2fr;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid-about-item {
+    min-height: 100px;
+}
+
+.about-content {
+    grid-column: 2 / span 3;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+
+/**GRID END/
+
+/*SOCIAL MEDIA*/
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0 0 20px;
+}
+
+i {
+    color: rgb(255, 69, 0);
+    text-decoration: none;
+}
+
+i a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media a:hover i {
+    margin-left: 10px;
+    color: rgb(209, 177, 116);
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.final {
+    text-align: center;
+    margin-top: 10px;
+    background-color: grey;
+    padding-top: 50px;
+}
+
+
+/*SOCIAL MEDIA ENDS*/
+
+
+/*Scroll to the top button*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: darkgrey;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(230, 158, 77);
+}
+
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+    .main-nav ul.main-ul {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #e9dbdb;
+        width: 50%;
+        height: 100%;
+        border-right: #000 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .main-nav ul.main-ul.show {
+        transform: translateX(-20px);
+    }
+    .main-nav ul.main-ul li {
+        padding: 10px;
+        border-bottom: #000 1px;
+        font-size: 14px;
+    }
+    .main-nav ul.main-ul li:last-child {
+        border-bottom: 0;
+    }
+}
