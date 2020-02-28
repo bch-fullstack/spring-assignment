@@ -1,289 +1,267 @@
 /*--- Setting basic styling---*/
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color: gainsboro;
-    font-family: 'IM Fell English' ;
+body {
+  background-color: gainsboro;
+  font-family: "IM Fell English";
 }
 /*---Header styling---*/
 
 .menuContainer {
-    padding: 2rem;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logoContainer{
-    flex: 1;
+.logoContainer {
+  flex: 1;
 }
 
 header .logo img {
-    height: 3.5rem;
+  height: 3.5rem;
 }
 
- /*Hoverable menu button styling*/   
+/*Hoverable menu button styling*/
 
-
-button{
-    font-family: 'IM Fell English SC';
-    
+button {
+  font-family: "IM Fell English SC";
 }
 
-.dropMenu{
-    position: relative;
+.dropMenu {
+  position: relative;
+}
 
-    
-  }
-  
- 
-  #dropBtn{
-    background-color: rgb(73, 71, 71);
-    color: white;
-    border: none;
-    padding: 16px;
-    font-size: 18px;
-  
-  }
-  
-  #dropContent{
-    display: none;
-    position: absolute;
-    left: -11px;
-    background-color: #f1f1f1;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  #dropContent a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  #dropContent a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropMenu:hover #dropContent {
-    display: block;
-  }
-  
-  .dropMenu:hover #dropBtn {
-    background-color: darkred;
-  }
+#dropBtn {
+  background-color: rgb(73, 71, 71);
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+}
 
+#dropContent {
+  display: none;
+  position: absolute;
+  left: -11px;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#dropContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropContent a:hover {
+  background-color: #ddd;
+}
+
+.dropMenu:hover #dropContent {
+  display: block;
+}
+
+.dropMenu:hover #dropBtn {
+  background-color: darkred;
+}
 
 /*--- Main page styling, including main grid ---*/
 
-.pageContainer{
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 0.5rem;
-    background-color:whitesmoke ;
+.pageContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 0.5rem;
+  background-color: whitesmoke;
 }
 
-h1{
-    font-family: 'IM Fell English SC';
-    font-size: 2rem;
-    margin-bottom: 1rem;
+h1 {
+  font-family: "IM Fell English SC";
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-h2 { 
-    font-family: 'IM Fell English SC';
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-
+h2 {
+  font-family: "IM Fell English SC";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
-
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /*---Hero banner section styling---*/
 
-.heroBanner{
-    grid-column: 1/span 12;
-    grid-row: 1/span 3;
-    background-image: url('https://source.unsplash.com/8_LZ9UWTKLE') ;
+.heroBanner {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 3;
+  background-image: url("https://source.unsplash.com/8_LZ9UWTKLE");
 
-    padding: 2rem;
-    line-height: 2rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 2rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 /*--- Education and work experience section styling.
  Including a sub-grid structure.---*/
 
-.eduContainer{
-    grid-column:2/span 10;
-    grid-row: 4/span 4;
-    background-color: gainsboro;
-    padding: 2rem;
+.eduContainer {
+  grid-column: 2 / span 10;
+  grid-row: 4 / span 4;
+  background-color: gainsboro;
+  padding: 2rem;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.2rem;
 }
 
-.eTitle{
-    margin-bottom: 1rem;
+.eTitle {
+  margin-bottom: 1rem;
 }
 
 .eduBox {
-    grid-column:1;
-    grid-row: 1/span 2;
-    background-color: whitesmoke;
-    padding: 0.5rem;
-
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  background-color: whitesmoke;
+  padding: 0.5rem;
 }
 
 .img1 {
-    grid-column: 2;
-    grid-row: 1;
-    background-image: url("https://source.unsplash.com/featured/?black-and-white");
-    
+  grid-column: 2;
+  grid-row: 1;
+  background-image: url("https://source.unsplash.com/featured/?black-and-white");
 }
 
 .img2 {
-    grid-column: 2;
-    grid-row: 2;
-    background-image: url("https://source.unsplash.com/featured/?black-and-white-texture");
+  grid-column: 2;
+  grid-row: 2;
+  background-image: url("https://source.unsplash.com/featured/?black-and-white-texture");
 }
 
 .expBox {
-    grid-column: 3;
-    grid-row: 1/span 2;
-    background-color: whitesmoke;
-    padding: 0.5rem;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background-color: whitesmoke;
+  padding: 0.5rem;
 }
 
 /*--- Skills area styling, including a second sub-grid structure---*/
 
-.boxContainer{
-    grid-column: 1/span 12;
-    grid-row:8/ span 3;
-    background-image: url('https://source.unsplash.com/v0N_zTNrIgo') ;
-    padding: 2rem;
+.boxContainer {
+  grid-column: 1 / span 12;
+  grid-row: 8 / span 3;
+  background-image: url("https://source.unsplash.com/v0N_zTNrIgo");
+  padding: 2rem;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap:0.4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.4rem;
 }
 .titleLine {
-    grid-column: 1/span 5;
-    grid-row: 1;
-    background-color:gainsboro ;
-    text-align: center;
-    padding: 2rem;
-    height: fit-content;
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  background-color: gainsboro;
+  text-align: center;
+  padding: 2rem;
+  height: fit-content;
 }
 
 .skillBox {
-    height: 150px;
-    background-color: whitesmoke;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 1rem;
-   line-height: 2rem;
-
-
+  height: 150px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  line-height: 2rem;
 }
 .skillHtml {
-    grid-column: 1;
-    grid-row: 2;
-
+  grid-column: 1;
+  grid-row: 2;
 }
 progress[value] {
-   
-    -webkit-appearance: none;
-     appearance: none;
-  
-    width: 50px;
-    height: 15px;
-  }
+  -webkit-appearance: none;
+  appearance: none;
 
-  progress[value]::-webkit-progress-bar {
-    background-color: #eee;
-    border-style: solid;
-    border-radius: 2px;
-    
-  }
+  width: 50px;
+  height: 15px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-style: solid;
+  border-radius: 2px;
+}
 
 progress[value]::-webkit-progress-value {
-    background-color: grey;
+  background-color: grey;
 }
 
 /*--- Footer area styling, including mailto link styling---*/
 
 footer {
-    background-color: gainsboro;
+  background-color: gainsboro;
 }
 
-.pdfCV{
-    display: flex;
-    justify-content: center;
+.pdfCV {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .pdfButton {
-    background-color: rgb(73, 71, 71);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    
-    
+  background-color: rgb(73, 71, 71);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }
 
+footer .fab {
+  color: black;
+  margin-top: 1rem;
+}
+.pdfButton:hover {
+  background-color: darkred;
+}
 
-.footerContainer{
-    padding: 4rem;
-    display:flex;
-    justify-content: space-between;
-    
+.footerContainer {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footerContainer .logo {
-
-    display:flex;
-    align-items: center;
-    
-  
+  display: flex;
+  align-items: center;
 }
-
 
 .footerContainer .logo p {
-    font-size: 1.5rem;
-    margin: 0.3rem;
+  font-size: 1.5rem;
+  margin: 0.3rem;
 }
 
-
-
 .contactMe a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .contactMe a:hover {
-    color: darkred;
-    font-size: 2rem;
+  color: darkred;
+  font-size: 2rem;
 }
