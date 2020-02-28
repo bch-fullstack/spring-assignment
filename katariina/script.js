@@ -18,3 +18,9 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//Script to show an alert when clicking the .pdfButton button
+
+function showAlert() {
+  alert("Such a brave soul! Thanks for clicking and have a nice day!");
+}
