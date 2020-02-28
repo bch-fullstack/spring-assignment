@@ -2,7 +2,9 @@
     padding-left: 8px;
 }
 
-
+body {
+    color: var(--profile-text-color);
+}
 /* ---------profile page specific header styles---------- */
 
 #profile a {
@@ -19,7 +21,7 @@
     margin: 40px auto;
     width: 85%;
     
-    color: var(--main-bg-color);
+    color: var(--profile-text-color);
     font-family: var(--logo-font);
 }
 .profile-img {
@@ -28,7 +30,7 @@
     background-position: center center;
 }
 .profile-info {  
-    background: var(--main-color-muted);
+    background: var(--skills-box);
     display: grid;
     grid-template-columns: 2fr 4fr 1.5fr;
     grid-template-rows: repeat(7, 1fr);
