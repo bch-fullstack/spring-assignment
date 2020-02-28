@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kata's very own Profile Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English|IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ddd0e62760.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="menuContainer" id="mainMenu">
+        <div class="logoContainer">
+          <div class="logo">
+            <img src="assets/logo_kata.svg" alt="Personal logo" />
+          </div>
+        </div>
+        <div class="dropMenu">
+          <button class="btn" id="dropBtn">Menu</button>
+          <div id="dropContent">
+            <a href="#heroBanner">About</a>
+            <a href="#education">Education</a>
+            <a href="#mySkills">Skills</a>
+            <a href="#contacts">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Main page content starts from here-->
+    <div class="pageContainer">
+      <div class="heroBanner" id="heroBanner">
+        <h1>Katariina Vuorinen</h1>
+        <h2>Crappy Web Designs since 2020.</h2>
+        <p>
+          Learning full-stack web development. Had a past life in academia in
+          molecular plant biology. Recovering arachnophobe. Dog parent and
+          tarantula keeper. I love stories.
+        </p>
+      </div>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+      <!-- Education and work experience information is contained in the area below. -->
+      <div class="eduContainer" id="education">
+        <div class="eduBox">
+          <h3 class="eTitle">Education</h3>
+          <p>
+            <strong>Current:</strong> <br />
+            Full-Stack Web Developer, Business College Helsinki<br />
+            PhD (Biological and Environmental Sciences), University of
+            Helsinki<br /><br />
+            <strong>Past:</strong><br />
+            MSc (Agriculture and Forestry), University of Helsinki<br />
+            BSc (Agriculture and Forestry), University of Helsinki
+          </p>
+        </div>
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="expBox">
+          <h3 class="eTitle">Experience</h3>
+          <p>
+            <strong>Most relevant:</strong><br />
+            Researcher/doctoral candidate<br />
+            University of Helsinki, Apr/2014 – Sep/2019<br />
+            Researcher<br />
+            Finnish Food Safety Authority Evira, Jul/2013 – Mar/2014<br /><br />
+
+            <strong> Other:</strong><br />
+            Summer jobs and other short employments aside studies including
+            sales, postal work, and plant nursery work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills are  displayed with icons in boxes-->
+
+      <div class="boxContainer" id="mySkills">
+        <div class="titleLine"><h3>My Skills</h3></div>
+        <div class="skillBox skillHtml">
+          <i class="fab fa-html5 fa-3x"></i>
+          <label for="sHtml">HTML</label>
+          <progress id="sHtml" value="25" max="100"> 25% </progress>
+        </div>
+        <div class="skillBox skillCss">
+          <i class="fab fa-css3 fa-3x"></i>
+          <label for="sCss">CSS</label>
+          <progress id="sCss" value="15" max="100"> 15% </progress>
+        </div>
+        <div class="skillBox skillJs">
+          <i class="fab fa-js fa-3x"></i>
+          <label for="sJs">JavaScript</label>
+          <progress id="sJs" value="10" max="100"> 10% </progress>
+        </div>
+        <div class="skillBox skillUiD">
+          <i class="fab fa-figma fa-3x"></i>
+          <label for="sDesign">UI Design</label>
+          <progress id="sDesign" value="15" max="100"> 15% </progress>
+        </div>
+        <div class="skillBox skillBaking">
+          <i class="fas fa-birthday-cake fa-3x"></i>
+          <label for="sBaking">Baking</label>
+          <progress id="sBaking" value="75" max="100"> 75% </progress>
+        </div>
+      </div>
+    </div>
+
+    <!--Main page stops here. Footer is below. mailto does not refer to an actual email address-->
+    <footer id="contacts">
+      <div class="pdfCV">
+        <a
+          href="https://twitter.com/katavuorinen?lang=en"
+          class="fab fa-twitter-square fa-3x"
+          target="_blank"
+        >
+        </a>
+
+        <a href="assets/Picture_cv_Kata.pdf" download=""
+          ><input
+            type="button"
+            value="Would you like to know more?"
+            class="pdfButton"
+            onclick="showAlert()"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/katariina-vuorinen-5a34b98a"
+          class="fab fa-linkedin fa-3x"
+          target="_blank"
+        ></a>
+      </div>
+      <div class="footerContainer">
+        <div class="logo">
+          <p>©</p>
+          <img src="assets/logo_kata.svg" alt="Personal logo" />
+        </div>
+
+        <div class="contactMe">
+          <a href="mailto:notreallyanemail@tentacles.not">Send me an email!</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
