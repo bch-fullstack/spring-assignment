@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!------fonts-------->
+    <link
+      href="//fonts.googleapis.com/css?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Flamenco&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="//unpkg.com/swiper/css/swiper.min.css" />
+
+    <!---fontawesome--->
+
+    <script
+      src="//kit.fontawesome.com/aed870ba56.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!----CSS link ----->
+    <link rel="stylesheet" href="gallery.css" />
+    <!--------CSS animate-------->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+    />
+    <title>My Gallery</title>
+
+    <!--------Google Analytics------->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="//www.googletagmanager.com/gtag/js?id=UA-156461836-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156461836-1');
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <!----logo and menubar---->
+
+      <header id="header">
+        <a href="index.html" class="logo animated flip slow infinite">bA</a>
+        <ul>
+          <li>
+            <a href="index.html" class="active" onclick="toggle()">Home</a>
+          </li>
+          <li>
+            <a href="index.html#aboutme" onclick="toggle()">About</a>
+          </li>
+          <li>
+            <a href="gallery.html" target="_self" onclick="toggle()">Gallery</a>
+          </li>
+          <li>
+            <a href="portfolio/portfolio.html" target="_self" onclick="toggle()"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact-section"
+              target="_self"
+              onclick="toggle()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+      </header>
+    </nav>
+
+    <div class="content">
+      <h2>My Gallery</h2>
+      <p>
+        My life in pictures including my hobbies, travel diaries, my interests
+        can be found in the following images.
+      </p>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image.jpeg)"
+        ></div>
+
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image1.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image2.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image3.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image4.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image5.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image6.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image7.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image8.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image9.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image10.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image11.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/img12.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image13.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image14.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image15.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image16.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image17.jpeg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image:url(images/image18.jpeg)"
+        ></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-------footer-------->
+    <footer class="site-footer">
+      <div class="social-wrapper">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/bisarl/"
+              target="_blank"
+              class="linkedin-icon"
+            >
+              <i class="fab fa-linkedin-in linkedin fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/biisuuu"
+              target="_blank"
+              class="facebook-icon"
+            >
+              <i class="fab fa-facebook-f facebook fa-2x"></i
+            ></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/bsl.arl/"
+              target="_blank"
+              class="instagram-icon"
+              ><i class="fab fa-instagram instagram fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:bishalkoid@gmail.com?subject=subject text"
+              target="_blank"
+              class="googleplus-icon"
+            >
+              <i class="fas fa-envelope-square fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container text-center">
+        Copyright © 2020. All Rights Reserved.
+        <div class="credits">
+          Designed by <a href="index.html">Bishal Aryal</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+
+        autoplay: {
+          delay: 2000
+        },
+        loop: true,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+
+      function toggle() {
+        var header = document.getElementById('header');
+        header.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>

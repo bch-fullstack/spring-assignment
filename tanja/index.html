@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanja's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="//use.fontawesome.com/e22008024a.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul class="navigation_bar">
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work_experience">Work experience</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero_banner" class="container">
+        </section>
+        <section id="about_me" class="container">
+            <div id="about_container">
+                <h1>About Tanja Lehtinen</h1>
+                <p>Welcome to my web site!</p>
+                <p>My name is Tanja Lehtinen. At the moment, I study Full Stack Web Development full-time in Business College Helsinki. To be able to do that I am on a study leave from my work as a team lead.</p>
+                <p>What I learn at school are HTML5, CSS3, JavaScript, jQuery, UI design and prototyping, React, Redux, and Node. I also study web development at home and participate in interesting work shops.</p>
+                <button id="print_btn">Print my CV</button>
+            </div>
+        </section>
+        <section id="education" class="container">
+            <div id="education_container">
+                <h2>My Education</h2>
+                <ul id="edu_container">
+                    <li id="bc">
+                        <h3>Business College Helsinki</h3>
+                        <p class="date">2020 - 2021</p>
+                        <p>Vocational Qualification in Information and Communications Technology</p>
+                    </li>
+                    <li id="university">
+                        <h3>University of Helsinki</h3>
+                        <p class="date">1995 - 2000</p>
+                        <p>Master of Arts, Cultural Anthropology</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="work_experience" class="container">
+            <div id="work_container">
+                <h2>My Work Experience</h2>
+                <ul class="resume">
+                    <li>
+                        <h3>Team Lead, Julkisten ja hyvinvointialojen työttömyyskassa
+                        </h3>
+                        <p class="date">September 2016 - January 2020 (currently on a study leave)</p>
+                        <p class="job-description">In addition to my previous tasks, I supervised work, assented flexible working time, wrote articles and lecture materials, kept lectures etc.</p>
+                    </li>
+                    <li>
+                        <h3>Senior Benefits Officer, Julkisten ja hyvinvointialojen työttömyyskassa</h3>
+                        <p class="date">March 2016 - September 2016</p>
+                        <p class="job-description">I processed earnings-related unemployment allowance applications + trained and instructed others.</p>
+                    </li>
+                    <li>
+                        <h3>Benefits Officer, Erityiskoulutettujen työttömyyskassa</h3>
+                        <p class="date">May 2010 - March 2016</p>
+                        <p class="job-description">I processed earnings-related unemployment allowance and alternation compensation applications.</p>
+                    </li>
+                    <li>
+                        <h3>Benefits Officer, IAET-kassa</h3>
+                        <p class="date">May 2009 - April 2010</p>
+                        <p class="job-description">I processed earnings-related unemployment allowance applications.</p>
+                    </li>
+                    <li>
+                        <h3>Product Purchaser, Koivunen Oy</h3>
+                        <p class="date">March 2001 - May 2009</p>
+                        <p class="job-description">I purchased car chemicals from Finland and abroad.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="image_slider" class="container">
+            <div id="image_container">
+                <img class="my_slides" src="taekwondo.jpeg" alt="After having my yellow belt in taekwondo">
+                <img class="my_slides" src="nyrkkeily.jpg" alt="In a boxing lesson">
+                <img class="my_slides" src="hanko.jpeg" alt="The sea in Hanko, Finland">
+                <img class="my_slides" src="sheep.jpeg" alt="Feeding sheep">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <div id="contact_container">
+                <ul id="mail">
+                    <li>
+                        <a href="mailto:tanja.lehtinen@edu.bc.fi"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                        <p>tanja.lehtinen@edu.bc.fi</p>
+                    </li>              
+                    <li>
+                        <a href="//www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        <p>linkedin.com/in/tanja-lehtinen-3b692019b</p>
+                    </li>
+                    <li>
+                        <a href="//github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <p>maaliskesakuu</p>
+                    </li>
+                </ul>    
+                <iframe id="map" src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254497.1699646913!2d24.738504!3d60.11021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sen!2sfi!4v1582228228568!5m2!1sen!2sfi" width="266" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var slides = document.getElementsByClassName("my_slides");
+
+            for (i=0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+
+        btn = document.getElementById("to_top_btn");
+    
+        window.onscroll = scrollFunction;
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+    
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+        $("#print_btn").on("click", function () {
+            window.print();
+        });
+      
+    </script>
+</body>
+</html>
