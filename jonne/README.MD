@@ -55,3 +55,13 @@ doing contact with mailto as we haven't been learning node.js yet
 -add mailto function for my page but using school email since mailto is heavily scraped by web scrapers
 
 -Polish desktop functionalities
+
+
+///UPDATE
+ 28/2
+
+ Things to improve for next project:
+ - Optimization for different platforms and breakpoints
+ - Modal view
+ - Focus more on javascript
+ - Contact form
