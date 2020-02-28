@@ -125,3 +125,8 @@ footer p {
 #btnScrollToTop:hover {
   background-color: #2a9134;
 }
+
+/*About me customization*/
+.aboutMeImg {
+  width: 400px;
+}
