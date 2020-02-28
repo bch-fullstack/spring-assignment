@@ -113,6 +113,23 @@ h3 {
   align-items: center;
 }
 
+#topBtn {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: rgb(73, 71, 71);
+  color: white;
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+#topBtn:hover {
+  background-color: darkred;
+}
+
 /*--- Education and work experience section styling.
  Including a sub-grid structure.---*/
 
@@ -236,6 +253,11 @@ footer .fab {
   color: black;
   margin-top: 1rem;
 }
+
+footer .fab:hover {
+  color: darkred;
+}
+
 .pdfButton:hover {
   background-color: darkred;
 }
