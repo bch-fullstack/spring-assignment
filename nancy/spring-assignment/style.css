@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+/*start global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: 'Amatic SC', ;
+    color: rgb(225, 204, 204);
+}
+body{
+    width: 100%;
+    height: 100%;
+    background:url("https://source.unsplash.com/udnCsUmuSgM") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
+    background-color: rgb(33, 15, 33);
+   
+    
+
+       
+}
+section{
+    padding: 5rem 0;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+   
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.section-heading{
+    text-align: center;
+    margin-top: 10rem;
+}
+.section-heading h2{
+    font-size: 3rem;
+    color: rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h2::before,
+.section-heading h2::after{
+content: "";
+position: absolute;
+bottom: -5rem;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(255,255,255, 0.75);
+
+    
+}
+.section-heading h2::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+
+.section-heading h5{
+    font-size: 1.5rem; 
+    font-weight: 300;
+}
+
+/*end global section*/
+/* header section start */
+header{
+    width: 100%;
+    height: 100vh;
+
+}
+.topNav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    z-index: 50;
+    background-color: rgb(18, 30, 33);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1,0,01);
+}
+.navList{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+li{
+    margin: 0 2rem;
+}
+.nav-links{
+   
+    font-family: 'Yeon Sung', sans-serif ;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.nav-links:hover,
+.nav-inks:focus{
+    background: linear-gradient(to Top, lightBlue,yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+   
+    
+
+} 
+.topNav.open{
+    top: 0;
+    border-radius: initial;
+}
+.menu-toggler{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: trasform 650ms ease-out;
+
+}
+.menu-toggler.open{
+    transform: rotate(-45deg);
+}
+.bar{
+    background: linear-gradient(to right, lightBlue, yellow);
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+
+}
+.bar.half{
+    width: 50%;
+}
+.bar.start{
+    transform-origin: right
+    transition; transform: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
+}
+.open.bar.start{
+    transform: rotate(-450deg) translateX(.8rem);
+
+
+}
+.bar.end{
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+    
+.open.bar.end{
+    transform: rotate(-450deg) translateX(-.8rem);
+
+
+}
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+
+
+}
+.landing-text h1{
+    font-size: 4rem;
+    font-family: 'Trade Winds', ;
+    background: linear-gradient(to Top, lightBlue,yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+.landing-text h5{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*end of header section */
+
+/*about section start */
+.About .container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.about-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-heading h2{
+    font-size: 3rem;
+    opacity: .3;
+
+}
+.about-heading h6{
+    font-size: 1.2rem;
+    font-weight: 300;
+
+
+}
+.profile-img{
+    flex: 1;
+    margin-right: 5rem;
+    overflow: hidden;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    text-align: center;
+}
+.button-container{
+    top: -20px
+    
+}
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.about-details{
+    flex: 1;
+}
+.socialMedia{
+    margin-top: 5rem;
+}
+.socialMedia i{
+    font-size: 2rem;
+    transition: color 650ms;
+}
+.fab fa-facebook-square :hover{
+    color: rgb(42, 67, 160);
+    
+}
+.fab fa-twitter-square:hover{
+    color: lightblue;
+}
+.fab fa-linkedin:hover{
+    color: whitesmoke, rgb(24, 24, 206);
+}
+.fab fa-instagram-square:hover{
+    color: coral, rgb(193, 47, 186), rgb(70, 135, 232);
+
+}
+.my-skills{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.5rem;
+    text-align: center;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+.skills h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+
+}
+
+
+.icon-container{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid yellow;
+    background-color: lightblue;
+    display: flex;
+    transform: rotate(45deg);
+
+}
+.icon-container i{
+    color: yellow;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+/*start hobbies section*/
+.has-margin-right{
+   margin-right:3rem ;
+}
+.hobbies-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.hobbies-item:last-child{
+    margin-bottom: 0;
+}
+.hobbie-images{
+    width: 50rem;
+    flex: 1;
+}
+.hobbie-discription{
+ flex: 2;
+}
+.hobbie-discription h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+.hobbie-discription p{
+    font-family: sans-serif;
+}
+
+/*end hobbies section */
+/*end of skills section
+/* portfolio section begin */
+.site-btn{
+    width: initial;
+    background-color:lightblue;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+    
+    
+   
+}
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+
+}
+.portfolio-img{
+    width: 25rem;
+    flex: 0.5;
+}
+
+
+
+.hobbies-images{
+    flex: 1;
+    margin-right: 5rem;
+    overflow: hidden;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    text-align: center;
+}
+   
+
+.add-info a{
+    color: whitesmoke;
+    line-height: 4rem;
+    
+}
+.my-info h2{
+    text-transform: uppercase;
+}
+.add-info{
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.section-titles h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.section-titles p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+}
+.section-titles li h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+}
+
+
+/*styling the work experience timeline */
+.timeline{
+    border-left: 4px yellow;
+    border-radius: 8rem;
+    background-color: rgb(0,0,0,0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+.timeline h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+.timeline .date{
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: rotateY(-50%);
+}
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1rem;
+}
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px lightblue;
+    border-radius: 100%;
+    left: -8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(169, 169, 66);
+
+}
+.ref-names{
+    line-height: 1.5rem;
+}
+
+/*portfolio section ends */
+
+/*start contact form */
+.contact{
+    background-color: rgb(33, 15, 33);
+}
+form{
+    width: 30%;
+    margin: 0 auto;
+
+}
+form.lable{
+    font-size: 1.3rem;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: rgb(95, 150, 169);
+}
+input[type="submit"]{
+    width: initial;
+    background-color:lightblue;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: indigo;
+    background-color: yellow;
+
+}
+
+/*end contact form */
+
+/*start footer */
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #121222;
+    padding: 2rem 0;
+    position: relative;
+}
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    
+}
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+
+}
+.copyright p{
+    font-size: 1.2rem;
+}
+/*start footer animation*/
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 #3a6c7d;
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgb(223, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 #add8e0; 
+    }
+}
+/*end of footer animations*/
+
+/*start media queries*/
+@media screen and (max-width:768px){
+    body{
+    background-image:url("http://source.unsplash.com/udnCsUmuSgM") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
+
+    }
+    .landing-text h1{
+        font-size: 3rem;
+    }
+    .landing-text h5{
+        font-size: 1.3rem;
+    }
+    .navList{
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .nav-links{
+        font-size: 2.5rem;
+    }
+    .about-heading h2{
+        font-size: 3rem;
+
+    }
+    .section-heading h2{
+        font: size 2rem; ;
+    }
+    .about-details .navList{
+        flex-direction: initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+
+    }
+    .icon-container i{
+        font-size: 3rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+
+    }
+    .timeline .date::before{
+        left: 8rem;
+    }
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+    .landing-text h1{
+        font-size: 6rem;
+    }
+    .landing-text h5{
+        font-size: 1.4rem;
+    }
+    .nav-links{
+        font-size: 3.5rem
+
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .portfolio-img{
+        margin-top: 0 0 7rem 0;
+        flex-direction: column;
+    }
+    
+    .timeline p{
+        font-size: 1.5rem;
+
+
+    }
+    .timeline .date::before{
+        font-size: 1.3rem;
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
+    }
+   
+}
+
+/*end of media animations*/
