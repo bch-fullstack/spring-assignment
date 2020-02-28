@@ -250,8 +250,9 @@ justify-content: center;
 }
 .button-container{
     top: -20px
-    position: relative;
+    
 }
+
 .slider-button{
     display: inline-block;
     height: 10px;
@@ -259,21 +260,8 @@ justify-content: center;
     border-radius: 5px;
     background-color: white;
 }
-#minyoiz-slider-1:target ~ .profile-img{
-    left: 0px;
-}
-#minyoiz-slider-2:target ~ .profile-img{
-    left: -200px;
-}
-#minyoiz-slider-3:target ~ .profile-img{
-    left: -400px;
-}
-#minyoiz-slider-4:target ~ .profile-img{
-    left: 600px;
-}
-#minyoiz-slider-5:target ~ .profile-img{
-    left: 800px;
-}
+
+
 .about-details{
     flex: 1;
 }
