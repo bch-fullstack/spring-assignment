@@ -355,6 +355,16 @@ justify-content: center;
     overflow: hidden;
 
 }
+.hobbies-images{
+    flex: 1;
+    margin-right: 5rem;
+    overflow: hidden;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    text-align: center;
+}
 
     
 
