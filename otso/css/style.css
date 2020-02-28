@@ -105,7 +105,8 @@ header ul li a:hover {
 /* Profile-banner */
 
 .profile-img {
-  background: url("/images/OtsoSelfie.jpg") no-repeat fixed center center/cover;
+  background: url("../images/OtsoSelfie.jpg") no-repeat fixed center
+    center/cover;
   width: 100vw;
   padding-top: 27rem;
   padding-bottom: 10rem;
@@ -179,27 +180,27 @@ header ul li a:hover {
 /* CV logos */
 
 .BC-logo {
-  content: url("/images/BCWhite.png");
+  content: url("../images/BCWhite.png");
   max-height: 9vh;
 }
 
 .SEM-logo {
-  content: url("/images/Gads.png");
+  content: url("../images/Gads.png");
   max-height: 9vh;
 }
 
 .BA-logo {
-  content: url("/images/BA.png");
+  content: url("../images/BA.png");
   max-height: 9vh;
 }
 
 .Stockmann-logo {
-  content: url("/images/Stockmann.png");
+  content: url("../images/Stockmann.png");
   max-height: 9vh;
 }
 
 .Mode-logo {
-  content: url("/images/Modelogo.png");
+  content: url("../images/Modelogo.png");
   max-height: 9vh;
 }
 
@@ -251,32 +252,32 @@ header ul li a:hover {
 /* Card-images */
 
 .cards-html {
-  content: url("/images/HTML5.svg");
+  content: url("../images/HTML5.svg");
   height: 7.5vh;
 }
 
 .cards-css {
-  content: url("/images/CSS.svg");
+  content: url("../images/CSS.svg");
   height: 7.5vh;
 }
 
 .cards-js {
-  content: url("/images/Javascript.png");
+  content: url("../images/Javascript.png");
   height: 7.5vh;
 }
 
 .cards-ux {
-  content: url("/images/UIUX.svg");
+  content: url("../images/UIUX.svg");
   height: 7.5vh;
 }
 
 .cards-photoshop {
-  content: url("/images/Photoshop.png");
+  content: url("../images/Photoshop.png");
   height: 7.5vh;
 }
 
 .cards-vegas {
-  content: url("/images/Vegas.png");
+  content: url("../images/Vegas.png");
   height: 7.5vh;
 }
 
@@ -302,7 +303,6 @@ header ul li a:hover {
 }
 
 /* Slidershow */
-
 
 /* Footer */
 
