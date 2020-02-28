@@ -350,9 +350,7 @@ justify-content: center;
     width: 25rem;
     flex: 0.5;
 }
-.minyoiz-slider{
-    float: left;
-    overflow: hidden;
+
 
 }
 .hobbies-images{
@@ -364,6 +362,10 @@ justify-content: center;
     -moz-transition: left 2s;
     -o-transition: left 2s;
     text-align: center;
+}
+.hobbies-images img{
+    width: 25rem;
+    flex: 0.5;
 }
 
     
