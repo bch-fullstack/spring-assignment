@@ -1,0 +1,624 @@
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+body {
+  font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+.social-icons a:last-child {
+  margin-right: 0;
+}
+.social-icons a:hover {
+  background-color: #bd5d38;
+}
+.dev-icons {
+  font-size: 3rem;
+}
+.dev-icons .list-inline-item i:hover {
+  color: #0cf518;
+}
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+#sideNav .navbar-toggler:focus {
+  outline-color: #29f30e;
+}
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+.bg-primary {
+  background-color: #bd5d38 !important;
+}
+.text-primary {
+  color: #bd5d38 !important;
+}
+a {
+  color: #bd5d38;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #824027;
+}
+
+/*----FOLLOW ME-----*/
+.social_box ul {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+.social_box ul .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0c0c0cf3;
+  color: #eee;
+  line-height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  pointer-events: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  transition: opacity 0.5s 0.75s ease-out;
+}
+.social_box ul:hover .text {
+  opacity: 0;
+  transition: opacity 0.5s 0.125s ease-out;
+  animation: none;
+}
+
+.social_box ul li {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: #0c0c0cda;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.5s ease-out, border-radius 0.5s 0.25s ease-out,
+    margin 0.5s 0.25s ease-out;
+}
+
+.social_box ul li:hover {
+  background: #fc0800;
+  animation: none;
+}
+.social_box ul li i {
+  color: #eee;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 1.9s;
+}
+
+.social_box ul:hover li i {
+  opacity: 1;
+  animation: none;
+}
+
+.social_box ul li:nth-child(1) {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.social_box ul li:nth-child(5) {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.social_box ul:hover li {
+  border-radius: 50px;
+  margin: 0 3px;
+  animation: none;
+}
+
+.main-text {
+  position: absolute;
+  top: 50px;
+  width: 96.66666666666666%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-min-block {
+  min-width: 170px;
+  line-height: 26px;
+}
+
+.btn-clear {
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+  margin-right: 15px;
+}
+
+.btn-clear:hover {
+  color: #000;
+  background-color: #6699cc;
+  animation: none;
+}
+
+/*--------get to know me-------*/
+
+#get {
+  color: #fff;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 40px;
+  width: 28%;
+  background: #0c0c0cea;
+  border-color: red;
+  outline: none;
+  margin-left: 10px;
+  border: none;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+#get:hover {
+  background: #4a148c;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  animation: none;
+}
+
+#get a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#get a:hover {
+  cursor: pointer;
+  color: #fff;
+  animation: none;
+}
+
+.cv-download {
+  margin-left: 1rem;
+}
+
+/*---------skills animation css----------*/
+
+.development_title {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.skills-bar-container {
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 350px;
+  top: 40%;
+  transform: translate(-50%, -50%) s;
+  list-style: none;
+  margin-bottom: 25px;
+}
+.skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 2px 2px;
+}
+
+.progressbar-title {
+  color: #ff6347;
+  margin-bottom: 1rem;
+}
+.progressbar-title h3 {
+  display: inline-block;
+  position: relative;
+  top: 17px;
+  color: #888;
+}
+.progressbar-title .percent {
+  position: absolute;
+  right: 2px;
+  top: 40px;
+}
+
+.bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: -15px;
+}
+.bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.progresstomatoes {
+  background: #047ae9;
+}
+
+#progress-html {
+  animation-name: progress-html;
+  animation-delay: 0.5s;
+}
+
+#progress-css {
+  animation-name: progress-css;
+  animation-delay: 1s;
+}
+
+#progress-javascript {
+  animation-name: progress-javascript;
+  animation-delay: 1.2s;
+}
+
+#progress-php {
+  animation-name: progress-php;
+  animation-delay: 1.4s;
+}
+
+#progress-wordpress {
+  animation-name: progress-wordpress;
+  animation-delay: 1.6s;
+}
+
+#progress-bootstrap {
+  animation-name: progress-bootstrap;
+  animation-delay: 1.8s;
+}
+
+#progress-laravel {
+  animation-name: progress-laravel;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@-ms-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-ms-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@-ms-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@-webkit-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@-moz-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@-ms-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@-webkit-keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@-moz-keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@-ms-keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+@-webkit-keyframes progress-laravel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@-moz-keyframes progress-laravel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@-ms-keyframes progress-laravel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes progress-laravel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+/*------back to home button--------*/
+.submit-button {
+  margin-top: 5rem;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit-button a {
+  text-decoration: none;
+}
+
+.submit-button:hover {
+  background: #918e94;
+  border: none;
+  outline: none;
+  animation: none;
+  text-decoration: none;
+}
+
+#CV {
+  margin-left: 1rem;
+}

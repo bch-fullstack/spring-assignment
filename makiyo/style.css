@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  }
+
+html{
+   scroll-behavior: smooth;
+  }
+
+  /* Scroll top button */
+
+  #page_top{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #A9A9A9;
+    opacity: 0.4;
+    z-index: 10;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    font-size: 25px;
+    color: #000000;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+/* Wrapper */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navigation bar */
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #B2D6FF;
+    color: #000000;
+}
+
+.nav {
+    margin: 0;
+    background:#FFFAFA;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 30%;
+    height: calc(100% - 500px);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    transition: all 400ms; 
+    visibility: hidden;
+}
+
+.navlink {
+  text-align: center;  
+  list-style: none;
+  padding: 5px;
+  margin: 10px;
+  color: #ccc;
+}
+
+.navlink a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navlink a:hover {
+  border-bottom: 4px dotted#000000;
+}
+
+.nav-active {
+  right: 0;
+  visibility: visible;
+  transition: all 400ms; 
+}
+
+.burger {
+    display: block
+}
+
+/* Hero-banner */
+
+/* Background pattern from Toptal Subtle Patterns */
+.hero-banner {
+  background: gray url(https://subtlepatterns.com/patterns/photography.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+  }
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.about-text{
+  flex: 1;
+  padding: 5px;
+  margin: 10px;
+}
+
+.about-image{
+  flex: 1;
+  padding: 5px;
+  margin: 10px;
+}
+
+.about-image img{
+  width: 20%;
+  height: auto;
+}
+  
+/* Main content */
+
+.content {
+    background-color: #F5CF8E;
+    height: 300px;
+    order: 2;
+  }
+
+/* Slick slider */
+  .slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 50%;
+}
+/* Slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+  
+/* Contact Form*/
+
+.contact {
+    background-color: #ffffff;
+    height: 300px;
+    order: 1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+.contact h2{
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+
+#mycv-container{
+  height: 300px;
+  width: 50%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#pdf-btn button{
+  cursor: pointer;
+}
+
+#mycontact-container{
+  height: 300px;
+  width: 50%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#mycontact a{
+  text-decoration: none;
+  color: #000000;
+  padding-top: 10px;
+}
+
+/* Skills Education Work containers */
+
+.feature-1 {
+    background-color: #ffffff;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+ 
+.feature-2 {
+    background-color: #ffffff;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  
+.feature-3 {
+    background-color: #ffffff;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+.feature-4 {
+    background-color: #ffffff;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+.box{
+    margin: 2em;
+    border: solid 3px #000000;
+    font-weight: bold;
+    background-color: #B2D6FF;
+  }
+
+.feature-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    z-index:0;
+  }
+
+  /* Modal containers */ 
+
+  .modal{
+  display:none;
+  position: fixed;
+  z-index: 9999;
+  padding: 0.5em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #FFFAFA;
+  background-color: #B2D6FF;
+  }
+
+  .modal-content{
+    background-color: #fefefe;
+    margin: 50px auto auto auto;
+    padding: 20px;
+    border: solid 3px #000000;
+    width: 50%;
+    height: auto;
+    word-break: break-word;
+  }
+ 
+  .featureBtn{
+   width: 120px;
+   display: flex;
+   justify-content: center;
+   padding: 1em;
+   text-decoration: none;
+   color: #000000;
+   border: solid 3px #000000;
+   border-radius: 5px;
+   transition: .4s;
+   cursor: pointer;
+   background-color: #FFFAFA;
+   font-size: 1em;
+  }
+ 
+  .featureBtn:hover{
+   background: #67c5ff;
+   color: #000000;
+   cursor: pointer;
+  }
+ 
+  .close{
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+  }
+ 
+  .close:hover,
+  .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ /* Skills - pop-up window */ 
+
+ #skills{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#skills::before{
+  content: "";    
+  background:url("https://source.unsplash.com/1600x900/?color") no-repeat fixed center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+
+ /* Education - pop-up window */ 
+
+ #workexperience{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#workexperience::before{
+  content: "";    
+  background:url("https://source.unsplash.com/1600x900/?color") no-repeat fixed center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+ /* Education - pop-up window */ 
+ #education{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#education::before{
+  content: "";    
+  background:url("https://source.unsplash.com/1600x900/?color") no-repeat fixed center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+ /* Project - pop-up window */
+ #project{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#project::before{
+  content: "";    
+  background:url("https://source.unsplash.com/1600x900/?color") no-repeat fixed center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+#project-pop-up a{
+  text-decoration: underline;
+  color: #000000;
+  font-weight: bold;
+}
+
+  /* Mobile version */
+  @media only screen and (max-width: 400px) {
+    body {
+      background-color: #ffffff; 
+    }
+  }
+  
+  /* Tablet version */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4 {
+    width: 50%;
+  }
+  }
+  
+  /* Desktop version */
+  @media only screen and (min-width: 961px) {
+    .wrapper {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .feature-1,
+    .feature-2,
+    .feature-3, 
+    .feature-4{
+      width: 25%;
+    }
+    .hero-banner {
+      height: 400px;
+    }
+
+  }
+
+  /* Desktop navigation */
+  @media only screen and (min-width: 401px) {
+    header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #B2D6FF;
+      color: #000000;
+  }
+
+    .nav {
+      width: 70%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      position: static;
+      margin: 0;
+      background-color: transparent;
+      visibility: visible;
+  
+    }
+    .navlink {
+      list-style: none;
+      margin: 0;
+    }
+
+    .navlink a {
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .navlink a:hover {
+      border-bottom: 4px dotted#000000;
+    }
+
+    .burger {
+        font-size: 1.2em;
+        display: none;
+      }
+}
+

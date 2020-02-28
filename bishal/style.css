@@ -1,0 +1,621 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+/*---------navbar--------*/
+
+header {
+  font-family: 'Flamenco';
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.9));
+}
+
+header .logo {
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 2px 2px #05f74e;
+}
+
+header .logo:hover {
+  transform: scale(1.2);
+  animation: none;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+header ul li a {
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+header ul li a:hover {
+  text-decoration: none;
+  text-shadow: 2px 1px #0019f8;
+  color: #fff;
+  transform: scale(1.2);
+  border-bottom: tomato solid;
+}
+
+.toggle {
+  display: none;
+}
+
+/*--------slider homepage----------*/
+
+.carousel-inner img {
+  height: 100vh;
+  object-fit: cover;
+  width: auto;
+}
+
+.carousel-caption {
+  font-family: 'Flamenco';
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.heading {
+  font-size: 60px;
+  text-shadow: 2px 1px #edf1ee;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-size: 30px;
+  color: 2px 1px #c7cac8;
+  font-weight: 600;
+}
+
+.caption {
+  font-size: 20px;
+  color: #f4f7f5;
+  font-weight: 700;
+}
+
+/*----FOLLOW ME-----*/
+.social_box ul {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+.social_box ul .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  color: red;
+  line-height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  pointer-events: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  transition: opacity 0.5s 0.75s ease-out;
+}
+.social_box ul:hover .text {
+  opacity: 0;
+  transition: opacity 0.5s 0.125s ease-out;
+}
+
+.social_box ul li {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: #111;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.5s ease-out, border-radius 0.5s 0.25s ease-out,
+    margin 0.5s 0.25s ease-out;
+}
+
+.social_box ul li:hover {
+  background: red;
+}
+.social_box ul li i {
+  color: #eee;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 1.9s;
+}
+
+.social_box ul:hover li i {
+  opacity: 1;
+}
+
+.social_box ul li:nth-child(1) {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.social_box ul li:nth-child(5) {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.social_box ul:hover li {
+  border-radius: 50px;
+  margin: 0 3px;
+}
+
+.main-text {
+  position: absolute;
+  top: 50px;
+  width: 96.66666666666666%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-min-block {
+  min-width: 170px;
+  line-height: 26px;
+}
+
+.btn-clear {
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+  margin-right: 15px;
+}
+
+.btn-clear:hover {
+  color: #000;
+  background-color: #6699cc;
+}
+
+/*-------get in touch button------*/
+
+.get {
+  color: rgb(255, 0, 0);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 40px;
+  width: 25%;
+  background: rgb(5, 5, 5);
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+
+.get:hover {
+  background: #111;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.get a {
+  text-decoration: none;
+  color: red;
+}
+
+.get a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/*---ABOUT ME....second section-----*/
+
+#aboutme {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(images/image14.jpeg);
+  padding: 4rem;
+  background-size: cover;
+  background-position: center;
+
+  background-position: center center;
+
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2%;
+  color: #fff;
+}
+.second-section {
+  padding: 1rem;
+  margin: 20px 0;
+}
+
+.aboutme-text h2 {
+  text-align: center;
+}
+
+.aboutme-text:hover h2 {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.aboutme-text p {
+  text-align: center;
+  line-height: 2em;
+  margin-top: 3rem;
+}
+
+/*.......about me paragraph spans-------*/
+
+.resume a,
+.social a,
+.here a,
+.pictures a {
+  color: #09bef5;
+  text-decoration: none;
+}
+
+/*------lets get in touch---------*/
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+/* contact form css */
+
+#contact-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  padding: 4rem;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+#contact-section .container h2 {
+  text-align: center;
+  padding-top: 1rem;
+
+  /* text-decoration-color:red; */
+  text-underline-position: under;
+  color: rgb(238, 235, 235);
+  letter-spacing: 2px;
+}
+
+#contact-section .container p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.contact-form i.fa {
+  /* color: red; */
+  /* color: #fff; */
+  font-size: 22px;
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  /* border: 2px solid #fff; */
+  cursor: pointer;
+  border: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+
+.contact-form i.fa:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-info {
+  font-size: 16px;
+  font-style: italic;
+  color: white;
+  letter-spacing: 2px;
+}
+.form-info a {
+  color: #fff;
+}
+
+.form-info a:hover {
+  color: #0019f8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  background-color: rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  background-color: rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+}
+textarea::placeholder {
+  color: white;
+}
+
+.submit {
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  /* border: 1px solid #fff;
+  color: #fff; */
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+
+.submit:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  background: #2e40e6;
+}
+
+/*-----scroll to top button........*/
+
+#scroll {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.9))
+    transparent;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  outline: none;
+  border-radius: 50%;
+}
+
+#scroll:hover {
+  transition: 0.1s;
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+}
+
+/* media queries */
+
+/*------lets get in touch--------*/
+
+@media (max-width: 968px) {
+  #contact-section .contact-form {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0 auto;
+  }
+  #contact-section .submit {
+    width: 60%;
+  }
+
+  /*......get in touch button........*/
+
+  .get {
+    color: rgb(255, 0, 0);
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 40px;
+    width: 51%;
+    background: #111;
+    border: none;
+    outline: none;
+  }
+}
+
+/*-------footer--------*/
+
+#site-footer {
+  background: #020202de;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#social-wrapper {
+  text-align: center;
+}
+.social-wrapper ul {
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-right: 1rem;
+}
+
+.social-wrapper ul li {
+  display: inline;
+  padding: 5px;
+}
+
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon {
+  margin-top: 0.625em;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  border-radius: 25px;
+  color: rgb(92, 159, 201);
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.facebook-icon:hover {
+  color: rgba(1, 189, 247, 0.842);
+}
+
+.instagram-icon:hover {
+  color: rgb(255, 174, 0);
+}
+.linkedin-icon:hover {
+  color: rgb(0, 38, 255);
+}
+.googleplus-icon:hover {
+  color: rgb(60, 23, 196);
+}
+
+.footer-text {
+  color: red;
+  font-size: 13px;
+}
+
+.credits a {
+  color: #fff;
+}
+.credits a:hover {
+  color: rgb(7, 151, 247);
+  cursor: pointer;
+}
+/*-----Responsive-----*/
+@media (max-width: 992px) {
+  header ul {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 50vh);
+    padding: 50px 100px;
+    text-align: center;
+    overflow: auto;
+    transition: 0.5s;
+    background: #000;
+    flex-direction: column;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  header.active ul {
+    top: 80px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  header ul li a {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+
+  .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .toggle::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+  .toggle::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+
+  header.active .toggle::before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+
+  header.active .toggle::after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 #fff;
+  }
+}

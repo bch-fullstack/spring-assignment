@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+        integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Scroll top button -->
+    <div id="page_top"><a href="#"></a></div>
+
+    <div class="wrapper">
+        <header id="section">
+
+            <!-- Menu & navigation bar -->
+            <ul class="nav">
+                <li class="navlink"><a href="#page_top">Home</a></li>
+                <li class="navlink"><a href="#about">About</a></li>
+                <li class="navlink"><a href="#skills">Skills</a></li>
+                <li class="navlink"><a href="#project">Projects</a></li>
+                <li class="navlink"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Hero banner -->
+        <div class="section hero-banner" class="background-animated">
+            <div id="about">
+                <div class="about-text">
+                    <h1>Hello, my name is Makiyo.</h1>
+                    <p>I'm a junior web developer.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/makiyo.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo slider -->
+        <div class="section content">
+            <div class="slider">
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="section contact contact-bkg" id="contact">
+            <div id="mycv-container">
+                <div id="mycv">
+                    <h2>You can download my CV here!</h2>
+                    <div id="pdf-btn">
+                        <button onclick="openCV()"> <i class="fas fa-download fa-2x"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="mycontact-container">
+                <div id="mycontact">
+                    <h2>Feel free to contact me :)</h2>
+                    <div class="email-btn">
+                        <div class="icon">
+                            <a href="mailto:makiyo.ronkko@bc.edu.fi"><i class="far fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="section feature-1">
+            <div class="box" id="skills">
+                <div class="feature-container">
+                    <button id="skillsBtn" class="featureBtn">Skills</button>
+                </div>
+            </div>
+            <div id="skills-pop-up" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Please click here to see my project at Github!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section feature-2">
+            <div class="box" id="workexperience">
+                <div class="feature-container">
+                    <button id="workBtn" class="featureBtn">Work Experience</button>
+                </div>
+            </div>
+            <div id="work-pop-up" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>01/2016-01/2020: Samuji Oy, Helsinki, Finland</h2><br>
+                    <p>Sales Executive and Wholesale Logistics and Distribution Manager</p><br>
+                    <h2>02/2015-12/2015: Toiminimi, Helsinki, Finland</h2><br>
+                    <p>Self-employed, Helsinki based online design store for Japan</p><br>
+                    <h2>10/2012-01/2015: Rovio Entertainment Ltd., Espoo, Finland</h2><br>
+                    <p>Communications Specialist, Japan in the Marketing and Communications Business Unit</p><br>
+                    <h2>06/2011-02/2012: Industrial News Service, INS Oy, Helsinki, Finland</h2><br>
+                    <p>Part-time Media Consultant, Media Department & Intern as Media Developer, Media Department</p>
+                    <br>
+                    <h2>For the rest of experiences, please see my CV.</h2><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="section feature-3">
+            <div class="box" id="education">
+                <div class="feature-container">
+                    <button id="educationBtn" class="featureBtn">Education</button>
+                </div>
+            </div>
+            <div id="education-pop-up" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>01/2020- present: Business College Helsinki Oy</h2><br>
+                    <p>Full Stack Web Developer program, Information and Communications Technology</p><br>
+                    <h2>08/2010- 12/2014: Helsinki Metropolia University of Applied Sciences</h2><br>
+                    <p>Metropolia Business School, Vantaa, Finland</p><br>
+                    <p>International Business and Logistics, Bachelor of Business Administration (BBA)</p><br>
+                    <h2>01/2003- 12/2005: Los Angeles City College, Los Angeles, U.S.A.</h2><br>
+                    <p>Associate of Art in Jusic (AA)</p><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="section feature-4">
+            <div class="box" id="project">
+                <div class="feature-container">
+                    <button id="projectBtn" class="featureBtn">Project</button>
+                </div>
+
+                <div>
+                </div>
+            </div>
+            <div id="project-pop-up" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Please click below link to see my project!</p><br>
+                    <a href="https://github.com/makiyo-ronkko">Makiyo's Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
+</html>
