@@ -7,9 +7,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -18,7 +21,7 @@
     <div id="page_top"><a href="#"></a></div>
 
     <div class="wrapper">
-        <header id="section">
+        <header>
 
             <!-- Menu & navigation bar -->
             <ul class="nav">
@@ -47,20 +50,22 @@
         </div>
 
         <!-- Photo slider -->
-        <div class="section content">
+        <div class="section slider-content">
+            <h2>Here are nothing but some pictures I took. Hope you like them.</h2>
             <div class="slider">
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
-                <div><img src="photo/"></div>
+                <img src="img/makiyo-oulu.jpg">
+                <img src="img/makiyo-helsinki1.jpg">
+                <img src="img/makiyo-helsinki2.jpg">
+                <img src="img/makiyo-helsinki3.jpg">
+                <img src="img/makiyo-helsinki4.jpg">
             </div>
         </div>
 
         <!-- Contact form -->
-        <div class="section contact contact-bkg" id="contact">
+        <div class="section contact" id="contact">
             <div id="mycv-container">
                 <div id="mycv">
-                    <h2>You can download my CV here!</h2>
+                    <h2>My CV here!</h2>
                     <div id="pdf-btn">
                         <button onclick="openCV()"> <i class="fas fa-download fa-2x"></i></button>
                     </div>
@@ -78,6 +83,7 @@
             </div>
         </div>
 
+
         <!-- Feature cards -->
         <div class="section feature-1">
             <div class="box" id="skills">
@@ -86,9 +92,19 @@
                 </div>
             </div>
             <div id="skills-pop-up" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="skill-modal">
                     <span class="close">&times;</span>
-                    <p>Please click here to see my project at Github!</p>
+                    <h2>Please visit my Github page to see my project.</h2>
+                    <a href="//github.com/makiyo-ronkko" target="_blank"><i class="fab fa-github fa-2x"></i>Makiyo's
+                        Github Page</a>
+                    <ul>
+                        <li>HTML5</li><br>
+                        <li>CSS3</li><br>
+                        <li>JavaScript</li><br>
+                        <li>React</li><br>
+                        <li>Redux</li><br>
+                        <li>Node</li><br>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -131,7 +147,7 @@
                     <p>Metropolia Business School, Vantaa, Finland</p><br>
                     <p>International Business and Logistics, Bachelor of Business Administration (BBA)</p><br>
                     <h2>01/2003- 12/2005: Los Angeles City College, Los Angeles, U.S.A.</h2><br>
-                    <p>Associate of Art in Jusic (AA)</p><br>
+                    <p>Associate of Art in Music (AA)</p><br>
                 </div>
             </div>
         </div>
@@ -148,15 +164,23 @@
             <div id="project-pop-up" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Please click below link to see my project!</p><br>
-                    <a href="https://github.com/makiyo-ronkko">Makiyo's Github</a>
+                    <h2>Please click below link to see my project!</h2><br>
+                    <a href="//github.com/makiyo-ronkko" target="_blank"><i class="fab fa-github fa-2x"></i>Makiyo's
+                        Github</a>
                 </div>
             </div>
         </div>
+        <!-- Footer -->
+        <div class="section footer">
+            <div class="socialicons">
+                <a href="//linkedin.com/in/makiyoronkko " target="_blank"><i class=" fab fa-linkedin fa-2x"></i></a>
+                <a href="//github.com/makiyo-ronkko" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
