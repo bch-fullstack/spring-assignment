@@ -345,10 +345,13 @@ justify-content: center;
  flex: 2;
 }
 .hobbie-discription h5{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
 
+}
+.hobbie-discription p{
+    font-family: sans-serif;
 }
 
 /*end hobbies section */
