@@ -195,7 +195,7 @@ header ul li a:hover {
 }
 
 .Stockmann-logo {
-  content: url("/images/Stockmann.png");
+  content: url("../images/Stockmann.png");
   max-height: 9vh;
 }
 

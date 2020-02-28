@@ -53,6 +53,3 @@ var keyHandler = function(event) {
 
 // Listen for keydown events
 document.addEventListener("keydown", keyHandler, false);
-
-/* Firebase */
-
