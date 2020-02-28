@@ -1,0 +1,7 @@
+/* equipment page specific header styles */
+
+#equipment a {
+    background: var(--main-color);
+    color: var(--main-bg-color);
+    
+}

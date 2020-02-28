@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Map Page Anne Kokkonen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/242a4dda2d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/map_styles.css">
+  </head>
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <header>
+      <div class="container">
+          <div class="logo-bar">
+              <div class="logo">
+                  <p><i class="fab fa-playstation"></i> nefarious_onion</p>
+                  <h1>
+                      <i class="fas fa-ghost"></i>
+                      Anne Kokkonen
+                  </h1>
+              </div>
+              <div class="btn-wrapper">
+                <button class="light-switch" id="theme-toggle" onclick="modeSwitcher()"></button>
+            </div>
+          </div>
+         
+      </div>
+      <div class="container shadow a">
+          <div class="header-content">
+              <nav class="top-nav">
+                  <ul class="nav-list">
+                     <li id="overview"><a href="index.html">Overview</a></li>
+                     <li><a href="profile.html">Profile</a></li>
+                     <li><a href="equipment.html">Equipment</a></li>
+                     <li><a href="missions.html">Missions</a></li>
+                     <li id="map"><a href="map.html">Map</a></li>
+                     <li><a href="settings.html">Settings</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </header>
+    <main>
+    <section id="map-page-main">
+      <div class="map-container">
+        <div class="map-content">
+          <div class="map-header">
+            <h2>Helsinki Finland</h2>
+          </div>
+          <div class="map-img"></div>
+          <p>Source: Detailed plan map of the city of Helsinki 1820. The maintainer of the dataset is Helsingin kaupunkiympäristön toimiala / Kaupunkimittauspalvelut and the original author is Helsingin kaupunginkanslia / Kaupunginarkisto. The dataset has been downloaded from <a href="https://hri.fi/"> Region Infoshare service</a> on 24.02.2020 under the license Creative Commons Attribution 4.0.</p>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="hidden-footer-container">
+          <div class="footer-header">
+            <h2 class="contact-header">Say hi.</h2>
+          </div>
+          <div class="footer-content">
+            <div class="contact-card">
+              <div class="contact-info">
+                <div class="contact-email">
+                  <a href="mailto:fake@fake.com">fake@<br />fake.com</a>
+                </div>
+                <div class="contact-text">
+                  <p>
+                    I'm currently studying to become a full stack web developer.
+                    I'm looking for an internship position for 5 months starting
+                    in January 2021. I'm interested in all things web
+                    development and web design (and videogames). Say hi!<br /><br />
+
+                    Anne Kokkonen <br />
+                    Helsinki, Finland
+                  </p>
+                </div>
+                <div class="contact-links">
+                  <a href="https://github.com/nefarious-onion"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/anne-kokkonen-b913a11a0/"><i class="fab fa-linkedin"></i></a>
+                  <a href="./assets//webdeveloperbootcamp_august19.pdf" download=""><i class="fas fa-file-pdf"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-img"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <script>
+      const userPrefers = getComputedStyle(document.documentElement).getPropertyValue("content");
+
+      if (theme === "dark") {
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+      } else if (theme === "light") {
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+      } else if (userPrefers === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        window.localStorage.setItem("theme", "dark");
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        window.localStorage.setItem("theme", "light");
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+      }
+
+      function modeSwitcher() {
+        let currentMode = document.documentElement.getAttribute("data-theme");
+        if (currentMode === "dark") {
+          document.documentElement.setAttribute("data-theme", "light");
+          window.localStorage.setItem("theme", "light");
+          document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+        } else {
+          document.documentElement.setAttribute("data-theme", "dark");
+          window.localStorage.setItem("theme", "dark");
+          document.getElementById("theme-toggle").innerHTML = "Light Mode";
+        }
+      }
+    </script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
