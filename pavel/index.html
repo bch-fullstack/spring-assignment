@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a926e10612.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue-grey white ">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons black">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+              <a class="waves-effect waves-light borders " href="#About"
+                >About Me</a
+              >
+            </li>
+            <li>
+                <a class="waves-effect waves-light borders " href="#skills">Skills</a>
+              </li>
+            <li>
+              <a class="waves-effect waves-light borders " href="#exp"
+                >Working experience</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav  " id="mobile-demo"> <!--mobile nav-->
+        <li><a  href="#About">About Me</a></li>
+        <li><a  href="#skills">Skills</a></li>
+        <li><a  href="#exp">Working experience</a></li>
+        
+        
+      </ul>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large blue-grey darken-3">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating red SendEmail blue-grey darken-4"
+            ><i class="material-icons">contact_mail</i></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="CV/PavelFakhrutdinov.pdf"
+            class="btn-floating blue-grey darken-4"
+            download
+            ><i class="material-icons">file_download</i></a
+          >
+          <!--downloadable CV link-->
+        </li>
+        <li>
+          <a
+            href="//www.linkedin.com/in/pfakhrutdinov/"
+            target="_blank"
+            class="btn-floating blue-grey darken-4"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!--open personal linkedIn in a new tab-->
+        </li>
+      </ul>
+    </div>
+    <div id="About">
+      
+        <h1>Welcome to my portfolio page</h1>
+        <p>My name is Pavel Fakhrutdinov and I am currently a student of Business Colledge Helsinki and fullstack web-developer in the near future. Please check this page to see more info about me</p>
+      </div>
+    </div>
+    <div id="skills">
+        
+        
+        <div id="particles-js">
+         <p class="underline">SKILL SET</p> 
+         <div class="container">
+           
+            
+            <div class="bar learning" data-skill="JS"></div>
+            <div class="bar learning" data-skill="jQuery"></div>
+            <div class="bar front advanced" data-skill="CSS3"></div>
+            <div class="bar front expert" data-skill="HTML5"></div>
+        
+          </div>
+            
+            
+
+	
+        </div>  
+      
+    </div>
+    <div id="exp">
+        <p class="underline">RELEVANT WORKING EXPERIENCE</p>
+        
+
+<div data-aos="fade-up">
+    <p>CTO • START-UP MEINI • SEP 2017 – JAN 2019,  HELSINKI, FINLAND  </p>
+</div>
+<div data-aos="fade-up">
+    <p>INTERN • ROBBO EUROPE • JAN 2017 – JUN 2017,  HELSINKI, FINLAND</p>
+    </div>
+    <div data-aos="fade-up">
+    <p>PROJECT ASSISTANT • DEMOLA • FEB 2017 – MAY 2017, HELSINKI, FINLAND </p>
+</div>
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
