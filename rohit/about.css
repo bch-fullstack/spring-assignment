@@ -1,0 +1,40 @@
+ .profile-img {
+     margin-top: 200px;
+     height: 700px;
+     box-shadow: rgba(17, 16, 16, 0.753) 10px 8px 5px;
+     width: 280px;
+
+ }
+
+ .ptb {
+     margin-top: 80px;
+     padding-right: 80px;
+     padding-top: 200px;
+     /* padding-bottom: 50px; */
+ }
+
+ .ptb h2 {
+     font-weight: bold;
+ }
+
+ .profile-img-2 {
+     display: none;
+
+ }
+
+ .text-color p {
+     color: #000000;
+
+
+ }
+
+ .progress {
+     border-radius: 16px;
+     /* margin-bottom: 1px; */
+     background-color: rgba(36, 44, 44, 0.295);
+ }
+
+ .progress-bar {
+     border-radius: 16px;
+     background: black;
+ }

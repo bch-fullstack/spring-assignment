@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Racing Sans One', ; */
+  /* font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif; */
+  font-family: "Cinzel";
+}
+
+body {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+/* ----------------------------------------------------------------------Landing-Page--------------------------------------------------------- */
+.landing-page {
+  background-image: linear-gradient(to bottom,
+      rgba(27, 28, 29, 0),
+      rgba(1, 3, 8, 0.925)),
+    url("images/images23.jpg");
+  opacity: 0.9;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 65vh;
+
+  position: relative;
+  background-attachment: scroll;
+  border-radius: 100px 100px 100px 100px;
+
+  margin: 20px;
+  z-index: 1000;
+}
+
+.landing-page:hover {
+  position: relative;
+  transition: box-shadow 1s ease-in-out;
+  box-shadow: 5px 7px 10px rgba(0, 0, 255, 0.349);
+}
+
+/* -------------------------------------------------SideNavBar-------------------------------------------------------- */
+
+/* --------------------Icon-Size------------------ */
+.fa-2x {
+  font-size: 2em;
+
+  padding: 15px;
+  color: rgba(206, 29, 29, 0.651);
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 10px;
+}
+
+/* ------------------------------Hover-effect-sidenavbar--------------------------------------------- */
+.main-menu:hover,
+nav.main-menu.expanded {
+  width: 260px;
+  border-radius: 100px 70px 70px 100px;
+  background: rgba(1, 5, 4, 0.911);
+
+  overflow: visible;
+}
+
+/* -----------------------------------------------Main-NavBar------------------------------------------------ */
+.main-menu {
+  background: #000000f5;
+  border-right: 1px solid rgba(109, 44, 44, 0.801);
+  position: absolute;
+
+  padding-left: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  height: 100%;
+  width: 110px;
+  overflow: hidden;
+  transition: width 0.5s linear;
+  z-index: 100;
+  /* -webkit-transform: translateZ(0) scale(1, 1); */
+  border-radius: 100px 0 0 100px;
+}
+
+
+.main-menu li {
+  display: block;
+  position: relative;
+  /* display: block; */
+  width: 230px;
+  /* border: 1px solid red; */
+
+  top: 50px;
+}
+
+.main-menu li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #f5e4e4c9;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  text-decoration: none;
+  /* -webkit-transform: translateZ(0) scale(1, 1); */
+  transition: li 0.1s linear;
+}
+
+.main-menu .nav-icon {
+  position: absolute;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* ----------------------------------------------NavBar-text-------------------------------------- */
+.nav-text {
+  position: relative;
+  width: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgba(202, 170, 26, 0.63);
+  margin-left: -40px;
+  top: 18px;
+}
+
+/* -------------------------------------Hover-effect-on-Menu-Icon----------------------------- */
+.main-menu li:hover a,
+nav .main-menu li.active a {
+  background-color: rgba(21, 128, 190, 0.863);
+  border-radius: 15px;
+  transition: 1s;
+  zoom: 1.009;
+}
+
+.main-menu .Download {
+  position: absolute;
+  left: 60px;
+  bottom: 150px;
+}
+
+.Download li a:hover {
+  display: none;
+}
+
+/* ------------------------------------Text-inside-of-landing-page-------------------------- */
+#home {
+  letter-spacing: 2px;
+  width: 100%;
+  top: 25%;
+  opacity: 1;
+
+  position: absolute;
+}
+
+.hero-content h1 {
+
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(204, 28, 28, 0.822);
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  letter-spacing: 1px;
+}
+
+.hero-content h5 {
+  word-spacing: 3px;
+  color: #f5f10be5;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.hero-section p {
+  color: #dddddd;
+  margin-bottom: 50px;
+  font-size: 17px;
+  font-family: "Cinzel";
+}

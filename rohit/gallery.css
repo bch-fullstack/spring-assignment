@@ -1,0 +1,25 @@
+ .gallery {
+     margin-top: 80px;
+     width: 100%;
+
+
+     background: #fff;
+ }
+
+ .gallery h1 {
+     font-weight: bold;
+
+     padding: 20px;
+ }
+
+
+ .main-img img,
+ .imgs img {
+     width: 100%;
+ }
+
+ .imgs {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1px;
+ }

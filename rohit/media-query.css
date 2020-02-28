@@ -1,0 +1,131 @@
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+
+  }
+
+  #particles-js {
+    background: linear-gradient(to bottom, rgba(12, 125, 201, 0.63) 10%, rgba(40, 49, 77, 0.8) 30%, rgba(29, 35, 71, 0.8) 50%, rgba(19, 25, 28, 0.8) 80%, rgba(15, 14, 14, .8) 100%), url(https://38.media.tumblr.com/tumblr_m00c3czJkM1qbukryo1_500.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  #particles-js {
+
+    width: 100%;
+    position: absolute;
+    top: -200px;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .landing-page {
+    max-height: 400px;
+    background: rgb(10, 10, 10);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 70px;
+    background-attachment: fixed;
+
+    border-radius: 0px 100px 100px 0px;
+    position: relative;
+
+  }
+
+  .progress-bar {
+    color: rgb(228, 28, 28);
+    background-color: rgba(144, 151, 209, 0.664);
+  }
+
+  ul li a i {
+    height: 5px;
+
+  }
+
+  .main-menu .fas {
+    font-size: 20px;
+    margin-left: -40px;
+    padding-top: 25px;
+  }
+
+
+  .fa {
+    height: 0px;
+  }
+
+  .main-menu {
+    height: 400px;
+    width: 60px;
+    border-radius: 0px 100px 100px 0px;
+  }
+
+  .Download {
+    width: 5px;
+    height: 10px;
+    bottom: 0px;
+    top: 250px;
+  }
+
+  #about-me {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: rgb(182, 7, 7);
+  }
+
+  .lt {
+    position: absolute;
+
+    z-index: 100;
+  }
+
+  #home p {
+    font-size: 10px;
+    color: white;
+  }
+
+  #home h5 {
+    font-size: 15px;
+  }
+
+  #home .rotate {
+    font-size: 35px;
+  }
+
+  #home .social-link {
+    font-size: 8px;
+  }
+
+  .row .profile-img {
+    display: none;
+  }
+
+  .row .profile-img-2 {
+    display: inline-block;
+    max-height: 700px;
+    max-width: 300px;
+    margin-top: 300px;
+  }
+
+  .mt {
+    padding: 20px;
+  }
+
+  .services,
+  .bg-about {
+    background-color: rgb(17, 16, 16);
+    color: rgba(219, 243, 243, 0.555);
+  }
+
+  #flex #navbar {
+    display: none;
+  }
+
+  #flex {
+    display: flex;
+    justify-content: center;
+
+  }
+}

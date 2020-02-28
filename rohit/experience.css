@@ -1,0 +1,82 @@
+.resume {
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to bottom,
+            rgba(3, 14, 26, 0.342),
+            rgba(1, 3, 8, 0.959)),
+        url("images/images19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    background-attachment: fixed;
+
+}
+
+.box-shadow-edu:hover {
+    transition: box-shadow 1s ease-in-out;
+    box-shadow: 5px 3px 8px rgba(16, 16, 43, 0.904);
+}
+
+li p {
+    color: rgb(143, 143, 143);
+}
+
+.resume h3 {
+    margin-bottom: 50px;
+    color: rgba(238, 237, 237, 0.479);
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+
+}
+
+.timeline:before {
+    content: '';
+    background: rgb(36, 15, 15);
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 3px;
+    z-index: 1;
+    height: 100%;
+}
+
+.timeline li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.bg-color-exp {
+    background-color: rgba(5, 5, 5, 0.26);
+    padding: 50px 80px 50px 80px;
+}
+
+.timeline li h4 {
+    background-color: #000000;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.timeline li h4 span {
+    font-weight: bold;
+    color: #949090;
+}
+
+.timeline li::before {
+    content: '';
+    background: rgb(37, 103, 202);
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #000;
+    left: -6px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
