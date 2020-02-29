@@ -29,7 +29,7 @@
   min-height: 660px;
 }
 .logo {
-  text-align: right;
+  display: flex;
 }
 ul li {
   display: inline;
@@ -103,4 +103,21 @@ img {
   border-style: solid;
   border-color: #287ec7;
   padding: 1em;
+}
+.name-text {
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10rem;
+}
+.download-btn {
+  color: white;
+  height: 2rem;
+  width: 6rem;
+  background-color: tomato;
+  margin-left: 45rem;
+}
+#download-text {
+  font-size: 3rem;
+  text-align: center;
 }

@@ -24,3 +24,5 @@ $(".image-slider").slick({
     }
   ]
 });
+
+
