@@ -13,20 +13,26 @@
   padding-top: 0px;
 }
 .about-page {
-  background: white;
+
   min-height: 660px;
+   background:#E5E5E5;
 }
 .education {
   min-height: 660px;
+   background:#E5E5E5;
 }
 .experience {
   min-height: 660px;
+   background:#E5E5E5;
 }
 .skills {
   min-height: 660px;
+  background:#E5E5E5;
+  box-sizing: border-box;
 }
 .contact {
   min-height: 660px;
+   background:#E5E5E5;
 }
 .logo {
   display: flex;
@@ -121,3 +127,42 @@ img {
   font-size: 3rem;
   text-align: center;
 }
+.skills-bar {
+  display: flex;
+  padding-top: 20rem;
+  margin-left: 20rem;
+}
+.html5 {
+  display: flex;
+  background: white;
+  height: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 0.001rem;
+}
+.css3 {
+  display: flex;
+  padding-left: 5rem;
+  background: white;
+  height: 3rem;
+   padding-top: 5rem;
+  padding-bottom: 0.001rem;
+}
+}
+.js {
+  display: flex;
+  padding-left: 5rem;
+  background: white;
+  height: 3rem;
+   padding-top: 5rem;
+  padding-bottom: 0.001rem;
+}
+}
+.UI {
+  display: flex;
+  padding-left: 5rem;
+  background: white;
+  height: 3rem;
+   padding-top: 5rem;
+  padding-bottom: 0.001rem;
+}
+
