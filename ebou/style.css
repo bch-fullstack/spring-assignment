@@ -13,26 +13,25 @@
   padding-top: 0px;
 }
 .about-page {
-
   min-height: 660px;
-   background:#E5E5E5;
+  background: #e5e5e5;
 }
 .education {
   min-height: 660px;
-   background:#E5E5E5;
+  background: #e5e5e5;
 }
 .experience {
   min-height: 660px;
-   background:#E5E5E5;
+  background: #e5e5e5;
 }
 .skills {
   min-height: 660px;
-  background:#E5E5E5;
+  background: #e5e5e5;
   box-sizing: border-box;
 }
 .contact {
   min-height: 660px;
-   background:#E5E5E5;
+  background: #e5e5e5;
 }
 .logo {
   display: flex;
@@ -131,6 +130,7 @@ img {
   display: flex;
   padding-top: 20rem;
   margin-left: 20rem;
+  flex-wrap: wrap;
 }
 .html5 {
   display: flex;
@@ -138,31 +138,38 @@ img {
   height: 3rem;
   padding-top: 5rem;
   padding-bottom: 0.001rem;
+  padding-right: 3rem;
+  margin-left: 2rem;
 }
 .css3 {
   display: flex;
   padding-left: 5rem;
   background: white;
   height: 3rem;
-   padding-top: 5rem;
+  padding-top: 5rem;
   padding-bottom: 0.001rem;
+  margin-left: 2rem;
+  padding-right: 3rem;
 }
-}
+
 .js {
   display: flex;
   padding-left: 5rem;
   background: white;
   height: 3rem;
-   padding-top: 5rem;
+  padding-top: 5rem;
   padding-bottom: 0.001rem;
+  margin-left: 2rem;
+  padding-right: 3rem;
 }
-}
+
 .UI {
   display: flex;
   padding-left: 5rem;
   background: white;
   height: 3rem;
-   padding-top: 5rem;
+  padding-top: 5rem;
   padding-bottom: 0.001rem;
+  margin-left: 2rem;
+  padding-right: 3rem;
 }
-
