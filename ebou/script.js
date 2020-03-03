@@ -1,19 +1,28 @@
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $(".scroll-top").fadeIn();
-    } else {
-      $(".scroll-top").fadeOut();
-    }
-  });
+$(".image-slider").slick({
+  // normal options...
+  infinite: false,
 
-  $(".scroll-top").click(function() {
-    $("html, body").animate(
-      {
-        scrollTop: 0
-      },
-      100
-    );
-    return false;
-  });
+  // the magic
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+    }
+  ]
 });
+
+
